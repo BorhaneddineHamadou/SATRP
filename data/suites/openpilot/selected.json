@@ -1,0 +1,321 @@
+{
+ "stack": "openpilot",
+ "N": 28,
+ "seed": 20260929,
+ "want": {
+  "partial": 15,
+  "silent": 7,
+  "mass-fail": 3,
+  "borderline": 3
+ },
+ "counts": {
+  "partial": 17,
+  "silent": 6,
+  "mass-fail": 3,
+  "borderline": 2
+ },
+ "per_op": {
+  "CSC": 6,
+  "CRP": 6,
+  "SGN": 3,
+  "AOR": 4,
+  "ROR": 2,
+  "SDL": 5,
+  "CLR": 1,
+  "NEG": 1
+ },
+ "per_file": {
+  "selfdrive/controls/lib/longitudinal_planner.py": 5,
+  "selfdrive/controls/controlsd.py": 5,
+  "selfdrive/controls/lib/drive_helpers.py": 5,
+  "selfdrive/controls/lib/latcontrol_torque.py": 2,
+  "selfdrive/modeld/constants.py": 5,
+  "selfdrive/modeld/fill_model_msg.py": 2,
+  "selfdrive/controls/radard.py": 3,
+  "selfdrive/controls/lib/longcontrol.py": 1
+ },
+ "selected": [
+  "mfcd3f26f",
+  "mac9a9c7f",
+  "m7a24eb29",
+  "macef8656",
+  "m03b2e413",
+  "m77550fce",
+  "m52616ac1",
+  "mc80b3e5f",
+  "m138415af",
+  "md936d0ee",
+  "m27ada9d3",
+  "mf27084ae",
+  "m260fbab5",
+  "md8ca1979",
+  "m4691b057",
+  "m3e6682fb",
+  "m522fbcb9",
+  "m1476fa59",
+  "m3ccf50c0",
+  "m3b0c0f56",
+  "m170fd28f",
+  "m9095366a",
+  "m82ded1ae",
+  "m002a3552",
+  "m291fab75",
+  "m449fd267",
+  "m3dfaeca1",
+  "mca764f0e"
+ ],
+ "detail": [
+  {
+   "mid": "mfcd3f26f",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:742:CSC:x2",
+   "op": "CSC",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 2
+  },
+  {
+   "mid": "mac9a9c7f",
+   "site": "selfdrive/controls/controlsd.py:767:CRP",
+   "op": "CRP",
+   "cls": "partial",
+   "trig": 4,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m7a24eb29",
+   "site": "selfdrive/controls/lib/drive_helpers.py:62:SGN",
+   "op": "SGN",
+   "cls": "partial",
+   "trig": 0,
+   "base": 0,
+   "div": 2
+  },
+  {
+   "mid": "macef8656",
+   "site": "selfdrive/controls/lib/drive_helpers.py:410:AOR",
+   "op": "AOR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m03b2e413",
+   "site": "selfdrive/controls/controlsd.py:1124:ROR",
+   "op": "ROR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m77550fce",
+   "site": "selfdrive/controls/lib/drive_helpers.py:284:AOR",
+   "op": "AOR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 0,
+   "div": 1
+  },
+  {
+   "mid": "m52616ac1",
+   "site": "selfdrive/controls/lib/drive_helpers.py:435:CRP",
+   "op": "CRP",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "mc80b3e5f",
+   "site": "selfdrive/controls/lib/latcontrol_torque.py:74:CSC:x05",
+   "op": "CSC",
+   "cls": "partial",
+   "trig": 1,
+   "base": 1,
+   "div": 2
+  },
+  {
+   "mid": "m138415af",
+   "site": "selfdrive/modeld/constants.py:143:CRP",
+   "op": "CRP",
+   "cls": "partial",
+   "trig": 2,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "md936d0ee",
+   "site": "selfdrive/controls/lib/drive_helpers.py:249:AOR",
+   "op": "AOR",
+   "cls": "partial",
+   "trig": 4,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m27ada9d3",
+   "site": "selfdrive/controls/lib/latcontrol_torque.py:65:CRP",
+   "op": "CRP",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 2
+  },
+  {
+   "mid": "mf27084ae",
+   "site": "selfdrive/modeld/fill_model_msg.py:66:SDL",
+   "op": "SDL",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m260fbab5",
+   "site": "selfdrive/controls/radard.py:1745:CRP",
+   "op": "CRP",
+   "cls": "partial",
+   "trig": 2,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "md8ca1979",
+   "site": "selfdrive/controls/controlsd.py:690:SDL",
+   "op": "SDL",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m4691b057",
+   "site": "selfdrive/controls/controlsd.py:157:SGN",
+   "op": "SGN",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m3e6682fb",
+   "site": "selfdrive/controls/controlsd.py:921:CLR",
+   "op": "CLR",
+   "cls": "silent",
+   "trig": 1,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m522fbcb9",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:127:SDL",
+   "op": "SDL",
+   "cls": "silent",
+   "trig": 0,
+   "base": 0,
+   "div": 0
+  },
+  {
+   "mid": "m1476fa59",
+   "site": "selfdrive/modeld/constants.py:210:CSC:x2",
+   "op": "CSC",
+   "cls": "silent",
+   "trig": 1,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m3ccf50c0",
+   "site": "selfdrive/modeld/constants.py:99:CSC:x2",
+   "op": "CSC",
+   "cls": "silent",
+   "trig": 1,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m3b0c0f56",
+   "site": "selfdrive/modeld/fill_model_msg.py:349:ROR",
+   "op": "ROR",
+   "cls": "silent",
+   "trig": 1,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m170fd28f",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:1124:CSC:x2",
+   "op": "CSC",
+   "cls": "silent",
+   "trig": 1,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m9095366a",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:171:SGN",
+   "op": "SGN",
+   "cls": "mass-fail",
+   "trig": 5,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m82ded1ae",
+   "site": "selfdrive/controls/radard.py:198:SDL",
+   "op": "SDL",
+   "cls": "mass-fail",
+   "trig": 5,
+   "base": 1,
+   "div": 1
+  },
+  {
+   "mid": "m002a3552",
+   "site": "selfdrive/controls/lib/longcontrol.py:148:NEG",
+   "op": "NEG",
+   "cls": "mass-fail",
+   "trig": 6,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m291fab75",
+   "site": "selfdrive/modeld/constants.py:157:CRP",
+   "op": "CRP",
+   "cls": "borderline",
+   "trig": 2,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m449fd267",
+   "site": "selfdrive/modeld/constants.py:318:CSC:x2",
+   "op": "CSC",
+   "cls": "borderline",
+   "trig": 2,
+   "base": 1,
+   "div": 0
+  },
+  {
+   "mid": "m3dfaeca1",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:111:AOR",
+   "op": "AOR",
+   "cls": "partial",
+   "trig": 1,
+   "base": 1,
+   "div": 2
+  },
+  {
+   "mid": "mca764f0e",
+   "site": "selfdrive/controls/radard.py:467:SDL",
+   "op": "SDL",
+   "cls": "partial",
+   "trig": 3,
+   "base": 1,
+   "div": 1
+  }
+ ]
+}

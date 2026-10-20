@@ -1,0 +1,12 @@
+diff --git a/pylot/planning/world.py b/pylot/planning/world.py
+index 7b1859e..39de2c7 100644
+--- a/pylot/planning/world.py
++++ b/pylot/planning/world.py
+@@ -87,6 +87,7 @@ class World(object):
+                         self._last_stop_ego_location)
+             else:
+                 self._distance_since_last_full_stop = 0
++        if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_junction_stop] ts=%d speed=%.2f ticks_stopped=%d dist_since_stop=%.2f\n' % (timestamp.coordinates[0], pose.forward_speed, self._num_ticks_stopped, self._distance_since_last_full_stop))
+ 
+     def update_waypoints(self, goal_location, waypoints):
+         self._goal_location = goal_location

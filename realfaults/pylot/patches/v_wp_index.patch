@@ -1,0 +1,19 @@
+diff --git a/pylot/planning/waypoints.py b/pylot/planning/waypoints.py
+index 726a950..64623b7 100644
+--- a/pylot/planning/waypoints.py
++++ b/pylot/planning/waypoints.py
+@@ -116,11 +116,10 @@ class Waypoints(object):
+             if distance >= min_distance:
+                 min_index = index
+                 break
+-        if min_index == -1:
+-            min_index = len(self.waypoints) - 1
+-        if min_index < 0:
++        wp_index = max(len(self.waypoints) - 1, min_index)
++        if wp_index < 0:
+             raise ValueError('No more waypoints')
+-        return min_index
++        return wp_index
+ 
+     def get_angle(self, transform, min_distance):
+         """Returns the angle between the transform and the first waypoint that

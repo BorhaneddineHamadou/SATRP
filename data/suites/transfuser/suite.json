@@ -1,0 +1,390 @@
+{
+ "stack": "transfuser",
+ "seed": 20260929,
+ "quota": {
+  "ProxLeadDecel": 4,
+  "ProxLeadStopped": 4,
+  "ProxCutIn": 8,
+  "ProxOncomingDrift": 8,
+  "ProxCrossingTraffic": 6
+ },
+ "mix": [
+  0.3,
+  0.4,
+  0.3
+ ],
+ "suite": [
+  {
+   "sid": 13,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 31.41993051946022,
+    "v_lead": 2.719470368809703,
+    "g_trig": 12.112180021557752,
+    "a_lead": 7.523859125727363
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 19,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 27.292337866939054,
+    "v_lead": 3.97231556035015,
+    "g_trig": 23.630285924978843,
+    "a_lead": 5.349648920790006
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 24,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 38.93386500100182,
+    "v_lead": 2.9227038483994363,
+    "g_trig": 26.154333616785784,
+    "a_lead": 3.3222312893717088
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 25,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 17.069675295080714,
+    "v_lead": 3.134645647911649,
+    "g_trig": 26.77801341861158,
+    "a_lead": 6.139552556146707
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 35,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 27.807518661565165
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 41,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 48.51466627748706
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 52,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 60.53790244489701
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 59,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 38.66531464847498
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 63,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 16.687908775811547,
+    "v_cut": 3.92397314512035,
+    "d_trig": 10.228187510070683,
+    "t_lat": 1.053426715196366,
+    "a_cut": 2.7092154005294393
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 65,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 14.717309658197049,
+    "v_cut": 2.020656080073343,
+    "d_trig": 16.397150897884714,
+    "t_lat": 1.9763267852285846,
+    "a_cut": 1.0969843411827653
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 69,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 18.971701590415268,
+    "v_cut": 1.4574410361584653,
+    "d_trig": 9.52393690333652,
+    "t_lat": 0.9367246434714456,
+    "a_cut": 2.565952076578363
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 72,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 9.430392603502945,
+    "v_cut": 2.2433950145063313,
+    "d_trig": 14.912296765656011,
+    "t_lat": 2.058988753621162,
+    "a_cut": 2.4686226505717777
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 73,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 12.65316158532972,
+    "v_cut": 2.4328994152006507,
+    "d_trig": 18.509187315179155,
+    "t_lat": 1.9072930145814158,
+    "a_cut": 2.900092015958615
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 81,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 8.203340920762972,
+    "v_cut": 1.6030189203038343,
+    "d_trig": 8.08563396569574,
+    "t_lat": 0.8518070875614903,
+    "a_cut": 0.05312298042076882
+   },
+   "nominal_triggers": 5,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 86,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 21.030438321957412,
+    "v_cut": 2.8180351272622968,
+    "d_trig": 13.10761293681902,
+    "t_lat": 2.2362771827409524,
+    "a_cut": 0.6471810163884615
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 87,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 10.22870126430776,
+    "v_cut": 3.2962867307827466,
+    "d_trig": 8.908113877864709,
+    "t_lat": 0.9879114493942805,
+    "a_cut": 0.4908131095596762
+   },
+   "nominal_triggers": 5,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 90,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 90.43579693747938,
+    "v_onc": 7.5058605794716655,
+    "d_trig": 31.841497876846255,
+    "vy_drift": 1.0459105911099362,
+    "y_frac": 1.069130650281795,
+    "t_stay": 2.2730786922453072
+   },
+   "nominal_triggers": 5,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 103,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 82.68582142979133,
+    "v_onc": 5.757100166372075,
+    "d_trig": 39.21734699569163,
+    "vy_drift": 1.9277340331246537,
+    "y_frac": 1.1887091336282103,
+    "t_stay": 1.7494114213971357
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 105,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 78.78026352626566,
+    "v_onc": 4.4371890893010635,
+    "d_trig": 49.184418635944155,
+    "vy_drift": 1.4315843500153382,
+    "y_frac": 0.9447231410338264,
+    "t_stay": 1.656251035671382
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 106,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 110.73399931660548,
+    "v_onc": 5.32427507478731,
+    "d_trig": 34.365205557925584,
+    "vy_drift": 1.3849789250879745,
+    "y_frac": 0.9847983346176113,
+    "t_stay": 1.998616005552953
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 108,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 104.22706533260481,
+    "v_onc": 7.317758218223847,
+    "d_trig": 36.73296060872575,
+    "vy_drift": 1.4455212039456902,
+    "y_frac": 0.8015209602536353,
+    "t_stay": 1.788900842438078
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 115,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 95.85327294420273,
+    "v_onc": 7.961770787501347,
+    "d_trig": 43.76929241206547,
+    "vy_drift": 1.898275187314563,
+    "y_frac": 0.8706166816870561,
+    "t_stay": 2.3407837185770712
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 116,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 71.0110954774381,
+    "v_onc": 7.8450184478401335,
+    "d_trig": 29.539017879499795,
+    "vy_drift": 1.3333294186593219,
+    "y_frac": 1.0544790709250236,
+    "t_stay": 2.770120026268061
+   },
+   "nominal_triggers": 5,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 119,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 87.71196728719393,
+    "v_onc": 6.791463200177132,
+    "d_trig": 44.71259010499184,
+    "vy_drift": 1.5765722865316742,
+    "y_frac": 1.0307167492119178,
+    "t_stay": 1.8678656866972063
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 120,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 46.388375729392145,
+    "d_trig": 25.860844153333183,
+    "v_cross": 1.8061891865093236,
+    "y0": 7.289559268393862
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 138,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 64.4788717517925,
+    "d_trig": 18.686767779720117,
+    "v_cross": 1.5587825909733237,
+    "y0": 6.301143934288358
+   },
+   "nominal_triggers": 5,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 142,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 60.31747621934007,
+    "d_trig": 22.253718672367302,
+    "v_cross": 2.9383654585937617,
+    "y0": 6.147297188976096
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 144,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 45.69581124907502,
+    "d_trig": 18.22032906254321,
+    "v_cross": 1.6310728665522731,
+    "y0": 7.564506289931607
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 146,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 63.31043463719503,
+    "d_trig": 26.374677492148717,
+    "v_cross": 2.8500814642250605,
+    "y0": 6.393015159626432
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 149,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 42.01331632575705,
+    "d_trig": 30.360797259650546,
+    "v_cross": 2.699260356269151,
+    "y0": 7.950873393554724
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  }
+ ]
+}

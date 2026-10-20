@@ -1,0 +1,12 @@
+diff --git a/pylot/planning/planning_operator.py b/pylot/planning/planning_operator.py
+index 8593335..34b59de 100644
+--- a/pylot/planning/planning_operator.py
++++ b/pylot/planning/planning_operator.py
+@@ -189,6 +189,7 @@ class PlanningOperator(erdos.Operator):
+             self._logger.debug(
+                 '@{}: speed factor: {}, target speed: {}'.format(
+                     timestamp, speed_factor, target_speed))
++            if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_speed7] ts=%d flag_target_speed=%s speed_factor=%.3f target_speed=%.3f\n' % (timestamp.coordinates[0], self._flags.target_speed, speed_factor, target_speed))
+             output_wps = self._world.follow_waypoints(target_speed)
+         else:
+             output_wps = self._planner.run(timestamp, ttd)

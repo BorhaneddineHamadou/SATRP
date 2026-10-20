@@ -1,0 +1,2324 @@
+{
+ "stack": "transfuser",
+ "seed": 20260929,
+ "K": 100,
+ "covered": true,
+ "per_op": {
+  "CRP": 8,
+  "CSC": 18,
+  "SDL": 18,
+  "SGN": 8,
+  "IDX": 14,
+  "NEG": 13,
+  "AOR": 12,
+  "ROR": 6,
+  "COR": 3
+ },
+ "per_stratum": {
+  "config": 15,
+  "control": 40,
+  "agent": 45
+ },
+ "candidates": [
+  {
+   "id": "team_code_transfuser/config.py:476:CRP",
+   "file": "team_code_transfuser/config.py",
+   "line": 93,
+   "op": "CRP",
+   "old": "4",
+   "new": "5",
+   "span": [
+    93,
+    8,
+    93,
+    9
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "mdcdf3346",
+   "mutant": {
+    "mid": "mdcdf3346",
+    "site": "team_code_transfuser/config.py:476:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mdcdf3346/team_code_transfuser",
+    "md5": "092004d5e79d0a1dc124a8ae1afa1803"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:144:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 16,
+   "op": "CSC",
+   "old": "8.0",
+   "new": "4.0",
+   "span": [
+    16,
+    23,
+    16,
+    26
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m2560f324",
+   "mutant": {
+    "mid": "m2560f324",
+    "site": "team_code_transfuser/config.py:144:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2560f324/team_code_transfuser",
+    "md5": "0c8942a730f7449c1a93d0500d2bb626"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:103:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 76,
+   "op": "SDL",
+   "old": "self.yaw_res_head = self._build_head(in_channel, feat_channel, 1)",
+   "new": "pass",
+   "span": [
+    76,
+    8,
+    76,
+    73
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m70281ec1",
+   "mutant": {
+    "mid": "m70281ec1",
+    "site": "team_code_transfuser/model.py:103:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m70281ec1/team_code_transfuser",
+    "md5": "5b0d1476fd9b9d9a2641ab39f9c9d95e"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:267:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 569,
+   "op": "SDL",
+   "old": "target_point = torch.cat(target_point_degrees, dim=0).to('cuda', dtype=torch.float32)",
+   "new": "pass",
+   "span": [
+    569,
+    8,
+    569,
+    93
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m3957971b",
+   "mutant": {
+    "mid": "m3957971b",
+    "site": "team_code_transfuser/submission_agent.py:267:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m3957971b/team_code_transfuser",
+    "md5": "9adeea92b7e888050f938fcbbb60d33f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:67:SGN",
+   "file": "team_code_transfuser/config.py",
+   "line": 131,
+   "op": "SGN",
+   "old": "img_vert_anchors * img_horz_anchors",
+   "new": "-(img_vert_anchors * img_horz_anchors)",
+   "span": [
+    131,
+    18,
+    131,
+    53
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "ma2055310",
+   "mutant": {
+    "mid": "ma2055310",
+    "site": "team_code_transfuser/config.py:67:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/ma2055310/team_code_transfuser",
+    "md5": "1d3a3d89d3fba31eab7d46814fc12dfc"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:4806:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 639,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    639,
+    41,
+    639,
+    42
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m8d7e9f6b",
+   "mutant": {
+    "mid": "m8d7e9f6b",
+    "site": "team_code_transfuser/model.py:4806:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m8d7e9f6b/team_code_transfuser",
+    "md5": "88df38b3e932fe637c28687e7e42b75e"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:5346:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 677,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    677,
+    26,
+    677,
+    27
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m01d0991f",
+   "mutant": {
+    "mid": "m01d0991f",
+    "site": "team_code_transfuser/submission_agent.py:5346:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m01d0991f/team_code_transfuser",
+    "md5": "14dfe84d400f41e67af6ab00bd013f7a"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:232:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 120,
+   "op": "CSC",
+   "old": "1e-4",
+   "new": "5e-05",
+   "span": [
+    120,
+    9,
+    120,
+    13
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "ma4fe9a8a",
+   "mutant": {
+    "mid": "ma4fe9a8a",
+    "site": "team_code_transfuser/config.py:232:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/ma4fe9a8a/team_code_transfuser",
+    "md5": "70fbea09b42f0b9bb7d6a92faaa34c5e"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1036:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 96,
+   "op": "SDL",
+   "old": "net.load_state_dict(state_dict, strict=False)",
+   "new": "pass",
+   "span": [
+    96,
+    16,
+    96,
+    61
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "ma6573b35",
+   "mutant": {
+    "mid": "ma6573b35",
+    "site": "team_code_transfuser/submission_agent.py:1036:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/ma6573b35/team_code_transfuser",
+    "md5": "373bc833a2b63cbfd1a62c65be9f617f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:184:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 368,
+   "op": "NEG",
+   "old": "brake or is_stuck",
+   "new": "not (brake or is_stuck)",
+   "span": [
+    368,
+    11,
+    368,
+    28
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m6edd099f",
+   "mutant": {
+    "mid": "m6edd099f",
+    "site": "team_code_transfuser/submission_agent.py:184:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m6edd099f/team_code_transfuser",
+    "md5": "b7d5a0fd42bd168523fffc03f69666b0"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1033:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 92,
+   "op": "NEG",
+   "old": "self.config.sync_batch_norm == True",
+   "new": "not (self.config.sync_batch_norm == True)",
+   "span": [
+    92,
+    19,
+    92,
+    54
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "mc445fb4f",
+   "mutant": {
+    "mid": "mc445fb4f",
+    "site": "team_code_transfuser/submission_agent.py:1033:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mc445fb4f/team_code_transfuser",
+    "md5": "eb73f15b4e2f9c9748c67d473e612e1b"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:304:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 634,
+   "op": "SDL",
+   "old": "to_pop = 0",
+   "new": "pass",
+   "span": [
+    634,
+    8,
+    634,
+    18
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m1664e2e0",
+   "mutant": {
+    "mid": "m1664e2e0",
+    "site": "team_code_transfuser/submission_agent.py:304:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m1664e2e0/team_code_transfuser",
+    "md5": "0df9b508d1cfd24532644d75457000e7"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2808:CSC:x2",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 592,
+   "op": "CSC",
+   "old": "2",
+   "new": "4",
+   "span": [
+    592,
+    37,
+    592,
+    38
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m3c322dd5",
+   "mutant": {
+    "mid": "m3c322dd5",
+    "site": "team_code_transfuser/submission_agent.py:2808:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m3c322dd5/team_code_transfuser",
+    "md5": "06da5244a3d06047ff626c3cf1dbd30b"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:3100:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 133,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    133,
+    52,
+    133,
+    53
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m713a2fd6",
+   "mutant": {
+    "mid": "m713a2fd6",
+    "site": "team_code_transfuser/submission_agent.py:3100:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m713a2fd6/team_code_transfuser",
+    "md5": "1cefa2b65c025aaea802c1987fec5411"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:361:NEG",
+   "file": "team_code_transfuser/config.py",
+   "line": 208,
+   "op": "NEG",
+   "old": "setting == 'all'",
+   "new": "not (setting == 'all')",
+   "span": [
+    208,
+    12,
+    208,
+    28
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "mbd5ae35a",
+   "mutant": {
+    "mid": "mbd5ae35a",
+    "site": "team_code_transfuser/config.py:361:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mbd5ae35a/team_code_transfuser",
+    "md5": "c48845595d9cc97c08b39a5839d49393"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:1846:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 530,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    530,
+    43,
+    530,
+    44
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m2c18cdd0",
+   "mutant": {
+    "mid": "m2c18cdd0",
+    "site": "team_code_transfuser/model.py:1846:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2c18cdd0/team_code_transfuser",
+    "md5": "c3196c742e929b96a3248e50a9ab4fae"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:104:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 54,
+   "op": "NEG",
+   "old": "'use_target_point_image' in self.args",
+   "new": "not ('use_target_point_image' in self.args)",
+   "span": [
+    54,
+    12,
+    54,
+    49
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m8b8da068",
+   "mutant": {
+    "mid": "m8b8da068",
+    "site": "team_code_transfuser/submission_agent.py:104:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m8b8da068/team_code_transfuser",
+    "md5": "66450ddbe72d14b53185ab9833613cfb"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:290:AOR",
+   "file": "team_code_transfuser/config.py",
+   "line": 158,
+   "op": "AOR",
+   "old": "/",
+   "new": "*",
+   "span": [
+    158,
+    24,
+    158,
+    25
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "mbb15f7ad",
+   "mutant": {
+    "mid": "mbb15f7ad",
+    "site": "team_code_transfuser/config.py:290:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mbb15f7ad/team_code_transfuser",
+    "md5": "84302caf37be014556dee121fd6fdfdf"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:358:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 204,
+   "op": "CSC",
+   "old": "0.75",
+   "new": "0.375",
+   "span": [
+    204,
+    20,
+    204,
+    24
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "mccfb207e",
+   "mutant": {
+    "mid": "mccfb207e",
+    "site": "team_code_transfuser/config.py:358:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mccfb207e/team_code_transfuser",
+    "md5": "2b73a5b28be103b50429eafeaf10b16d"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:729:CSC:x05",
+   "file": "team_code_transfuser/model.py",
+   "line": 490,
+   "op": "CSC",
+   "old": "4.",
+   "new": "2.0",
+   "span": [
+    490,
+    16,
+    490,
+    18
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mb7009556",
+   "mutant": {
+    "mid": "mb7009556",
+    "site": "team_code_transfuser/model.py:729:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mb7009556/team_code_transfuser",
+    "md5": "f3acf5eb46801ea06527f03852a29b0c"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:389:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 20,
+   "op": "CSC",
+   "old": "2.3",
+   "new": "1.15",
+   "span": [
+    20,
+    28,
+    20,
+    31
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "mf1d74fd5",
+   "mutant": {
+    "mid": "mf1d74fd5",
+    "site": "team_code_transfuser/config.py:389:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mf1d74fd5/team_code_transfuser",
+    "md5": "e4c105141de5e98ac14630df656b44c2"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:3513:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 709,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    709,
+    45,
+    709,
+    46
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mc568d860",
+   "mutant": {
+    "mid": "mc568d860",
+    "site": "team_code_transfuser/model.py:3513:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mc568d860/team_code_transfuser",
+    "md5": "b9be5a2d59c0aea628dd87d2fde54be2"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:5965:CSC:x05",
+   "file": "team_code_transfuser/model.py",
+   "line": 595,
+   "op": "CSC",
+   "old": "256",
+   "new": "128",
+   "span": [
+    595,
+    38,
+    595,
+    41
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m38fd342a",
+   "mutant": {
+    "mid": "m38fd342a",
+    "site": "team_code_transfuser/model.py:5965:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m38fd342a/team_code_transfuser",
+    "md5": "57bd0f4ebe8099c5e36f0793be0bb165"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:434:ROR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 174,
+   "op": "ROR",
+   "old": "!=",
+   "new": "==",
+   "span": [
+    174,
+    26,
+    174,
+    28
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m52d800d6",
+   "mutant": {
+    "mid": "m52d800d6",
+    "site": "team_code_transfuser/submission_agent.py:434:ROR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m52d800d6/team_code_transfuser",
+    "md5": "29d021f99a2282343c970cc65912bf72"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2358:CRP",
+   "file": "team_code_transfuser/model.py",
+   "line": 881,
+   "op": "CRP",
+   "old": "255",
+   "new": "256",
+   "span": [
+    881,
+    73,
+    881,
+    76
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m8594da47",
+   "mutant": {
+    "mid": "m8594da47",
+    "site": "team_code_transfuser/model.py:2358:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m8594da47/team_code_transfuser",
+    "md5": "d56a047365c2200c106a9a17ec5b6b0f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:252:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 549,
+   "op": "SDL",
+   "old": "self.pred_len = config.pred_len",
+   "new": "pass",
+   "span": [
+    549,
+    8,
+    549,
+    39
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m63199e8d",
+   "mutant": {
+    "mid": "m63199e8d",
+    "site": "team_code_transfuser/model.py:252:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m63199e8d/team_code_transfuser",
+    "md5": "1ca9cbea5c6e0619a0f4cf54acfe09fe"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:376:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 57,
+   "op": "SDL",
+   "old": "use_velocity = bool(self.args['use_velocity'])",
+   "new": "pass",
+   "span": [
+    57,
+    12,
+    57,
+    58
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "mddef34b7",
+   "mutant": {
+    "mid": "mddef34b7",
+    "site": "team_code_transfuser/submission_agent.py:376:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mddef34b7/team_code_transfuser",
+    "md5": "21049b1614145f5a5761f4be8324706d"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:354:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 202,
+   "op": "CSC",
+   "old": "1.1",
+   "new": "0.55",
+   "span": [
+    202,
+    18,
+    202,
+    21
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m136269ae",
+   "mutant": {
+    "mid": "m136269ae",
+    "site": "team_code_transfuser/config.py:354:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m136269ae/team_code_transfuser",
+    "md5": "c45d6b46e3a2ecca81ba44c5f0583f24"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:4117:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 178,
+   "op": "IDX",
+   "old": "2",
+   "new": "3",
+   "span": [
+    178,
+    126,
+    178,
+    127
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m9f35fea3",
+   "mutant": {
+    "mid": "m9f35fea3",
+    "site": "team_code_transfuser/submission_agent.py:4117:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m9f35fea3/team_code_transfuser",
+    "md5": "483c7c9e15061c35da8383412c2625dd"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:801:AOR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 592,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    592,
+    27,
+    592,
+    28
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "ma133accf",
+   "mutant": {
+    "mid": "ma133accf",
+    "site": "team_code_transfuser/submission_agent.py:801:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/ma133accf/team_code_transfuser",
+    "md5": "65e2e2502a23432d46c20c9b6b1257f9"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2103:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 710,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    710,
+    28,
+    710,
+    29
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m33c0f78b",
+   "mutant": {
+    "mid": "m33c0f78b",
+    "site": "team_code_transfuser/model.py:2103:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m33c0f78b/team_code_transfuser",
+    "md5": "014b1b4b904525e623aa61b4e230385d"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:578:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 384,
+   "op": "NEG",
+   "old": "(emergency_stop == True) and (is_stuck == True)",
+   "new": "not ((emergency_stop == True) and (is_stuck == True))",
+   "span": [
+    384,
+    16,
+    384,
+    63
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m2ff82fe7",
+   "mutant": {
+    "mid": "m2ff82fe7",
+    "site": "team_code_transfuser/submission_agent.py:578:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2ff82fe7/team_code_transfuser",
+    "md5": "7988234e859fff3d1913f9c19d3c88d5"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1129:CRP",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 200,
+   "op": "CRP",
+   "old": "True",
+   "new": "False",
+   "span": [
+    200,
+    33,
+    200,
+    37
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "md721ae7a",
+   "mutant": {
+    "mid": "md721ae7a",
+    "site": "team_code_transfuser/submission_agent.py:1129:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/md721ae7a/team_code_transfuser",
+    "md5": "888a318ce69b6485ccfd4b0c2c7bb9f2"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2136:CSC:x2",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 191,
+   "op": "CSC",
+   "old": "1",
+   "new": "2",
+   "span": [
+    191,
+    39,
+    191,
+    40
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m450b7c6a",
+   "mutant": {
+    "mid": "m450b7c6a",
+    "site": "team_code_transfuser/submission_agent.py:2136:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m450b7c6a/team_code_transfuser",
+    "md5": "c1739c2b1c767eb5e69c588c651a0cc1"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:288:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 657,
+   "op": "SDL",
+   "old": "waypoints[:, 0] += self.config.lidar_pos[0]",
+   "new": "pass",
+   "span": [
+    657,
+    8,
+    657,
+    51
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m09bd8a86",
+   "mutant": {
+    "mid": "m09bd8a86",
+    "site": "team_code_transfuser/model.py:288:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m09bd8a86/team_code_transfuser",
+    "md5": "d2521522d936c62be736086c82746e54"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2061:CRP",
+   "file": "team_code_transfuser/model.py",
+   "line": 688,
+   "op": "CRP",
+   "old": "True",
+   "new": "False",
+   "span": [
+    688,
+    37,
+    688,
+    41
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m93f232af",
+   "mutant": {
+    "mid": "m93f232af",
+    "site": "team_code_transfuser/model.py:2061:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m93f232af/team_code_transfuser",
+    "md5": "d4ba85d64b95125324c09ae6543879f0"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:5351:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 679,
+   "op": "IDX",
+   "old": "3",
+   "new": "4",
+   "span": [
+    679,
+    28,
+    679,
+    29
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m6bf35279",
+   "mutant": {
+    "mid": "m6bf35279",
+    "site": "team_code_transfuser/submission_agent.py:5351:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m6bf35279/team_code_transfuser",
+    "md5": "0aa9d5599f4abb23fa7d321417d52150"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:340:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 193,
+   "op": "CSC",
+   "old": "5.0",
+   "new": "2.5",
+   "span": [
+    193,
+    15,
+    193,
+    18
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m53e5a9d5",
+   "mutant": {
+    "mid": "m53e5a9d5",
+    "site": "team_code_transfuser/config.py:340:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m53e5a9d5/team_code_transfuser",
+    "md5": "116ba314af110593d4aa4e3577862b2f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1764:COR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 645,
+   "op": "COR",
+   "old": "and",
+   "new": "or",
+   "span": [
+    645,
+    45,
+    645,
+    48
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m195d3513",
+   "mutant": {
+    "mid": "m195d3513",
+    "site": "team_code_transfuser/submission_agent.py:1764:COR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m195d3513/team_code_transfuser",
+    "md5": "9fb93a76bfca1b82636b03ada47bba88"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1030:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 89,
+   "op": "SDL",
+   "old": "self.model_count += 1",
+   "new": "pass",
+   "span": [
+    89,
+    16,
+    89,
+    37
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m1ccc48cd",
+   "mutant": {
+    "mid": "m1ccc48cd",
+    "site": "team_code_transfuser/submission_agent.py:1030:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m1ccc48cd/team_code_transfuser",
+    "md5": "f928a0cc4de2d41285ff10d75cf7cc29"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:5999:CSC:x2",
+   "file": "team_code_transfuser/model.py",
+   "line": 625,
+   "op": "CSC",
+   "old": "1",
+   "new": "2",
+   "span": [
+    625,
+    56,
+    625,
+    57
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m2c3dcdc0",
+   "mutant": {
+    "mid": "m2c3dcdc0",
+    "site": "team_code_transfuser/model.py:5999:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2c3dcdc0/team_code_transfuser",
+    "md5": "303034bf13304f0d579cea26bf1a4c6a"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2211:AOR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 230,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    230,
+    50,
+    230,
+    51
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "mb3597972",
+   "mutant": {
+    "mid": "mb3597972",
+    "site": "team_code_transfuser/submission_agent.py:2211:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mb3597972/team_code_transfuser",
+    "md5": "cd48db83b68f69f7efe008484cc05224"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:289:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 659,
+   "op": "SDL",
+   "old": "speed = velocity[0].data.cpu().numpy()",
+   "new": "pass",
+   "span": [
+    659,
+    8,
+    659,
+    46
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mde553245",
+   "mutant": {
+    "mid": "mde553245",
+    "site": "team_code_transfuser/model.py:289:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mde553245/team_code_transfuser",
+    "md5": "47541b6c7bbbb5924635651387065ea8"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:332:CSC:x2",
+   "file": "team_code_transfuser/config.py",
+   "line": 188,
+   "op": "CSC",
+   "old": "1.25",
+   "new": "2.5",
+   "span": [
+    188,
+    14,
+    188,
+    18
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m26b8c99f",
+   "mutant": {
+    "mid": "m26b8c99f",
+    "site": "team_code_transfuser/config.py:332:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m26b8c99f/team_code_transfuser",
+    "md5": "0ea063fbc8f2d71f9a05740d71fdf510"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:290:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 661,
+   "op": "SDL",
+   "old": "desired_speed = np.linalg.norm(waypoints[0] - waypoints[1]) * 2.0",
+   "new": "pass",
+   "span": [
+    661,
+    8,
+    661,
+    73
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m56512de1",
+   "mutant": {
+    "mid": "m56512de1",
+    "site": "team_code_transfuser/model.py:290:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m56512de1/team_code_transfuser",
+    "md5": "7ba55718d27e98a51c235157918a6cbc"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:1059:SGN",
+   "file": "team_code_transfuser/model.py",
+   "line": 841,
+   "op": "SGN",
+   "old": "bbox[point_index] + np.array([center_old_coordinate_sys[0], center_old_coordinate_sys[1],0])",
+   "new": "-(bbox[point_index] + np.array([center_old_coordinate_sys[0], center_old_coordinate_sys[1],0]))",
+   "span": [
+    841,
+    32,
+    841,
+    124
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mfea805ba",
+   "mutant": {
+    "mid": "mfea805ba",
+    "site": "team_code_transfuser/model.py:1059:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mfea805ba/team_code_transfuser",
+    "md5": "0f6e8a2780f1859f2599be2d372880a2"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:273:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 617,
+   "op": "SDL",
+   "old": "x = torch.zeros(size=(z.shape[0], 2), dtype=z.dtype).to(z.device)",
+   "new": "pass",
+   "span": [
+    617,
+    8,
+    617,
+    73
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m3c9aa47d",
+   "mutant": {
+    "mid": "m3c9aa47d",
+    "site": "team_code_transfuser/model.py:273:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m3c9aa47d/team_code_transfuser",
+    "md5": "a38679e157787b42a93fd559ab300246"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:4785:AOR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 691,
+   "op": "AOR",
+   "old": "+",
+   "new": "-",
+   "span": [
+    691,
+    60,
+    691,
+    61
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m33030c96",
+   "mutant": {
+    "mid": "m33030c96",
+    "site": "team_code_transfuser/submission_agent.py:4785:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m33030c96/team_code_transfuser",
+    "md5": "3f31201a9f0e65d38a3b8369666fca79"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:497:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 243,
+   "op": "SDL",
+   "old": "control.steer = 0.0",
+   "new": "pass",
+   "span": [
+    243,
+    12,
+    243,
+    31
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m485d457d",
+   "mutant": {
+    "mid": "m485d457d",
+    "site": "team_code_transfuser/submission_agent.py:497:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m485d457d/team_code_transfuser",
+    "md5": "6c4c26a31c5878337af9725044000922"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1265:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 319,
+   "op": "SDL",
+   "old": "bounding_boxes.append(rotated_bb)",
+   "new": "pass",
+   "span": [
+    319,
+    16,
+    319,
+    49
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m61f7b0c6",
+   "mutant": {
+    "mid": "m61f7b0c6",
+    "site": "team_code_transfuser/submission_agent.py:1265:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m61f7b0c6/team_code_transfuser",
+    "md5": "04338d895458fd77250b9de141d33bd6"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:585:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 167,
+   "op": "CSC",
+   "old": "1.066",
+   "new": "0.533",
+   "span": [
+    167,
+    24,
+    167,
+    29
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m80a86a16",
+   "mutant": {
+    "mid": "m80a86a16",
+    "site": "team_code_transfuser/config.py:585:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m80a86a16/team_code_transfuser",
+    "md5": "912efb65bfb11499ea73ba30e78a98b4"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:210:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 433,
+   "op": "SDL",
+   "old": "filtered_boxes = []",
+   "new": "pass",
+   "span": [
+    433,
+    8,
+    433,
+    27
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m2d9d5c8d",
+   "mutant": {
+    "mid": "m2d9d5c8d",
+    "site": "team_code_transfuser/submission_agent.py:210:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2d9d5c8d/team_code_transfuser",
+    "md5": "8cda21fb9cadbc303cf0453f6f07bca6"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:250:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 547,
+   "op": "SDL",
+   "old": "self.device = device",
+   "new": "pass",
+   "span": [
+    547,
+    8,
+    547,
+    28
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m2572ab20",
+   "mutant": {
+    "mid": "m2572ab20",
+    "site": "team_code_transfuser/model.py:250:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2572ab20/team_code_transfuser",
+    "md5": "1fa9bdc77f6c166530d0d5eb82942c4e"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:319:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 671,
+   "op": "SDL",
+   "old": "self.steer_gain  = 0.36848336",
+   "new": "pass",
+   "span": [
+    671,
+    8,
+    671,
+    37
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "mfa74c749",
+   "mutant": {
+    "mid": "mfa74c749",
+    "site": "team_code_transfuser/submission_agent.py:319:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mfa74c749/team_code_transfuser",
+    "md5": "a2a39e187534a83a0af034577361a60c"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:142:CRP",
+   "file": "team_code_transfuser/config.py",
+   "line": 15,
+   "op": "CRP",
+   "old": "256",
+   "new": "257",
+   "span": [
+    15,
+    30,
+    15,
+    33
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "mfdbe4cc3",
+   "mutant": {
+    "mid": "mfdbe4cc3",
+    "site": "team_code_transfuser/config.py:142:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mfdbe4cc3/team_code_transfuser",
+    "md5": "e392a7d44f15d3c66427107d27cc8747"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:322:CSC:x05",
+   "file": "team_code_transfuser/config.py",
+   "line": 181,
+   "op": "CSC",
+   "old": "0.1",
+   "new": "0.05",
+   "span": [
+    181,
+    18,
+    181,
+    21
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m1994b465",
+   "mutant": {
+    "mid": "m1994b465",
+    "site": "team_code_transfuser/config.py:322:CSC:x05",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m1994b465/team_code_transfuser",
+    "md5": "5f1359b05992e8a922c33b359774210a"
+   }
+  },
+  {
+   "id": "team_code_transfuser/config.py:91:SGN",
+   "file": "team_code_transfuser/config.py",
+   "line": 164,
+   "op": "SGN",
+   "old": "-3.0",
+   "new": "-(-3.0)",
+   "span": [
+    164,
+    23,
+    164,
+    27
+   ],
+   "note": "",
+   "stratum": "config",
+   "mid": "m1593560a",
+   "mutant": {
+    "mid": "m1593560a",
+    "site": "team_code_transfuser/config.py:91:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m1593560a/team_code_transfuser",
+    "md5": "8761f437f12e73525e84ab900512c40f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:266:SDL",
+   "file": "team_code_transfuser/model.py",
+   "line": 604,
+   "op": "SDL",
+   "old": "self.avgpool = nn.AdaptiveAvgPool2d((1, 1))",
+   "new": "pass",
+   "span": [
+    604,
+    8,
+    604,
+    51
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mf1de3906",
+   "mutant": {
+    "mid": "mf1de3906",
+    "site": "team_code_transfuser/model.py:266:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mf1de3906/team_code_transfuser",
+    "md5": "a00a4e32c37d7f559dc084edf854e518"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:1574:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 278,
+   "op": "AOR",
+   "old": "*",
+   "new": "/",
+   "span": [
+    278,
+    28,
+    278,
+    29
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m5e137d49",
+   "mutant": {
+    "mid": "m5e137d49",
+    "site": "team_code_transfuser/model.py:1574:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m5e137d49/team_code_transfuser",
+    "md5": "90baefaf0955c702fd06d10a788b8d0b"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:93:SDL",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 36,
+   "op": "SDL",
+   "old": "self.track = autonomous_agent.Track.SENSORS",
+   "new": "pass",
+   "span": [
+    36,
+    8,
+    36,
+    51
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m450464ba",
+   "mutant": {
+    "mid": "m450464ba",
+    "site": "team_code_transfuser/submission_agent.py:93:SDL",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m450464ba/team_code_transfuser",
+    "md5": "03e30bcdeda01aac85b6265aba3100a0"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2802:CSC:x2",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 591,
+   "op": "CSC",
+   "old": "2",
+   "new": "4",
+   "span": [
+    591,
+    38,
+    591,
+    39
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m695d11db",
+   "mutant": {
+    "mid": "m695d11db",
+    "site": "team_code_transfuser/submission_agent.py:2802:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m695d11db/team_code_transfuser",
+    "md5": "635293b292becc3efc47f9c27938a270"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:3076:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 126,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    126,
+    52,
+    126,
+    53
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m099a15b3",
+   "mutant": {
+    "mid": "m099a15b3",
+    "site": "team_code_transfuser/submission_agent.py:3076:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m099a15b3/team_code_transfuser",
+    "md5": "a20e3ff7a7b71335b416873546393773"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1206:CSC:x2",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 245,
+   "op": "CSC",
+   "old": "1.0",
+   "new": "2.0",
+   "span": [
+    245,
+    28,
+    245,
+    31
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m24e4c396",
+   "mutant": {
+    "mid": "m24e4c396",
+    "site": "team_code_transfuser/submission_agent.py:1206:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m24e4c396/team_code_transfuser",
+    "md5": "a79721778279ae1865ff6a7e14dd3e4e"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:961:COR",
+   "file": "team_code_transfuser/model.py",
+   "line": 720,
+   "op": "COR",
+   "old": "and",
+   "new": "or",
+   "span": [
+    720,
+    17,
+    720,
+    20
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mefc2478d",
+   "mutant": {
+    "mid": "mefc2478d",
+    "site": "team_code_transfuser/model.py:961:COR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mefc2478d/team_code_transfuser",
+    "md5": "e4fe77f9bafc2156ad2d61d283a81eef"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:1243:CSC:x2",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 278,
+   "op": "CSC",
+   "old": "1",
+   "new": "2",
+   "span": [
+    278,
+    39,
+    278,
+    40
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "md93a867b",
+   "mutant": {
+    "mid": "md93a867b",
+    "site": "team_code_transfuser/submission_agent.py:1243:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/md93a867b/team_code_transfuser",
+    "md5": "274f6c5e3c15a41c5c1216ccddc29e49"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:4412:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 464,
+   "op": "IDX",
+   "old": "1",
+   "new": "2",
+   "span": [
+    464,
+    37,
+    464,
+    38
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m0c44004b",
+   "mutant": {
+    "mid": "m0c44004b",
+    "site": "team_code_transfuser/submission_agent.py:4412:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m0c44004b/team_code_transfuser",
+    "md5": "eaa65ed84c4774559a046219bcca840d"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:403:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 88,
+   "op": "NEG",
+   "old": "file.endswith(\".pth\")",
+   "new": "not (file.endswith(\".pth\"))",
+   "span": [
+    88,
+    15,
+    88,
+    36
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m401779a2",
+   "mutant": {
+    "mid": "m401779a2",
+    "site": "team_code_transfuser/submission_agent.py:403:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m401779a2/team_code_transfuser",
+    "md5": "8add20ad6e6fb6130a7eb1348638cd3f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:4276:CSC:x2",
+   "file": "team_code_transfuser/model.py",
+   "line": 96,
+   "op": "CSC",
+   "old": "1",
+   "new": "2",
+   "span": [
+    96,
+    71,
+    96,
+    72
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m5283418c",
+   "mutant": {
+    "mid": "m5283418c",
+    "site": "team_code_transfuser/model.py:4276:CSC:x2",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m5283418c/team_code_transfuser",
+    "md5": "0dfb1954ae997bb65f49804a8fcc3fa3"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2943:AOR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 692,
+   "op": "AOR",
+   "old": "*",
+   "new": "/",
+   "span": [
+    692,
+    44,
+    692,
+    45
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m995cf3ae",
+   "mutant": {
+    "mid": "m995cf3ae",
+    "site": "team_code_transfuser/submission_agent.py:2943:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m995cf3ae/team_code_transfuser",
+    "md5": "1eed658d525c5b49314a3fb6224b243c"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:303:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 630,
+   "op": "NEG",
+   "old": "len(self.route) <= 2",
+   "new": "not (len(self.route) <= 2)",
+   "span": [
+    630,
+    11,
+    630,
+    31
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m7442167a",
+   "mutant": {
+    "mid": "m7442167a",
+    "site": "team_code_transfuser/submission_agent.py:303:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m7442167a/team_code_transfuser",
+    "md5": "ca3dcb79b5970f58a08c977980ea851a"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2151:IDX",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 199,
+   "op": "IDX",
+   "old": "1",
+   "new": "2",
+   "span": [
+    199,
+    36,
+    199,
+    37
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m9b767fa0",
+   "mutant": {
+    "mid": "m9b767fa0",
+    "site": "team_code_transfuser/submission_agent.py:2151:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m9b767fa0/team_code_transfuser",
+    "md5": "75ea8852821044b248a9464d60b21c82"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:857:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 650,
+   "op": "NEG",
+   "old": "len(self.route) > 2",
+   "new": "not (len(self.route) > 2)",
+   "span": [
+    650,
+    15,
+    650,
+    34
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m2affb045",
+   "mutant": {
+    "mid": "m2affb045",
+    "site": "team_code_transfuser/submission_agent.py:857:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m2affb045/team_code_transfuser",
+    "md5": "94c7d536dea098ed44991f9c3df6ecd6"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:773:ROR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 575,
+   "op": "ROR",
+   "old": "!=",
+   "new": "==",
+   "span": [
+    575,
+    17,
+    575,
+    19
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m10a7366e",
+   "mutant": {
+    "mid": "m10a7366e",
+    "site": "team_code_transfuser/submission_agent.py:773:ROR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m10a7366e/team_code_transfuser",
+    "md5": "95b39c9a8efd0693aa59e67003e6c47f"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:3617:CRP",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 485,
+   "op": "CRP",
+   "old": "60",
+   "new": "61",
+   "span": [
+    485,
+    34,
+    485,
+    36
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m63cd037f",
+   "mutant": {
+    "mid": "m63cd037f",
+    "site": "team_code_transfuser/submission_agent.py:3617:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m63cd037f/team_code_transfuser",
+    "md5": "d50735f7730b973ab9cb7efb2bb88fa1"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:3084:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 416,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    416,
+    28,
+    416,
+    29
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m0727eda4",
+   "mutant": {
+    "mid": "m0727eda4",
+    "site": "team_code_transfuser/model.py:3084:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m0727eda4/team_code_transfuser",
+    "md5": "94461c9908442d1c33acc985d6ff9ace"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:6022:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 661,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    661,
+    49,
+    661,
+    50
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m22273879",
+   "mutant": {
+    "mid": "m22273879",
+    "site": "team_code_transfuser/model.py:6022:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m22273879/team_code_transfuser",
+    "md5": "b5a4b4b63fa6027022080f13d124ed38"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:3044:CRP",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 92,
+   "op": "CRP",
+   "old": "True",
+   "new": "False",
+   "span": [
+    92,
+    50,
+    92,
+    54
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m08530a72",
+   "mutant": {
+    "mid": "m08530a72",
+    "site": "team_code_transfuser/submission_agent.py:3044:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m08530a72/team_code_transfuser",
+    "md5": "df59b1042e5940a3ea3a87058c33fb8a"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:563:COR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 368,
+   "op": "COR",
+   "old": "or",
+   "new": "and",
+   "span": [
+    368,
+    17,
+    368,
+    19
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m708ce400",
+   "mutant": {
+    "mid": "m708ce400",
+    "site": "team_code_transfuser/submission_agent.py:563:COR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m708ce400/team_code_transfuser",
+    "md5": "6309ee9b3c6721a2580ca05d65aed2b5"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:3081:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 415,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    415,
+    25,
+    415,
+    26
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m666dae93",
+   "mutant": {
+    "mid": "m666dae93",
+    "site": "team_code_transfuser/model.py:3081:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m666dae93/team_code_transfuser",
+    "md5": "1cb5600ce2f8327bc36ff01a77b1fda9"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:930:CRP",
+   "file": "team_code_transfuser/model.py",
+   "line": 686,
+   "op": "CRP",
+   "old": "False",
+   "new": "True",
+   "span": [
+    686,
+    50,
+    686,
+    55
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m4fb1a7e6",
+   "mutant": {
+    "mid": "m4fb1a7e6",
+    "site": "team_code_transfuser/model.py:930:CRP",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m4fb1a7e6/team_code_transfuser",
+    "md5": "c01c6c60fe7db6b7fc7cf9c57b75545b"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:301:SGN",
+   "file": "team_code_transfuser/model.py",
+   "line": 679,
+   "op": "SGN",
+   "old": "self.turn_controller.step(angle)",
+   "new": "-(self.turn_controller.step(angle))",
+   "span": [
+    679,
+    16,
+    679,
+    48
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m76653204",
+   "mutant": {
+    "mid": "m76653204",
+    "site": "team_code_transfuser/model.py:301:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m76653204/team_code_transfuser",
+    "md5": "725db04f1acb8a75ac0e854b9d835da6"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:3087:IDX",
+   "file": "team_code_transfuser/model.py",
+   "line": 417,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    417,
+    26,
+    417,
+    27
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m11159254",
+   "mutant": {
+    "mid": "m11159254",
+    "site": "team_code_transfuser/model.py:3087:IDX",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m11159254/team_code_transfuser",
+    "md5": "5342784b3eff39f15a45af798703a7f3"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2107:ROR",
+   "file": "team_code_transfuser/model.py",
+   "line": 713,
+   "op": "ROR",
+   "old": ">",
+   "new": ">=",
+   "span": [
+    713,
+    38,
+    713,
+    39
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m98b4689e",
+   "mutant": {
+    "mid": "m98b4689e",
+    "site": "team_code_transfuser/model.py:2107:ROR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m98b4689e/team_code_transfuser",
+    "md5": "b7bced1dad7f1910408f0d3ae2221536"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:852:NEG",
+   "file": "team_code_transfuser/model.py",
+   "line": 624,
+   "op": "NEG",
+   "old": "self.gru_concat_target_point",
+   "new": "not (self.gru_concat_target_point)",
+   "span": [
+    624,
+    15,
+    624,
+    43
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m088f2261",
+   "mutant": {
+    "mid": "m088f2261",
+    "site": "team_code_transfuser/model.py:852:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m088f2261/team_code_transfuser",
+    "md5": "545137160944b1ecba4cf83869c9c9bb"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2120:ROR",
+   "file": "team_code_transfuser/model.py",
+   "line": 720,
+   "op": "ROR",
+   "old": "==",
+   "new": "!=",
+   "span": [
+    720,
+    32,
+    720,
+    34
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mef5e8bad",
+   "mutant": {
+    "mid": "mef5e8bad",
+    "site": "team_code_transfuser/model.py:2120:ROR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mef5e8bad/team_code_transfuser",
+    "md5": "1b5530d3c734530b5cae791a43382331"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:5183:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 833,
+   "op": "AOR",
+   "old": "*",
+   "new": "/",
+   "span": [
+    833,
+    40,
+    833,
+    41
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m71e310f1",
+   "mutant": {
+    "mid": "m71e310f1",
+    "site": "team_code_transfuser/model.py:5183:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m71e310f1/team_code_transfuser",
+    "md5": "57e983a3e8ec77fc35dba1f9fc94e9f2"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:2384:ROR",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 359,
+   "op": "ROR",
+   "old": ">",
+   "new": ">=",
+   "span": [
+    359,
+    60,
+    359,
+    61
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m5a69aeea",
+   "mutant": {
+    "mid": "m5a69aeea",
+    "site": "team_code_transfuser/submission_agent.py:2384:ROR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m5a69aeea/team_code_transfuser",
+    "md5": "20a7be925afde2e05c3d533c7caea200"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:305:NEG",
+   "file": "team_code_transfuser/model.py",
+   "line": 688,
+   "op": "NEG",
+   "old": "self.use_point_pillars == True",
+   "new": "not (self.use_point_pillars == True)",
+   "span": [
+    688,
+    11,
+    688,
+    41
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m46d1a5e9",
+   "mutant": {
+    "mid": "m46d1a5e9",
+    "site": "team_code_transfuser/model.py:305:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m46d1a5e9/team_code_transfuser",
+    "md5": "796f858b4d0f35e84734fc9e4ffd1ed9"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:1049:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 823,
+   "op": "AOR",
+   "old": "+",
+   "new": "-",
+   "span": [
+    823,
+    62,
+    823,
+    63
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mb30ffaf4",
+   "mutant": {
+    "mid": "mb30ffaf4",
+    "site": "team_code_transfuser/model.py:1049:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mb30ffaf4/team_code_transfuser",
+    "md5": "3c49f9a0c459b377a3a1f28970bd3198"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:725:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 487,
+   "op": "AOR",
+   "old": "+",
+   "new": "-",
+   "span": [
+    487,
+    26,
+    487,
+    27
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m960c66ca",
+   "mutant": {
+    "mid": "m960c66ca",
+    "site": "team_code_transfuser/model.py:725:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m960c66ca/team_code_transfuser",
+    "md5": "6f081adbcaf8a5a53ada8342c6caee8c"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:851:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 639,
+   "op": "NEG",
+   "old": "cumulative_distance > self.max_distance",
+   "new": "not (cumulative_distance > self.max_distance)",
+   "span": [
+    639,
+    15,
+    639,
+    54
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m993b775a",
+   "mutant": {
+    "mid": "m993b775a",
+    "site": "team_code_transfuser/submission_agent.py:851:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m993b775a/team_code_transfuser",
+    "md5": "5a3b6c13e67c8996c77d80ae054feaee"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:297:SGN",
+   "file": "team_code_transfuser/model.py",
+   "line": 672,
+   "op": "SGN",
+   "old": "(waypoints[1] + waypoints[0]) / 2.0",
+   "new": "-((waypoints[1] + waypoints[0]) / 2.0)",
+   "span": [
+    672,
+    14,
+    672,
+    49
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mdc51c801",
+   "mutant": {
+    "mid": "mdc51c801",
+    "site": "team_code_transfuser/model.py:297:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mdc51c801/team_code_transfuser",
+    "md5": "213d4356aa3cea064d5d6d78b5801128"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2243:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 813,
+   "op": "AOR",
+   "old": "/",
+   "new": "*",
+   "span": [
+    813,
+    14,
+    813,
+    15
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mfcccb1e3",
+   "mutant": {
+    "mid": "mfcccb1e3",
+    "site": "team_code_transfuser/model.py:2243:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mfcccb1e3/team_code_transfuser",
+    "md5": "dc73433c4b96de332cc929139e5da535"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:860:AOR",
+   "file": "team_code_transfuser/model.py",
+   "line": 639,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    639,
+    44,
+    639,
+    45
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mea5b4723",
+   "mutant": {
+    "mid": "mea5b4723",
+    "site": "team_code_transfuser/model.py:860:AOR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mea5b4723/team_code_transfuser",
+    "md5": "da3bbc1d2f5ef27e759361261546f9a5"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:129:SGN",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 119,
+   "op": "SGN",
+   "old": "(gps - self._route_planner.mean) * self._route_planner.scale",
+   "new": "-((gps - self._route_planner.mean) * self._route_planner.scale)",
+   "span": [
+    119,
+    14,
+    119,
+    74
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "m3090a1c0",
+   "mutant": {
+    "mid": "m3090a1c0",
+    "site": "team_code_transfuser/submission_agent.py:129:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/m3090a1c0/team_code_transfuser",
+    "md5": "2887f30a818b6e76870525afad0cf0cc"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:291:NEG",
+   "file": "team_code_transfuser/model.py",
+   "line": 663,
+   "op": "NEG",
+   "old": "is_stuck",
+   "new": "not (is_stuck)",
+   "span": [
+    663,
+    11,
+    663,
+    19
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mc2e19d52",
+   "mutant": {
+    "mid": "mc2e19d52",
+    "site": "team_code_transfuser/model.py:291:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mc2e19d52/team_code_transfuser",
+    "md5": "41efbae2dd355e52623652e8330e895b"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:102:NEG",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 50,
+   "op": "NEG",
+   "old": "'use_point_pillars' in self.args",
+   "new": "not ('use_point_pillars' in self.args)",
+   "span": [
+    50,
+    12,
+    50,
+    44
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "ma18b3f4d",
+   "mutant": {
+    "mid": "ma18b3f4d",
+    "site": "team_code_transfuser/submission_agent.py:102:NEG",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/ma18b3f4d/team_code_transfuser",
+    "md5": "6e83eb67ef0f9a3349010e34d1f2c8ec"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:2914:ROR",
+   "file": "team_code_transfuser/model.py",
+   "line": 282,
+   "op": "ROR",
+   "old": ">",
+   "new": ">=",
+   "span": [
+    282,
+    24,
+    282,
+    25
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mcab1a887",
+   "mutant": {
+    "mid": "mcab1a887",
+    "site": "team_code_transfuser/model.py:2914:ROR",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mcab1a887/team_code_transfuser",
+    "md5": "37d6139c7549a0215f4fafb020a2c771"
+   }
+  },
+  {
+   "id": "team_code_transfuser/model.py:295:SGN",
+   "file": "team_code_transfuser/model.py",
+   "line": 670,
+   "op": "SGN",
+   "old": "np.clip(throttle, 0.0, self.config.clip_throttle)",
+   "new": "-(np.clip(throttle, 0.0, self.config.clip_throttle))",
+   "span": [
+    670,
+    19,
+    670,
+    68
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mf117f989",
+   "mutant": {
+    "mid": "mf117f989",
+    "site": "team_code_transfuser/model.py:295:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mf117f989/team_code_transfuser",
+    "md5": "fb6e80c6ecde96d5cd0876508f617e86"
+   }
+  },
+  {
+   "id": "team_code_transfuser/submission_agent.py:331:SGN",
+   "file": "team_code_transfuser/submission_agent.py",
+   "line": 691,
+   "op": "SGN",
+   "old": "locs[0].item() + spds * math.cos(yaws + beta) * self.dt",
+   "new": "-(locs[0].item() + spds * math.cos(yaws + beta) * self.dt)",
+   "span": [
+    691,
+    22,
+    691,
+    77
+   ],
+   "note": "",
+   "stratum": "agent",
+   "mid": "mb01621b4",
+   "mutant": {
+    "mid": "mb01621b4",
+    "site": "team_code_transfuser/submission_agent.py:331:SGN",
+    "team_code_dir": "/home/users/bhamadou/satrp_mutation/ads/store/transfuser/mutants/mb01621b4/team_code_transfuser",
+    "md5": "dbc0a46a80967a4c7cc0b1d03e061a55"
+   }
+  }
+ ]
+}

@@ -1,0 +1,6221 @@
+{
+ "stack": "transfuser",
+ "floor": {
+  "24": 0.16862934738066473,
+  "52": 0.03468184585283252,
+  "69": 0.3260308804974458,
+  "81": 0.17508262273413833,
+  "106": 0.4678172800165192,
+  "149": 0.6807823728830322
+ },
+ "base_trig": {
+  "24": false,
+  "52": false,
+  "69": false,
+  "81": true,
+  "106": true,
+  "149": false
+ },
+ "mutants": [
+  {
+   "mid": "mdcdf3346",
+   "site": "team_code_transfuser/config.py:476:CRP",
+   "op": "CRP",
+   "stratum": "config",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.30680486130226076,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.424012156755063,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.30615341903357735,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03433702090090965,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.3903903183078177,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 0.19935206658999602,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m2560f324",
+   "site": "team_code_transfuser/config.py:144:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.16351594218232038,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.7257384898271869,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.016447865294806487,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.33949895158673987,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 1.6140077364220926,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 3.079367483994496,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m70281ec1",
+   "site": "team_code_transfuser/model.py:103:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3957971b",
+   "site": "team_code_transfuser/submission_agent.py:267:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.1606523909916754,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.38591749086652993,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.02009954148823945,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.19339199571725038,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 0.8615382026532743,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.628649378853685,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "ma2055310",
+   "site": "team_code_transfuser/config.py:67:SGN",
+   "op": "SGN",
+   "stratum": "config",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.6849095854198728,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.31228568844011856,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.016775561707988558,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.20046736540949595,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 0.42909995360344444,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 4.977337819240458,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m8d7e9f6b",
+   "site": "team_code_transfuser/model.py:4806:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 62.86662468011853,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 46.01676235863898,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 25.349048324103336,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 2.125156574723774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 25.629474448194145,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 75.74956744323731,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m01d0991f",
+   "site": "team_code_transfuser/submission_agent.py:5346:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "ma4fe9a8a",
+   "site": "team_code_transfuser/config.py:232:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.29555675501676887,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.22225168138243565,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.39680699698295924,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.1935983626694214,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.2201543932994314,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 8.594501845366537,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "ma6573b35",
+   "site": "team_code_transfuser/submission_agent.py:1036:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 56.379379944065576,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 44.62339862807407,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 24.040916806295442,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 1.7307189927961557,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 25.629474448194145,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 75.74956744323731,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m6edd099f",
+   "site": "team_code_transfuser/submission_agent.py:184:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.46216326952061376,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.7130876218512127,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.24562347907376877,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3802199165920273,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.691423174564223,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 8.010162681831526,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mc445fb4f",
+   "site": "team_code_transfuser/submission_agent.py:1033:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 59.2206268516578,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 35.799714564377325,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 15.38465411726515,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 2.259865055713775,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 23.89942331258653,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 70.81248879328736,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m1664e2e0",
+   "site": "team_code_transfuser/submission_agent.py:304:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3c322dd5",
+   "site": "team_code_transfuser/submission_agent.py:2808:CSC:x2",
+   "op": "CSC",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 13.355388241020075,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 6.272998957117999,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 6.295555271752754,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 0.5713387751554763,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 25.131933531620604,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 59.28523700756318,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m713a2fd6",
+   "site": "team_code_transfuser/submission_agent.py:3100:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 4,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 1.5533226901463908,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.9135096035352349,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.7696639704757994,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.41295831000374295,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 2.3426147282170904,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 4.62371586134015,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mbd5ae35a",
+   "site": "team_code_transfuser/config.py:361:NEG",
+   "op": "NEG",
+   "stratum": "config",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m2c18cdd0",
+   "site": "team_code_transfuser/model.py:1846:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 3,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 1.0016179122698385,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.4712543688343952,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.23885852185621473,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.5070873582208032,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.9534841180362061,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.7167617047800334,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m8b8da068",
+   "site": "team_code_transfuser/submission_agent.py:104:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mbb15f7ad",
+   "site": "team_code_transfuser/config.py:290:AOR",
+   "op": "AOR",
+   "stratum": "config",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.31220200678553717,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.11363711993273014,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.21543405803822346,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03398508494906889,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.7645841881312229,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 8.511899073241466,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mccfb207e",
+   "site": "team_code_transfuser/config.py:358:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 17.439562989419006,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 45.270894429803654,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 3.1214154333285205,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 1.2849027332556495,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 13.216530694602813,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 10.33523923152221,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mb7009556",
+   "site": "team_code_transfuser/model.py:729:CSC:x05",
+   "op": "CSC",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.6792674425862547,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.5132508956002925,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.28560914552318156,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03415403694704675,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 0.9401100875095332,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 7.893251350790452,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mf1d74fd5",
+   "site": "team_code_transfuser/config.py:389:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 62.86662468011853,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 46.01676235863898,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 25.349048324103336,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 2.125156574723774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 25.629474448194145,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 67.95239066948153,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mc568d860",
+   "site": "team_code_transfuser/model.py:3513:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.0818466120231712,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.13558459229846606,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.018447937045816508,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03886216058016268,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.7045598746470338,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 1.2203229623221807,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m38fd342a",
+   "site": "team_code_transfuser/model.py:5965:CSC:x05",
+   "op": "CSC",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m52d800d6",
+   "site": "team_code_transfuser/submission_agent.py:434:ROR",
+   "op": "ROR",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m8594da47",
+   "site": "team_code_transfuser/model.py:2358:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.20372683749137907,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.2250966778930464,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.02111143959898982,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.1855215599902486,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.13647274738475393,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 1.9981688946180691,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m63199e8d",
+   "site": "team_code_transfuser/model.py:252:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mddef34b7",
+   "site": "team_code_transfuser/submission_agent.py:376:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m136269ae",
+   "site": "team_code_transfuser/config.py:354:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 62.448682891018876,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 45.46243381241144,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 23.663657478096376,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 1.9047853203385672,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 23.838551251812206,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 68.47634842205842,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m9f35fea3",
+   "site": "team_code_transfuser/submission_agent.py:4117:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "ma133accf",
+   "site": "team_code_transfuser/submission_agent.py:801:AOR",
+   "op": "AOR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 17.51449132078424,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 10.22229768568056,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 5.873753186161796,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.7284627417386644,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 7.369200036230498,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 70.22820877146204,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m33c0f78b",
+   "site": "team_code_transfuser/model.py:2103:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m2ff82fe7",
+   "site": "team_code_transfuser/submission_agent.py:578:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 62.8709409903334,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 46.016901888421394,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 25.35319585760275,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 2.1250411723414646,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 25.62959754170627,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 75.74935946430652,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "md721ae7a",
+   "site": "team_code_transfuser/submission_agent.py:1129:CRP",
+   "op": "CRP",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 54.22577364497075,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 36.451409374214556,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 16.977623342646208,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 0.24017446469265913,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 17.500323250437006,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 69.50046855620657,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m450b7c6a",
+   "site": "team_code_transfuser/submission_agent.py:2136:CSC:x2",
+   "op": "CSC",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m09bd8a86",
+   "site": "team_code_transfuser/model.py:288:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 4,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 3.935568098772089,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.630782694277843,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 1.9202083206714753,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.6209687273931404,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 3.792445441287831,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 3.527016424709971,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m93f232af",
+   "site": "team_code_transfuser/model.py:2061:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m6bf35279",
+   "site": "team_code_transfuser/submission_agent.py:5351:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.3526524358316722,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.32606586506579327,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.01819868512564109,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.29956190969368296,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.5157825024405578,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 4.946112746163175,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m53e5a9d5",
+   "site": "team_code_transfuser/config.py:340:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 2.8011528849659713,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.561694808374149,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.4183563345449681,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.372339398533354,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.0613160212170496,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 1.3472046387019116,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m195d3513",
+   "site": "team_code_transfuser/submission_agent.py:1764:COR",
+   "op": "COR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 3,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 10.306799171836975,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.5321982331576285,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 18.777747783222004,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.15373883069092104,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 1.225015511439977,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 50.53183378638358,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m1ccc48cd",
+   "site": "team_code_transfuser/submission_agent.py:1030:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m2c3dcdc0",
+   "site": "team_code_transfuser/model.py:5999:CSC:x2",
+   "op": "CSC",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mb3597972",
+   "site": "team_code_transfuser/submission_agent.py:2211:AOR",
+   "op": "AOR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 52.22074995134775,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 39.456477750071734,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 15.158407969709428,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 1.0759532343968412,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 18.101574067525686,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 66.19629902888343,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mde553245",
+   "site": "team_code_transfuser/model.py:289:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m26b8c99f",
+   "site": "team_code_transfuser/config.py:332:CSC:x2",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.058269780552913694,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.6711378245912066,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.03796380966628487,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.275145892301287,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.5052136999520556,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 3.1593890026002027,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m56512de1",
+   "site": "team_code_transfuser/model.py:290:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mfea805ba",
+   "site": "team_code_transfuser/model.py:1059:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.5504494000653266,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.14081843106846692,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.32590288214822094,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.29802050792970686,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.5415287299503911,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 0.4830262043204318,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3c9aa47d",
+   "site": "team_code_transfuser/model.py:273:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m33030c96",
+   "site": "team_code_transfuser/submission_agent.py:4785:AOR",
+   "op": "AOR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.09995541158496987,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.17088579412750518,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.004563619354937683,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.17503371676159477,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.1101218024730422,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 7.572977278760549,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m485d457d",
+   "site": "team_code_transfuser/submission_agent.py:497:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.5655098419978613,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.277437416139534,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.3132538227722425,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03426267728677345,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 1.2747312518170928,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 7.910804960134426,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m61f7b0c6",
+   "site": "team_code_transfuser/submission_agent.py:1265:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.030108699633254788,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.702221276595784,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.010440701829393594,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3465623715194252,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.5718151314746984,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.046391525496774,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m80a86a16",
+   "site": "team_code_transfuser/config.py:585:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.40221178764310966,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.48547744931375175,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.005917836367193422,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.1934993246449732,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.5532557482173253,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 7.961097321433239,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m2d9d5c8d",
+   "site": "team_code_transfuser/submission_agent.py:210:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m2572ab20",
+   "site": "team_code_transfuser/model.py:250:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mfa74c749",
+   "site": "team_code_transfuser/submission_agent.py:319:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mfdbe4cc3",
+   "site": "team_code_transfuser/config.py:142:CRP",
+   "op": "CRP",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.28705482440234636,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.0529317464441694,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.006289183751708519,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.22801028245237617,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.0004004798303534,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.868381154051114,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m1994b465",
+   "site": "team_code_transfuser/config.py:322:CSC:x05",
+   "op": "CSC",
+   "stratum": "config",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.5158087212252647,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.40346253252372405,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.36139322263650797,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3117105982897417,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.45887830423018766,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.352776658828307,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m1593560a",
+   "site": "team_code_transfuser/config.py:91:SGN",
+   "op": "SGN",
+   "stratum": "config",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.3274173964172078,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.3175528189757283,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.016733093058299467,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3767323873553567,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.2339336505112495,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.2480360849236263,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mf1de3906",
+   "site": "team_code_transfuser/model.py:266:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.12886693092936918,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.256059261296832,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.3645244249840231,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03426330775740492,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.233654799134918,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.678021979079621,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m5e137d49",
+   "site": "team_code_transfuser/model.py:1574:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.4210714197541538,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.38937084404290745,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.32646302113459974,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03391407770475213,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 0.972342804438864,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 29.774959666885103,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m450464ba",
+   "site": "team_code_transfuser/submission_agent.py:93:SDL",
+   "op": "SDL",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 1.3344499119178828,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.3758455939477796,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.009451284387009061,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3369986467638011,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.5459969273167102,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 1.747889208773663,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m695d11db",
+   "site": "team_code_transfuser/submission_agent.py:2802:CSC:x2",
+   "op": "CSC",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.22435653876089237,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.24180217856139458,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.8484879005147795,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 1.0786107618443708,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.118587007861592,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 3.772552065795186,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m099a15b3",
+   "site": "team_code_transfuser/submission_agent.py:3076:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 3,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 1.385907148682088,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 1.440381754961016,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.8610555777033655,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.6377394456360421,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 2.7459923869222407,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 0.7060759422970052,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m24e4c396",
+   "site": "team_code_transfuser/submission_agent.py:1206:CSC:x2",
+   "op": "CSC",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.1776906803983002,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.43900699363973983,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.0179273097948732,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.40079446075039443,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.0314105882494362,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 5.843345015665107,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mefc2478d",
+   "site": "team_code_transfuser/model.py:961:COR",
+   "op": "COR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.10666008178604973,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.03146546580869424,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.03198692359982639,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.29756588562848224,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.12676605709275227,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 1.5804042610073905,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "md93a867b",
+   "site": "team_code_transfuser/submission_agent.py:1243:CSC:x2",
+   "op": "CSC",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m0c44004b",
+   "site": "team_code_transfuser/submission_agent.py:4412:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m401779a2",
+   "site": "team_code_transfuser/submission_agent.py:403:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m5283418c",
+   "site": "team_code_transfuser/model.py:4276:CSC:x2",
+   "op": "CSC",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.360215687403225,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.23730393153221926,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.02098594690920105,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.1693599290053232,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.5408003175231183,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 4.9230400850043905,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m995cf3ae",
+   "site": "team_code_transfuser/submission_agent.py:2943:AOR",
+   "op": "AOR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 35.23731793544014,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 18.291036130663826,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 9.867751150070461,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 1.4725192374932654,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 9.858652912344212,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 20.49570941236824,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m7442167a",
+   "site": "team_code_transfuser/submission_agent.py:303:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 12.165776275034336,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.3800780301678698,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.3540182046381,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03365301851611618,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.4158613344562951,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 65.35327035413856,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m9b767fa0",
+   "site": "team_code_transfuser/submission_agent.py:2151:IDX",
+   "op": "IDX",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m2affb045",
+   "site": "team_code_transfuser/submission_agent.py:857:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 11.57660290158253,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.510743823205752,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.35242015388559234,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.04345430557977223,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.0533398195562913,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 65.48358878031407,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m10a7366e",
+   "site": "team_code_transfuser/submission_agent.py:773:ROR",
+   "op": "ROR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.1352884652680909,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.36603326210783943,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.007433535425796263,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.03424612879549507,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.07830627218798299,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 7.841520996422057,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m63cd037f",
+   "site": "team_code_transfuser/submission_agent.py:3617:CRP",
+   "op": "CRP",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.6109383389533024,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.3617501275935434,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.314846415467798,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.4012715512948945,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 2.4790068793033226,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 3.2907136799430075,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m0727eda4",
+   "site": "team_code_transfuser/model.py:3084:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m22273879",
+   "site": "team_code_transfuser/model.py:6022:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 0,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 62.86662468011853,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 46.01676235863898,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 25.349048324103336,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 2.125156574723774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 25.629474448194145,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 75.74956744323731,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m08530a72",
+   "site": "team_code_transfuser/submission_agent.py:3044:CRP",
+   "op": "CRP",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 52.67772926970061,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 43.95159495039438,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 16.603333325922748,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.8759749033976978,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 22.83693234774134,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 63.95297397538979,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m708ce400",
+   "site": "team_code_transfuser/submission_agent.py:563:COR",
+   "op": "COR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.2443718215673654,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.3658040319842291,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.02133571159706943,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3722864718071884,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.5564930440856437,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.5987200585581847,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m666dae93",
+   "site": "team_code_transfuser/model.py:3081:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m4fb1a7e6",
+   "site": "team_code_transfuser/model.py:930:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.5032945167612989,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.3871571845606251,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.39861717555919973,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.06014580888940373,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.26651150858049405,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 0.38838795793898734,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m76653204",
+   "site": "team_code_transfuser/model.py:301:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 50.36995789966521,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 34.19168714011894,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 12.840856668905525,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.4321313744352111,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 15.235604567179747,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 54.26197265721173,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m11159254",
+   "site": "team_code_transfuser/model.py:3087:IDX",
+   "op": "IDX",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m98b4689e",
+   "site": "team_code_transfuser/model.py:2107:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.16553324004685324,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.27208186734073936,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.2989158607669395,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.17315699938820175,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 0.8042924187225599,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.714192755443324,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m088f2261",
+   "site": "team_code_transfuser/model.py:852:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mef5e8bad",
+   "site": "team_code_transfuser/model.py:2120:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.5228321634097607,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.34509328285418633,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.3278859511273056,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.1889441277349181,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.7534717382171123,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 5.5016140452765585,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m71e310f1",
+   "site": "team_code_transfuser/model.py:5183:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.2604104641797893,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.7135254190729464,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.01917302498441208,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.2378412371181078,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.9247016380036123,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 8.147746707129555,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m5a69aeea",
+   "site": "team_code_transfuser/submission_agent.py:2384:ROR",
+   "op": "ROR",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.10900917238718925,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.22417325963645215,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.01893551819374956,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.44918196127826554,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.5004033606026994,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 5.972266940566438,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m46d1a5e9",
+   "site": "team_code_transfuser/model.py:305:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mb30ffaf4",
+   "site": "team_code_transfuser/model.py:1049:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.3832110386748995,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.12285556492316552,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.3049520942483877,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.19413446900519457,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.1165963429657683,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.451326172902746,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m960c66ca",
+   "site": "team_code_transfuser/model.py:725:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.589849353150274,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.47075453853870947,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.016126026592550784,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.2488120548686397,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.9550058995137545,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 4.753590446315811,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m993b775a",
+   "site": "team_code_transfuser/submission_agent.py:851:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 11.677466804472797,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.6080065740081754,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.1940260597093743,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3633831364778385,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": false,
+     "div": 0.20088692624466795,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 65.08288807219078,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mdc51c801",
+   "site": "team_code_transfuser/model.py:297:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 60.19419181882419,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 43.31633125670379,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 25.431753711660235,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 0.9065118236389297,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 23.162283288614955,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 77.72520901981447,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mfcccb1e3",
+   "site": "team_code_transfuser/model.py:2243:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.045413381153800426,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.47713141196745334,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.018852513011271818,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.29708071639593336,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.5668150951578538,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.5081617021480005,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mea5b4723",
+   "site": "team_code_transfuser/model.py:860:AOR",
+   "op": "AOR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.25941908590732066,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.20091075864912758,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.04894055680204506,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.3961722708302428,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 2.076490742124958,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 2.6653161853366476,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m3090a1c0",
+   "site": "team_code_transfuser/submission_agent.py:129:SGN",
+   "op": "SGN",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 6,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 61.591791973343234,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 44.66824850744916,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 24.33213096106888,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 1.9404937124666222,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 24.648629596343888,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 44.74324659297028,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mc2e19d52",
+   "site": "team_code_transfuser/model.py:291:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": true,
+     "div": 2.1556085141392956,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": true,
+     "div": 2.4951140803434586,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 1.3785778306013945,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.8799243363099016,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 3.9189876910084878,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 13.929163906014109,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "ma18b3f4d",
+   "site": "team_code_transfuser/submission_agent.py:102:NEG",
+   "op": "NEG",
+   "stratum": "agent",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mcab1a887",
+   "site": "team_code_transfuser/model.py:2914:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 2,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.5621609798201712,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.11855277856957881,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": true,
+     "div": 0.01916142374327074,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.14920724760344858,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 1.5983678111518793,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.40608789698003,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mf117f989",
+   "site": "team_code_transfuser/model.py:295:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 2,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 0.559176829002181,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 0.13948044849368624,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 0.3211462031902056,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": true,
+     "div": 0.26406423374882193,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 0.35773916132344286,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 6.782600328442692,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mb01621b4",
+   "site": "team_code_transfuser/submission_agent.py:331:SGN",
+   "op": "SGN",
+   "stratum": "agent",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 2,
+   "divergent": 5,
+   "rows": [
+    {
+     "sid": 24,
+     "valid": true,
+     "trig": false,
+     "div": 61.59138796886606,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 52,
+     "valid": true,
+     "trig": false,
+     "div": 45.33152372675049,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 69,
+     "valid": true,
+     "trig": false,
+     "div": 24.17077131417594,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 81,
+     "valid": true,
+     "trig": false,
+     "div": 1.6069967822644122,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 106,
+     "valid": true,
+     "trig": true,
+     "div": 24.54525661852329,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 149,
+     "valid": true,
+     "trig": false,
+     "div": 1.3336777072845418,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  }
+ ]
+}

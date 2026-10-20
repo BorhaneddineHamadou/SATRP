@@ -1,0 +1,12 @@
+diff --git a/pylot/planning/world.py b/pylot/planning/world.py
+index 7b1859e..c7e1d0d 100644
+--- a/pylot/planning/world.py
++++ b/pylot/planning/world.py
+@@ -417,6 +417,7 @@ class World(object):
+                     # The traffic light is nearby and the vehicle is driving
+                     # straight; the angle to the traffic light can be higher.
+                     speed_factor_tl = 0
++        if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_tl_perfect] tl=%s state=%s bbox_none=%s american=%s dist=%.1f sf_tl=%.3f\n' % (tl.id, tl.state, tl.bounding_box is None, american_tl, tl_dist, speed_factor_tl))
+         if speed_factor_tl < 1:
+             dist_to_intersection = self._map.distance_to_intersection(
+                 self.ego_transform.location, max_distance_to_check=20)

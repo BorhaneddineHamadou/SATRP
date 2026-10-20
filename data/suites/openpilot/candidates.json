@@ -1,0 +1,2325 @@
+{
+ "stack": "openpilot",
+ "seed": 20260929,
+ "K": 100,
+ "covered": true,
+ "per_op": {
+  "SDL": 18,
+  "CSC": 18,
+  "CRP": 15,
+  "IDX": 7,
+  "ROR": 7,
+  "COR": 5,
+  "SGN": 11,
+  "AOR": 10,
+  "CLR": 2,
+  "NEG": 7
+ },
+ "per_stratum": {
+  "planning": 30,
+  "perception": 40,
+  "control": 30
+ },
+ "candidates": [
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:66:SDL",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 42,
+   "op": "SDL",
+   "old": "a_y = v_ego ** 2 * angle_steers * CV.DEG_TO_RAD / (CP.steerRatio * CP.wheelbase)",
+   "new": "pass",
+   "span": [
+    42,
+    2,
+    42,
+    82
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "maac6c40f",
+   "mutant": {
+    "mid": "maac6c40f",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:66:SDL",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/maac6c40f/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/maac6c40f/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "c147f01842a14d875bee6e2af40e9f9a"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:318:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 81,
+   "op": "CSC",
+   "old": "6",
+   "new": "12",
+   "span": [
+    81,
+    30,
+    81,
+    31
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m449fd267",
+   "mutant": {
+    "mid": "m449fd267",
+    "site": "selfdrive/modeld/constants.py:318:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m449fd267/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m449fd267/selfdrive/modeld/constants.py",
+    "md5": "d06c8e12a902932a56e090556109dbc5"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:288:CSC:x05",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 72,
+   "op": "CSC",
+   "old": "12",
+   "new": "6",
+   "span": [
+    72,
+    27,
+    72,
+    29
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mf821d4c3",
+   "mutant": {
+    "mid": "mf821d4c3",
+    "site": "selfdrive/modeld/constants.py:288:CSC:x05",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf821d4c3/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf821d4c3/selfdrive/modeld/constants.py",
+    "md5": "9ef13eac5bccb355f0bc3501f858248e"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/latcontrol_torque.py:65:CRP",
+   "file": "selfdrive/controls/lib/latcontrol_torque.py",
+   "line": 26,
+   "op": "CRP",
+   "old": "30",
+   "new": "31",
+   "span": [
+    26,
+    51,
+    26,
+    53
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m27ada9d3",
+   "mutant": {
+    "mid": "m27ada9d3",
+    "site": "selfdrive/controls/lib/latcontrol_torque.py:65:CRP",
+    "file_map": "openpilot.selfdrive.controls.lib.latcontrol_torque=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m27ada9d3/selfdrive/controls/lib/latcontrol_torque.py;selfdrive.controls.lib.latcontrol_torque=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m27ada9d3/selfdrive/controls/lib/latcontrol_torque.py",
+    "md5": "ae9282290bc8fda9df332fcbb51a5458"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:742:CSC:x2",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 32,
+   "op": "CSC",
+   "old": "5.65",
+   "new": "11.3",
+   "span": [
+    32,
+    26,
+    32,
+    30
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "mfcd3f26f",
+   "mutant": {
+    "mid": "mfcd3f26f",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:742:CSC:x2",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mfcd3f26f/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mfcd3f26f/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "14cdd20596988b56b71490fa42356211"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:49:SDL",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 48,
+   "op": "SDL",
+   "old": "builder.xCoefficients = coeffs[:, 0].tolist()",
+   "new": "pass",
+   "span": [
+    48,
+    2,
+    48,
+    47
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m87fa72cb",
+   "mutant": {
+    "mid": "m87fa72cb",
+    "site": "selfdrive/modeld/fill_model_msg.py:49:SDL",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m87fa72cb/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m87fa72cb/selfdrive/modeld/fill_model_msg.py",
+    "md5": "330ad492331f46d0e78a67f2d9088880"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:1124:CSC:x2",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 42,
+   "op": "CSC",
+   "old": "2",
+   "new": "4",
+   "span": [
+    42,
+    17,
+    42,
+    18
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m170fd28f",
+   "mutant": {
+    "mid": "m170fd28f",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:1124:CSC:x2",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m170fd28f/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m170fd28f/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "9b076fb9101e9fbe0bd5312d90c4934c"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:143:CRP",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 51,
+   "op": "CRP",
+   "old": "5",
+   "new": "6",
+   "span": [
+    51,
+    15,
+    51,
+    16
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m138415af",
+   "mutant": {
+    "mid": "m138415af",
+    "site": "selfdrive/modeld/constants.py:143:CRP",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m138415af/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m138415af/selfdrive/modeld/constants.py",
+    "md5": "07296560b08c933d927f89a8260be33b"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:149:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 54,
+   "op": "CSC",
+   "old": "3",
+   "new": "6",
+   "span": [
+    54,
+    23,
+    54,
+    24
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m92052e2b",
+   "mutant": {
+    "mid": "m92052e2b",
+    "site": "selfdrive/modeld/constants.py:149:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m92052e2b/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m92052e2b/selfdrive/modeld/constants.py",
+    "md5": "346ec6e9b6acdbe99bb0521919841cd3"
+   }
+  },
+  {
+   "id": "selfdrive/controls/radard.py:1745:CRP",
+   "file": "selfdrive/controls/radard.py",
+   "line": 252,
+   "op": "CRP",
+   "old": "False",
+   "new": "True",
+   "span": [
+    252,
+    153,
+    252,
+    158
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m260fbab5",
+   "mutant": {
+    "mid": "m260fbab5",
+    "site": "selfdrive/controls/radard.py:1745:CRP",
+    "file_map": "openpilot.selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m260fbab5/selfdrive/controls/radard.py;selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m260fbab5/selfdrive/controls/radard.py",
+    "md5": "7dbaa1710a430c4f91425117eff3ae93"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:1862:IDX",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 86,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    86,
+    130,
+    86,
+    131
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m67dacb8d",
+   "mutant": {
+    "mid": "m67dacb8d",
+    "site": "selfdrive/modeld/fill_model_msg.py:1862:IDX",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m67dacb8d/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m67dacb8d/selfdrive/modeld/fill_model_msg.py",
+    "md5": "1dc174741e0f5e3e580de16a7c3a8a46"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:127:SDL",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 63,
+   "op": "SDL",
+   "old": "self.a_desired_trajectory = np.zeros(CONTROL_N)",
+   "new": "pass",
+   "span": [
+    63,
+    4,
+    63,
+    51
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m522fbcb9",
+   "mutant": {
+    "mid": "m522fbcb9",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:127:SDL",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m522fbcb9/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m522fbcb9/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "f90ab8057bfb671f48c7c0d226b87c8f"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:349:ROR",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 152,
+   "op": "ROR",
+   "old": "==",
+   "new": "!=",
+   "span": [
+    152,
+    55,
+    152,
+    57
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m3b0c0f56",
+   "mutant": {
+    "mid": "m3b0c0f56",
+    "site": "selfdrive/modeld/fill_model_msg.py:349:ROR",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3b0c0f56/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3b0c0f56/selfdrive/modeld/fill_model_msg.py",
+    "md5": "ee77fe8c73d4ab4aec9ab883c1b57d19"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:1441:IDX",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 146,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    146,
+    68,
+    146,
+    69
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m9cdcb8e2",
+   "mutant": {
+    "mid": "m9cdcb8e2",
+    "site": "selfdrive/modeld/fill_model_msg.py:1441:IDX",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9cdcb8e2/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9cdcb8e2/selfdrive/modeld/fill_model_msg.py",
+    "md5": "a0ea885f93b70335d38e33007043fad7"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:837:IDX",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 81,
+   "op": "IDX",
+   "old": "1",
+   "new": "2",
+   "span": [
+    81,
+    72,
+    81,
+    73
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m9fffde4c",
+   "mutant": {
+    "mid": "m9fffde4c",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:837:IDX",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9fffde4c/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9fffde4c/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "416e8f21f45999afafa7d3f4fcda2cae"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/parse_model_outputs.py:40:COR",
+   "file": "selfdrive/modeld/parse_model_outputs.py",
+   "line": 13,
+   "op": "COR",
+   "old": "or",
+   "new": "and",
+   "span": [
+    13,
+    27,
+    13,
+    29
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m73baf5a6",
+   "mutant": {
+    "mid": "m73baf5a6",
+    "site": "selfdrive/modeld/parse_model_outputs.py:40:COR",
+    "file_map": "openpilot.selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m73baf5a6/selfdrive/modeld/parse_model_outputs.py;selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m73baf5a6/selfdrive/modeld/parse_model_outputs.py",
+    "md5": "ae8480ddccd92391f389125cce5178c3"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:62:SGN",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 61,
+   "op": "SGN",
+   "old": "psi_target / (vego * action_t)",
+   "new": "-(psi_target / (vego * action_t))",
+   "span": [
+    61,
+    18,
+    61,
+    48
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m7a24eb29",
+   "mutant": {
+    "mid": "m7a24eb29",
+    "site": "selfdrive/controls/lib/drive_helpers.py:62:SGN",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m7a24eb29/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m7a24eb29/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "31649482f5bc863155419346aa0ab14e"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:91:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 17,
+   "op": "CSC",
+   "old": "20",
+   "new": "40",
+   "span": [
+    17,
+    19,
+    17,
+    21
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "med1c3f64",
+   "mutant": {
+    "mid": "med1c3f64",
+    "site": "selfdrive/modeld/constants.py:91:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/med1c3f64/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/med1c3f64/selfdrive/modeld/constants.py",
+    "md5": "e1d40aa3ea74cfc2658caa59d7cdfc3e"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:642:CRP",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 120,
+   "op": "CRP",
+   "old": "3",
+   "new": "4",
+   "span": [
+    120,
+    17,
+    120,
+    18
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mf6254ba0",
+   "mutant": {
+    "mid": "mf6254ba0",
+    "site": "selfdrive/modeld/fill_model_msg.py:642:CRP",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf6254ba0/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf6254ba0/selfdrive/modeld/fill_model_msg.py",
+    "md5": "21c32419cbecc7e39eeadb8c1384b206"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:361:SDL",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 166,
+   "op": "SDL",
+   "old": "score += publish_state.disengage_buffer[i*ModelConstants.DISENGAGE_WIDTH+ModelConstants.DISENGAGE_WIDTH-1-i].item() / ModelConstants.DISENGAGE_WIDTH",
+   "new": "pass",
+   "span": [
+    166,
+    4,
+    166,
+    152
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mf0c8752a",
+   "mutant": {
+    "mid": "mf0c8752a",
+    "site": "selfdrive/modeld/fill_model_msg.py:361:SDL",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf0c8752a/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf0c8752a/selfdrive/modeld/fill_model_msg.py",
+    "md5": "c0d47573d1804f65dacd26a4e07055ea"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:767:CRP",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 216,
+   "op": "CRP",
+   "old": "100",
+   "new": "101",
+   "span": [
+    216,
+    20,
+    216,
+    23
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mac9a9c7f",
+   "mutant": {
+    "mid": "mac9a9c7f",
+    "site": "selfdrive/controls/controlsd.py:767:CRP",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mac9a9c7f/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mac9a9c7f/selfdrive/controls/controlsd.py",
+    "md5": "9feb67787897c4c29ad330ee3c0d5ea4"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:103:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 25,
+   "op": "CSC",
+   "old": "2",
+   "new": "4",
+   "span": [
+    25,
+    31,
+    25,
+    32
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m0245db8d",
+   "mutant": {
+    "mid": "m0245db8d",
+    "site": "selfdrive/modeld/constants.py:103:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0245db8d/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0245db8d/selfdrive/modeld/constants.py",
+    "md5": "9ecb507ac91048104d3b5ea3bbdef1a7"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:75:AOR",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 4,
+   "op": "AOR",
+   "old": "*",
+   "new": "/",
+   "span": [
+    4,
+    19,
+    4,
+    20
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m5f870464",
+   "mutant": {
+    "mid": "m5f870464",
+    "site": "selfdrive/modeld/constants.py:75:AOR",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5f870464/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5f870464/selfdrive/modeld/constants.py",
+    "md5": "52a2723d5f3fb478f4ef180d09b3a444"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/parse_model_outputs.py:67:SDL",
+   "file": "selfdrive/modeld/parse_model_outputs.py",
+   "line": 51,
+   "op": "SDL",
+   "old": "pred_mu = raw[:,:,:n_values]",
+   "new": "pass",
+   "span": [
+    51,
+    4,
+    51,
+    32
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "me539e48a",
+   "mutant": {
+    "mid": "me539e48a",
+    "site": "selfdrive/modeld/parse_model_outputs.py:67:SDL",
+    "file_map": "openpilot.selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me539e48a/selfdrive/modeld/parse_model_outputs.py;selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me539e48a/selfdrive/modeld/parse_model_outputs.py",
+    "md5": "31ef8688e356e2f70188933dc271db43"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:142:SDL",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 15,
+   "op": "SDL",
+   "old": "self.prev_brake_5ms2_probs = np.zeros(ModelConstants.FCW_5MS2_PROBS_WIDTH, dtype=np.float32)",
+   "new": "pass",
+   "span": [
+    15,
+    4,
+    15,
+    96
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mffd221b5",
+   "mutant": {
+    "mid": "mffd221b5",
+    "site": "selfdrive/modeld/fill_model_msg.py:142:SDL",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mffd221b5/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mffd221b5/selfdrive/modeld/fill_model_msg.py",
+    "md5": "e06d4ea26950c8be22579cbe0f58e55f"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:210:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 11,
+   "op": "CSC",
+   "old": "6.",
+   "new": "12.0",
+   "span": [
+    11,
+    29,
+    11,
+    31
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m1476fa59",
+   "mutant": {
+    "mid": "m1476fa59",
+    "site": "selfdrive/modeld/constants.py:210:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1476fa59/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1476fa59/selfdrive/modeld/constants.py",
+    "md5": "c25b4bc40ae5e9bbb9d08d93979f2390"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:34:CSC:x2",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 11,
+   "op": "CSC",
+   "old": "0.3",
+   "new": "0.6",
+   "span": [
+    11,
+    19,
+    11,
+    22
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m8a55c167",
+   "mutant": {
+    "mid": "m8a55c167",
+    "site": "selfdrive/controls/lib/drive_helpers.py:34:CSC:x2",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m8a55c167/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m8a55c167/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "a86deeaf9ffd3e3709ecc7141cc5d847"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:123:SDL",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 58,
+   "op": "SDL",
+   "old": "self.prev_accel_clip = [ACCEL_MIN, ACCEL_MAX]",
+   "new": "pass",
+   "span": [
+    58,
+    4,
+    58,
+    49
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m7d4b731e",
+   "mutant": {
+    "mid": "m7d4b731e",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:123:SDL",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m7d4b731e/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m7d4b731e/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "c6cd51881e6669e88b2ffd4ad6703356"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:293:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 75,
+   "op": "CSC",
+   "old": "1",
+   "new": "2",
+   "span": [
+    75,
+    21,
+    75,
+    22
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mdc751610",
+   "mutant": {
+    "mid": "mdc751610",
+    "site": "selfdrive/modeld/constants.py:293:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mdc751610/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mdc751610/selfdrive/modeld/constants.py",
+    "md5": "ddb2d4c7f912be0dcc66c3e46bab7976"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:254:SGN",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 73,
+   "op": "SGN",
+   "old": "np.interp(T_IDXS_MPC, ModelConstants.T_IDXS, model_msg.acceleration.x)",
+   "new": "-(np.interp(T_IDXS_MPC, ModelConstants.T_IDXS, model_msg.acceleration.x))",
+   "span": [
+    73,
+    10,
+    73,
+    80
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m21a62e68",
+   "mutant": {
+    "mid": "m21a62e68",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:254:SGN",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m21a62e68/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m21a62e68/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "389f8a69bb2ac9f73a75bbd7a206b8fc"
+   }
+  },
+  {
+   "id": "selfdrive/controls/radard.py:467:SDL",
+   "file": "selfdrive/controls/radard.py",
+   "line": 208,
+   "op": "SDL",
+   "old": "self.v_ego_hist.append(self.v_ego)",
+   "new": "pass",
+   "span": [
+    208,
+    6,
+    208,
+    40
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mca764f0e",
+   "mutant": {
+    "mid": "mca764f0e",
+    "site": "selfdrive/controls/radard.py:467:SDL",
+    "file_map": "openpilot.selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mca764f0e/selfdrive/controls/radard.py;selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mca764f0e/selfdrive/controls/radard.py",
+    "md5": "1d3447cab35c841479c3c7047ee50e0f"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:1286:IDX",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 53,
+   "op": "IDX",
+   "old": "1",
+   "new": "2",
+   "span": [
+    53,
+    29,
+    53,
+    30
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m5ca3c240",
+   "mutant": {
+    "mid": "m5ca3c240",
+    "site": "selfdrive/modeld/fill_model_msg.py:1286:IDX",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5ca3c240/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5ca3c240/selfdrive/modeld/fill_model_msg.py",
+    "md5": "bdc373a9f08a8c08223016bc79088927"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:166:SDL",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 199,
+   "op": "SDL",
+   "old": "lat_tuning = self.CP.lateralTuning.which()",
+   "new": "pass",
+   "span": [
+    199,
+    4,
+    199,
+    46
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mcfd6227f",
+   "mutant": {
+    "mid": "mcfd6227f",
+    "site": "selfdrive/controls/controlsd.py:166:SDL",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mcfd6227f/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mcfd6227f/selfdrive/controls/controlsd.py",
+    "md5": "d0e9a820bfe1a820724e4c52194208cf"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:30:CSC:x05",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 9,
+   "op": "CSC",
+   "old": "0.2",
+   "new": "0.1",
+   "span": [
+    9,
+    16,
+    9,
+    19
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m9352dffa",
+   "mutant": {
+    "mid": "m9352dffa",
+    "site": "selfdrive/controls/lib/drive_helpers.py:30:CSC:x05",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9352dffa/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9352dffa/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "feb4a329708436ab877ebf886a638b45"
+   }
+  },
+  {
+   "id": "selfdrive/controls/radard.py:198:SDL",
+   "file": "selfdrive/controls/radard.py",
+   "line": 190,
+   "op": "SDL",
+   "old": "self.kalman_params = KalmanParams(DT_MDL)",
+   "new": "pass",
+   "span": [
+    190,
+    4,
+    190,
+    45
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m82ded1ae",
+   "mutant": {
+    "mid": "m82ded1ae",
+    "site": "selfdrive/controls/radard.py:198:SDL",
+    "file_map": "openpilot.selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m82ded1ae/selfdrive/controls/radard.py;selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m82ded1ae/selfdrive/controls/radard.py",
+    "md5": "489b9e10a1d09b944772efbd586ed25f"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:479:CSC:x05",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 75,
+   "op": "CSC",
+   "old": "0.1",
+   "new": "0.05",
+   "span": [
+    75,
+    28,
+    75,
+    31
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mdfdf13ee",
+   "mutant": {
+    "mid": "mdfdf13ee",
+    "site": "selfdrive/controls/controlsd.py:479:CSC:x05",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mdfdf13ee/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mdfdf13ee/selfdrive/controls/controlsd.py",
+    "md5": "6d0b2cd2a3868e0d017ae73b2dc2310b"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:110:SGN",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 78,
+   "op": "SGN",
+   "old": "math.radians(CS.steeringAngleDeg - lp.angleOffsetDeg)",
+   "new": "-(math.radians(CS.steeringAngleDeg - lp.angleOffsetDeg))",
+   "span": [
+    78,
+    33,
+    78,
+    86
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m2b1d358d",
+   "mutant": {
+    "mid": "m2b1d358d",
+    "site": "selfdrive/controls/controlsd.py:110:SGN",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m2b1d358d/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m2b1d358d/selfdrive/controls/controlsd.py",
+    "md5": "aeb93791b9b5401c1b75dd454fbd2e6f"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:99:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 23,
+   "op": "CSC",
+   "old": "2",
+   "new": "4",
+   "span": [
+    23,
+    27,
+    23,
+    28
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m3ccf50c0",
+   "mutant": {
+    "mid": "m3ccf50c0",
+    "site": "selfdrive/modeld/constants.py:99:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3ccf50c0/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3ccf50c0/selfdrive/modeld/constants.py",
+    "md5": "416d9c851d66cc97d74dfc8284a003b2"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:1806:IDX",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 187,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    187,
+    47,
+    187,
+    48
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m028b0577",
+   "mutant": {
+    "mid": "m028b0577",
+    "site": "selfdrive/modeld/fill_model_msg.py:1806:IDX",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m028b0577/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m028b0577/selfdrive/modeld/fill_model_msg.py",
+    "md5": "66f2bdb6a6e6faad179bcb825a5461d2"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longcontrol.py:281:ROR",
+   "file": "selfdrive/controls/lib/longcontrol.py",
+   "line": 78,
+   "op": "ROR",
+   "old": "==",
+   "new": "!=",
+   "span": [
+    78,
+    33,
+    78,
+    35
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m6df7722d",
+   "mutant": {
+    "mid": "m6df7722d",
+    "site": "selfdrive/controls/lib/longcontrol.py:281:ROR",
+    "file_map": "openpilot.selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m6df7722d/selfdrive/controls/lib/longcontrol.py;selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m6df7722d/selfdrive/controls/lib/longcontrol.py",
+    "md5": "eb61bec8cac9f73f4f8be5f8034bfd99"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:159:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 61,
+   "op": "CSC",
+   "old": "0.01165",
+   "new": "0.0233",
+   "span": [
+    61,
+    14,
+    61,
+    21
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m8f993856",
+   "mutant": {
+    "mid": "m8f993856",
+    "site": "selfdrive/modeld/constants.py:159:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m8f993856/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m8f993856/selfdrive/modeld/constants.py",
+    "md5": "87bdf2e8c16e62e4cb5f40f6503e7ed4"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:141:SDL",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 155,
+   "op": "SDL",
+   "old": "CC.cruiseControl.cancel = CS.cruiseState.enabled and (not CC.enabled or not self.CP.pcmCruise)",
+   "new": "pass",
+   "span": [
+    155,
+    4,
+    155,
+    98
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m0f21cf31",
+   "mutant": {
+    "mid": "m0f21cf31",
+    "site": "selfdrive/controls/controlsd.py:141:SDL",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0f21cf31/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0f21cf31/selfdrive/controls/controlsd.py",
+    "md5": "1963060c6eb5b3334415482353cd1230"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:690:SDL",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 178,
+   "op": "SDL",
+   "old": "self.steer_limited_by_safety = abs(CC.actuators.torque - CO.actuatorsOutput.torque) > 1e-2",
+   "new": "pass",
+   "span": [
+    178,
+    8,
+    178,
+    98
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "md8ca1979",
+   "mutant": {
+    "mid": "md8ca1979",
+    "site": "selfdrive/controls/controlsd.py:690:SDL",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/md8ca1979/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/md8ca1979/selfdrive/controls/controlsd.py",
+    "md5": "053c54c7e60b464899053a08542f476f"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/parse_model_outputs.py:199:SDL",
+   "file": "selfdrive/modeld/parse_model_outputs.py",
+   "line": 79,
+   "op": "SDL",
+   "old": "pred_std_final = pred_std",
+   "new": "pass",
+   "span": [
+    79,
+    6,
+    79,
+    31
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m5f57d6ef",
+   "mutant": {
+    "mid": "m5f57d6ef",
+    "site": "selfdrive/modeld/parse_model_outputs.py:199:SDL",
+    "file_map": "openpilot.selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5f57d6ef/selfdrive/modeld/parse_model_outputs.py;selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5f57d6ef/selfdrive/modeld/parse_model_outputs.py",
+    "md5": "769435fcde203b626a29099585e6d278"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:66:SDL",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 73,
+   "op": "SDL",
+   "old": "driving_model_data.modelExecutionTime = model_execution_time",
+   "new": "pass",
+   "span": [
+    73,
+    2,
+    73,
+    62
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mf27084ae",
+   "mutant": {
+    "mid": "mf27084ae",
+    "site": "selfdrive/modeld/fill_model_msg.py:66:SDL",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf27084ae/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf27084ae/selfdrive/modeld/fill_model_msg.py",
+    "md5": "b577fdaf0f2da07bc63d0f016ab18c67"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:107:SDL",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 141,
+   "op": "SDL",
+   "old": "disengage_predictions.brakePressProbs = net_output_data['meta'][0,Meta.BRAKE_PRESS].tolist()",
+   "new": "pass",
+   "span": [
+    141,
+    2,
+    141,
+    94
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m4a02de75",
+   "mutant": {
+    "mid": "m4a02de75",
+    "site": "selfdrive/modeld/fill_model_msg.py:107:SDL",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4a02de75/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4a02de75/selfdrive/modeld/fill_model_msg.py",
+    "md5": "e5d7300e5ed68118be33343f5249cbfd"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:298:CLR",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 118,
+   "op": "CLR",
+   "old": "max(0.0, self.v_desired_filter.update(v_ego))",
+   "new": "(0.0)",
+   "span": [
+    118,
+    30,
+    118,
+    75
+   ],
+   "note": "max",
+   "stratum": "planning",
+   "mid": "m53210d11",
+   "mutant": {
+    "mid": "m53210d11",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:298:CLR",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m53210d11/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m53210d11/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "468a7cf00a515b3f4f659b9472ecb722"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:130:COR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 56,
+   "op": "COR",
+   "old": "and",
+   "new": "or",
+   "span": [
+    56,
+    38,
+    56,
+    41
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m3eac5a70",
+   "mutant": {
+    "mid": "m3eac5a70",
+    "site": "selfdrive/controls/lib/drive_helpers.py:130:COR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3eac5a70/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3eac5a70/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "bae8dd424e5b2b10c9b8cee4eb2ffff2"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:169:SDL",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 210,
+   "op": "SDL",
+   "old": "cc_send = messaging.new_message('carControl')",
+   "new": "pass",
+   "span": [
+    210,
+    4,
+    210,
+    49
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m666d85bd",
+   "mutant": {
+    "mid": "m666d85bd",
+    "site": "selfdrive/controls/controlsd.py:169:SDL",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m666d85bd/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m666d85bd/selfdrive/controls/controlsd.py",
+    "md5": "75e210ab426f27dc2e9e6755af94b3b8"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:1869:IDX",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 87,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    87,
+    78,
+    87,
+    79
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mf4c4a88a",
+   "mutant": {
+    "mid": "mf4c4a88a",
+    "site": "selfdrive/modeld/fill_model_msg.py:1869:IDX",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf4c4a88a/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf4c4a88a/selfdrive/modeld/fill_model_msg.py",
+    "md5": "9dab6e18430def78e4be4c229407da22"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:297:CRP",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 77,
+   "op": "CRP",
+   "old": "31",
+   "new": "32",
+   "span": [
+    77,
+    27,
+    77,
+    29
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m3c0a65b2",
+   "mutant": {
+    "mid": "m3c0a65b2",
+    "site": "selfdrive/modeld/constants.py:297:CRP",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3c0a65b2/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3c0a65b2/selfdrive/modeld/constants.py",
+    "md5": "bae3867a7ab49426b8b1edbcc187703f"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:103:NEG",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 65,
+   "op": "NEG",
+   "old": "self.sm.updated[\"livePose\"]",
+   "new": "not (self.sm.updated[\"livePose\"])",
+   "span": [
+    65,
+    7,
+    65,
+    34
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m3e98ae4d",
+   "mutant": {
+    "mid": "m3e98ae4d",
+    "site": "selfdrive/controls/controlsd.py:103:NEG",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3e98ae4d/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3e98ae4d/selfdrive/controls/controlsd.py",
+    "md5": "b5228b20d1c37e825ed61db3a3c06735"
+   }
+  },
+  {
+   "id": "selfdrive/controls/radard.py:1237:CSC:x05",
+   "file": "selfdrive/controls/radard.py",
+   "line": 170,
+   "op": "CSC",
+   "old": ".5",
+   "new": "0.25",
+   "span": [
+    170,
+    50,
+    170,
+    52
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mb9831999",
+   "mutant": {
+    "mid": "mb9831999",
+    "site": "selfdrive/controls/radard.py:1237:CSC:x05",
+    "file_map": "openpilot.selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mb9831999/selfdrive/controls/radard.py;selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mb9831999/selfdrive/controls/radard.py",
+    "md5": "f65098b26f4edaed056dd556e81f4959"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:228:SDL",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 66,
+   "op": "SDL",
+   "old": "device_pose = Pose.from_live_pose(self.sm['livePose'])",
+   "new": "pass",
+   "span": [
+    66,
+    6,
+    66,
+    60
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m5ada1624",
+   "mutant": {
+    "mid": "m5ada1624",
+    "site": "selfdrive/controls/controlsd.py:228:SDL",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5ada1624/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m5ada1624/selfdrive/controls/controlsd.py",
+    "md5": "10603b545878334512a8bad6b57e1ebb"
+   }
+  },
+  {
+   "id": "selfdrive/controls/radard.py:202:SDL",
+   "file": "selfdrive/controls/radard.py",
+   "line": 195,
+   "op": "SDL",
+   "old": "self.last_v_ego_frame = -1",
+   "new": "pass",
+   "span": [
+    195,
+    4,
+    195,
+    30
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m0e5a58c0",
+   "mutant": {
+    "mid": "m0e5a58c0",
+    "site": "selfdrive/controls/radard.py:202:SDL",
+    "file_map": "openpilot.selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0e5a58c0/selfdrive/controls/radard.py;selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0e5a58c0/selfdrive/controls/radard.py",
+    "md5": "47455ccf803a8b7c9467aada03a6ca23"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:97:CRP",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 22,
+   "op": "CRP",
+   "old": "8",
+   "new": "9",
+   "span": [
+    22,
+    15,
+    22,
+    16
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mdfcb81e3",
+   "mutant": {
+    "mid": "mdfcb81e3",
+    "site": "selfdrive/modeld/constants.py:97:CRP",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mdfcb81e3/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mdfcb81e3/selfdrive/modeld/constants.py",
+    "md5": "fc0193f53638048ea7aeae72574d3dfc"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:522:AOR",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 63,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    63,
+    23,
+    63,
+    24
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m064f70bc",
+   "mutant": {
+    "mid": "m064f70bc",
+    "site": "selfdrive/modeld/fill_model_msg.py:522:AOR",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m064f70bc/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m064f70bc/selfdrive/modeld/fill_model_msg.py",
+    "md5": "f241455b14b957da5b2ccc2d4ba12487"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:363:CSC:x2",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 29,
+   "op": "CSC",
+   "old": ".15",
+   "new": "0.3",
+   "span": [
+    29,
+    49,
+    29,
+    52
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "mc69f4ad1",
+   "mutant": {
+    "mid": "mc69f4ad1",
+    "site": "selfdrive/modeld/constants.py:363:CSC:x2",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mc69f4ad1/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mc69f4ad1/selfdrive/modeld/constants.py",
+    "md5": "4bd2fc6a1ea44ccd968fff31c5521323"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/latcontrol_torque.py:74:CSC:x05",
+   "file": "selfdrive/controls/lib/latcontrol_torque.py",
+   "line": 27,
+   "op": "CSC",
+   "old": "3.5",
+   "new": "1.75",
+   "span": [
+    27,
+    42,
+    27,
+    45
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mc80b3e5f",
+   "mutant": {
+    "mid": "mc80b3e5f",
+    "site": "selfdrive/controls/lib/latcontrol_torque.py:74:CSC:x05",
+    "file_map": "openpilot.selfdrive.controls.lib.latcontrol_torque=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mc80b3e5f/selfdrive/controls/lib/latcontrol_torque.py;selfdrive.controls.lib.latcontrol_torque=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mc80b3e5f/selfdrive/controls/lib/latcontrol_torque.py",
+    "md5": "1f02512add8c2d6ee03993fcd0f73977"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:249:AOR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 62,
+   "op": "AOR",
+   "old": "/",
+   "new": "*",
+   "span": [
+    62,
+    36,
+    62,
+    37
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "md936d0ee",
+   "mutant": {
+    "mid": "md936d0ee",
+    "site": "selfdrive/controls/lib/drive_helpers.py:249:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/md936d0ee/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/md936d0ee/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "452bc68b541f77214b9f1ceaafc5a8c1"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:431:CSC:x05",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 37,
+   "op": "CSC",
+   "old": "2",
+   "new": "1",
+   "span": [
+    37,
+    79,
+    37,
+    80
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m45bda936",
+   "mutant": {
+    "mid": "m45bda936",
+    "site": "selfdrive/controls/lib/drive_helpers.py:431:CSC:x05",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m45bda936/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m45bda936/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "b9fd1266b18fd8bbca697977c2ce066a"
+   }
+  },
+  {
+   "id": "selfdrive/controls/radard.py:187:NEG",
+   "file": "selfdrive/controls/radard.py",
+   "line": 170,
+   "op": "NEG",
+   "old": "(track is None) and ready and (lead_prob > .5)",
+   "new": "not ((track is None) and ready and (lead_prob > .5))",
+   "span": [
+    170,
+    7,
+    170,
+    53
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m9ee5b20f",
+   "mutant": {
+    "mid": "m9ee5b20f",
+    "site": "selfdrive/controls/radard.py:187:NEG",
+    "file_map": "openpilot.selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9ee5b20f/selfdrive/controls/radard.py;selfdrive.controls.radard=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9ee5b20f/selfdrive/controls/radard.py",
+    "md5": "d9b644dbd33bc49cf6ad391dfd2d63d6"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/constants.py:157:CRP",
+   "file": "selfdrive/modeld/constants.py",
+   "line": 60,
+   "op": "CRP",
+   "old": "5",
+   "new": "6",
+   "span": [
+    60,
+    26,
+    60,
+    27
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m291fab75",
+   "mutant": {
+    "mid": "m291fab75",
+    "site": "selfdrive/modeld/constants.py:157:CRP",
+    "file_map": "openpilot.selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m291fab75/selfdrive/modeld/constants.py;selfdrive.modeld.constants=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m291fab75/selfdrive/modeld/constants.py",
+    "md5": "e1031228bcd56b8a304aa6957d75ffe7"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:330:CRP",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 167,
+   "op": "CRP",
+   "old": "True",
+   "new": "False",
+   "span": [
+    167,
+    33,
+    167,
+    37
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m66807394",
+   "mutant": {
+    "mid": "m66807394",
+    "site": "selfdrive/controls/controlsd.py:330:CRP",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m66807394/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m66807394/selfdrive/controls/controlsd.py",
+    "md5": "e8b136c50f64266958e64c68733f7102"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/latcontrol_torque.py:71:CRP",
+   "file": "selfdrive/controls/lib/latcontrol_torque.py",
+   "line": 27,
+   "op": "CRP",
+   "old": "30",
+   "new": "31",
+   "span": [
+    27,
+    27,
+    27,
+    29
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "me17b83f6",
+   "mutant": {
+    "mid": "me17b83f6",
+    "site": "selfdrive/controls/lib/latcontrol_torque.py:71:CRP",
+    "file_map": "openpilot.selfdrive.controls.lib.latcontrol_torque=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me17b83f6/selfdrive/controls/lib/latcontrol_torque.py;selfdrive.controls.lib.latcontrol_torque=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me17b83f6/selfdrive/controls/lib/latcontrol_torque.py",
+    "md5": "7276c4419e2455d5e367a8a2f34bb329"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:1634:IDX",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 107,
+   "op": "IDX",
+   "old": "0",
+   "new": "1",
+   "span": [
+    107,
+    61,
+    107,
+    62
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m4bc8d8ea",
+   "mutant": {
+    "mid": "m4bc8d8ea",
+    "site": "selfdrive/modeld/fill_model_msg.py:1634:IDX",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4bc8d8ea/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4bc8d8ea/selfdrive/modeld/fill_model_msg.py",
+    "md5": "9217f0361198e6a414f81a3660f8c923"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/parse_model_outputs.py:267:CRP",
+   "file": "selfdrive/modeld/parse_model_outputs.py",
+   "line": 6,
+   "op": "CRP",
+   "old": "11",
+   "new": "12",
+   "span": [
+    6,
+    36,
+    6,
+    38
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m33f0a68e",
+   "mutant": {
+    "mid": "m33f0a68e",
+    "site": "selfdrive/modeld/parse_model_outputs.py:267:CRP",
+    "file_map": "openpilot.selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m33f0a68e/selfdrive/modeld/parse_model_outputs.py;selfdrive.modeld.parse_model_outputs=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m33f0a68e/selfdrive/modeld/parse_model_outputs.py",
+    "md5": "6bfa3f6464ddb9abfead0bc46199da35"
+   }
+  },
+  {
+   "id": "selfdrive/modeld/fill_model_msg.py:114:NEG",
+   "file": "selfdrive/modeld/fill_model_msg.py",
+   "line": 152,
+   "op": "NEG",
+   "old": "vipc_frame_id % (2*ModelConstants.MODEL_RUN_FREQ) == 0",
+   "new": "not (vipc_frame_id % (2*ModelConstants.MODEL_RUN_FREQ) == 0)",
+   "span": [
+    152,
+    5,
+    152,
+    59
+   ],
+   "note": "",
+   "stratum": "perception",
+   "mid": "m3fb0f7f2",
+   "mutant": {
+    "mid": "m3fb0f7f2",
+    "site": "selfdrive/modeld/fill_model_msg.py:114:NEG",
+    "file_map": "openpilot.selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3fb0f7f2/selfdrive/modeld/fill_model_msg.py;selfdrive.modeld.fill_model_msg=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3fb0f7f2/selfdrive/modeld/fill_model_msg.py",
+    "md5": "481848c01c8830d5603289631fa0b623"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:1124:ROR",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 178,
+   "op": "ROR",
+   "old": ">",
+   "new": ">=",
+   "span": [
+    178,
+    92,
+    178,
+    93
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m03b2e413",
+   "mutant": {
+    "mid": "m03b2e413",
+    "site": "selfdrive/controls/controlsd.py:1124:ROR",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m03b2e413/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m03b2e413/selfdrive/controls/controlsd.py",
+    "md5": "3db339fc2df067ac222a946c5a9284c9"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:66:SGN",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 42,
+   "op": "SGN",
+   "old": "v_ego ** 2 * angle_steers * CV.DEG_TO_RAD / (CP.steerRatio * CP.wheelbase)",
+   "new": "-(v_ego ** 2 * angle_steers * CV.DEG_TO_RAD / (CP.steerRatio * CP.wheelbase))",
+   "span": [
+    42,
+    8,
+    42,
+    82
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m1801ad53",
+   "mutant": {
+    "mid": "m1801ad53",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:66:SGN",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1801ad53/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1801ad53/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "b7572baec6f13973aaeb1b8cc0e97e99"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:534:COR",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 106,
+   "op": "COR",
+   "old": "or",
+   "new": "and",
+   "span": [
+    106,
+    45,
+    106,
+    47
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m76df3f22",
+   "mutant": {
+    "mid": "m76df3f22",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:534:COR",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m76df3f22/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m76df3f22/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "34c98edd16fe5ccc10b315216f015b2f"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:101:AOR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 34,
+   "op": "AOR",
+   "old": "*",
+   "new": "/",
+   "span": [
+    34,
+    27,
+    34,
+    28
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "mf1d53903",
+   "mutant": {
+    "mid": "mf1d53903",
+    "site": "selfdrive/controls/lib/drive_helpers.py:101:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf1d53903/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf1d53903/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "960218b6472818c5d142d1c49c2bcdf8"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:224:AOR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 51,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    51,
+    51,
+    51,
+    52
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m698c62ea",
+   "mutant": {
+    "mid": "m698c62ea",
+    "site": "selfdrive/controls/lib/drive_helpers.py:224:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m698c62ea/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m698c62ea/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "5729b5fc8e3c3eea4e082b6b38a1e924"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:133:SGN",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 131,
+   "op": "SGN",
+   "old": "float(steeringAngleDeg)",
+   "new": "-(float(steeringAngleDeg))",
+   "span": [
+    131,
+    33,
+    131,
+    56
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "mf66bd2fd",
+   "mutant": {
+    "mid": "mf66bd2fd",
+    "site": "selfdrive/controls/controlsd.py:133:SGN",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf66bd2fd/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mf66bd2fd/selfdrive/controls/controlsd.py",
+    "md5": "46c7551fc93fa5e666ab23833f0f45e2"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:328:CRP",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 166,
+   "op": "CRP",
+   "old": "True",
+   "new": "False",
+   "span": [
+    166,
+    34,
+    166,
+    38
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m7139ebc6",
+   "mutant": {
+    "mid": "m7139ebc6",
+    "site": "selfdrive/controls/controlsd.py:328:CRP",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m7139ebc6/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m7139ebc6/selfdrive/controls/controlsd.py",
+    "md5": "9412fde363c4950ce4688454bab421d5"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:156:ROR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 20,
+   "op": "ROR",
+   "old": "!=",
+   "new": "==",
+   "span": [
+    20,
+    34,
+    20,
+    36
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "maa648e39",
+   "mutant": {
+    "mid": "maa648e39",
+    "site": "selfdrive/controls/lib/drive_helpers.py:156:ROR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/maa648e39/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/maa648e39/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "521f1732d5b3885b54f1556b6e9c2280"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:294:NEG",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 135,
+   "op": "NEG",
+   "old": "not isinstance(attr, Number)",
+   "new": "not (not isinstance(attr, Number))",
+   "span": [
+    135,
+    9,
+    135,
+    37
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m54d7c869",
+   "mutant": {
+    "mid": "m54d7c869",
+    "site": "selfdrive/controls/controlsd.py:294:NEG",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m54d7c869/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m54d7c869/selfdrive/controls/controlsd.py",
+    "md5": "62b5c205fd3f91a7485e13041049f838"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:220:ROR",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 54,
+   "op": "ROR",
+   "old": "==",
+   "new": "!=",
+   "span": [
+    54,
+    32,
+    54,
+    34
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m3dde19ec",
+   "mutant": {
+    "mid": "m3dde19ec",
+    "site": "selfdrive/controls/controlsd.py:220:ROR",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3dde19ec/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3dde19ec/selfdrive/controls/controlsd.py",
+    "md5": "865c0bd2794d771c7c2367cf212eba2d"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longcontrol.py:91:NEG",
+   "file": "selfdrive/controls/lib/longcontrol.py",
+   "line": 26,
+   "op": "NEG",
+   "old": "not starting_condition",
+   "new": "not (not starting_condition)",
+   "span": [
+    26,
+    9,
+    26,
+    31
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m4f0d3f1c",
+   "mutant": {
+    "mid": "m4f0d3f1c",
+    "site": "selfdrive/controls/lib/longcontrol.py:91:NEG",
+    "file_map": "openpilot.selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4f0d3f1c/selfdrive/controls/lib/longcontrol.py;selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4f0d3f1c/selfdrive/controls/lib/longcontrol.py",
+    "md5": "c8efdb8d14ecc79d3fe26507bcd4cdc7"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:284:AOR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 24,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    24,
+    26,
+    24,
+    27
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m77550fce",
+   "mutant": {
+    "mid": "m77550fce",
+    "site": "selfdrive/controls/lib/drive_helpers.py:284:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m77550fce/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m77550fce/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "349146d48c3fce58a1286f2230cbf03f"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longcontrol.py:149:ROR",
+   "file": "selfdrive/controls/lib/longcontrol.py",
+   "line": 34,
+   "op": "ROR",
+   "old": "==",
+   "new": "!=",
+   "span": [
+    34,
+    28,
+    34,
+    30
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "me108cb8e",
+   "mutant": {
+    "mid": "me108cb8e",
+    "site": "selfdrive/controls/lib/longcontrol.py:149:ROR",
+    "file_map": "openpilot.selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me108cb8e/selfdrive/controls/lib/longcontrol.py;selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me108cb8e/selfdrive/controls/lib/longcontrol.py",
+    "md5": "638cc26f7d8c4523e908c4e2102b2d26"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:126:SGN",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 115,
+   "op": "SGN",
+   "old": "float(self.LoC.update(CC.longActive, CS, long_plan.aTarget, long_plan.shouldStop, pid_accel_limits))",
+   "new": "-(float(self.LoC.update(CC.longActive, CS, long_plan.aTarget, long_plan.shouldStop, pid_accel_limits)))",
+   "span": [
+    115,
+    22,
+    115,
+    122
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "me1d5fc2b",
+   "mutant": {
+    "mid": "me1d5fc2b",
+    "site": "selfdrive/controls/controlsd.py:126:SGN",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me1d5fc2b/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/me1d5fc2b/selfdrive/controls/controlsd.py",
+    "md5": "ebeccf46e622c545a4a83a1c3e6e80bf"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:1131:CRP",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 43,
+   "op": "CRP",
+   "old": "2",
+   "new": "3",
+   "span": [
+    43,
+    45,
+    43,
+    46
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m0e9336d2",
+   "mutant": {
+    "mid": "m0e9336d2",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:1131:CRP",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0e9336d2/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m0e9336d2/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "74ee96395f251c9a474d722056bb8c31"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:111:AOR",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 42,
+   "op": "AOR",
+   "old": "/",
+   "new": "*",
+   "span": [
+    42,
+    50,
+    42,
+    51
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m3dfaeca1",
+   "mutant": {
+    "mid": "m3dfaeca1",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:111:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3dfaeca1/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3dfaeca1/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "66386dd0c5a68c66241b0c64040c9890"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:233:CRP",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 54,
+   "op": "CRP",
+   "old": "True",
+   "new": "False",
+   "span": [
+    54,
+    26,
+    54,
+    30
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m6db7a6ad",
+   "mutant": {
+    "mid": "m6db7a6ad",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:233:CRP",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m6db7a6ad/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m6db7a6ad/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "0450040b7588b6254aad526da53a10d8"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:363:ROR",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 200,
+   "op": "ROR",
+   "old": "==",
+   "new": "!=",
+   "span": [
+    200,
+    32,
+    200,
+    34
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m63beea2c",
+   "mutant": {
+    "mid": "m63beea2c",
+    "site": "selfdrive/controls/controlsd.py:363:ROR",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m63beea2c/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m63beea2c/selfdrive/controls/controlsd.py",
+    "md5": "2348eeeadbfa6790ef368603405b6370"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:157:SGN",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 188,
+   "op": "SGN",
+   "old": "self.curvature",
+   "new": "-(self.curvature)",
+   "span": [
+    188,
+    19,
+    188,
+    33
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m4691b057",
+   "mutant": {
+    "mid": "m4691b057",
+    "site": "selfdrive/controls/controlsd.py:157:SGN",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4691b057/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m4691b057/selfdrive/controls/controlsd.py",
+    "md5": "6ff2ef00e3d12f31307f2dcd17a8eed0"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longcontrol.py:148:NEG",
+   "file": "selfdrive/controls/lib/longcontrol.py",
+   "line": 29,
+   "op": "NEG",
+   "old": "starting_condition and CP.startingState",
+   "new": "not (starting_condition and CP.startingState)",
+   "span": [
+    29,
+    11,
+    29,
+    50
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m002a3552",
+   "mutant": {
+    "mid": "m002a3552",
+    "site": "selfdrive/controls/lib/longcontrol.py:148:NEG",
+    "file_map": "openpilot.selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m002a3552/selfdrive/controls/lib/longcontrol.py;selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m002a3552/selfdrive/controls/lib/longcontrol.py",
+    "md5": "5461f012123ecd62ee02c73103e8a0c8"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:1054:AOR",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 165,
+   "op": "AOR",
+   "old": "+",
+   "new": "-",
+   "span": [
+    165,
+    109,
+    165,
+    110
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m74af6edf",
+   "mutant": {
+    "mid": "m74af6edf",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:1054:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m74af6edf/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m74af6edf/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "9bfb320d49f27b1921fdd08f127a613c"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:102:AOR",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 32,
+   "op": "AOR",
+   "old": "-",
+   "new": "+",
+   "span": [
+    32,
+    31,
+    32,
+    32
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "mca3a43d8",
+   "mutant": {
+    "mid": "mca3a43d8",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:102:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mca3a43d8/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mca3a43d8/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "5718804a9b63f726f95593f6da7691f3"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:435:CRP",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 37,
+   "op": "CRP",
+   "old": "2",
+   "new": "3",
+   "span": [
+    37,
+    107,
+    37,
+    108
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m52616ac1",
+   "mutant": {
+    "mid": "m52616ac1",
+    "site": "selfdrive/controls/lib/drive_helpers.py:435:CRP",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m52616ac1/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m52616ac1/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "bc8a27655038059e67756d6f41aeadbf"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:921:CLR",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 95,
+   "op": "CLR",
+   "old": "max(self.CP.minSteerSpeed, 0.3)",
+   "new": "(self.CP.minSteerSpeed)",
+   "span": [
+    95,
+    33,
+    95,
+    64
+   ],
+   "note": "max",
+   "stratum": "control",
+   "mid": "m3e6682fb",
+   "mutant": {
+    "mid": "m3e6682fb",
+    "site": "selfdrive/controls/controlsd.py:921:CLR",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3e6682fb/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m3e6682fb/selfdrive/controls/controlsd.py",
+    "md5": "73a84d6292efd2686a3a246865e7c8c5"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:131:SGN",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 127,
+   "op": "SGN",
+   "old": "self.LaC.update(CC.latActive, CS, self.VM, lp,\n                                                       self.steer_limited_by_safety, self.desired_curvature,\n                                                       curvature_limited, lat_delay)",
+   "new": "-(self.LaC.update(CC.latActive, CS, self.VM, lp,\n                                                       self.steer_limited_by_safety, self.desired_curvature,\n                                                       curvature_limited, lat_delay))",
+   "span": [
+    127,
+    39,
+    129,
+    84
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m59eda4a9",
+   "mutant": {
+    "mid": "m59eda4a9",
+    "site": "selfdrive/controls/controlsd.py:131:SGN",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m59eda4a9/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m59eda4a9/selfdrive/controls/controlsd.py",
+    "md5": "f74d0ec23890e3c9fefb354fbeefee7a"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longcontrol.py:220:COR",
+   "file": "selfdrive/controls/lib/longcontrol.py",
+   "line": 29,
+   "op": "COR",
+   "old": "and",
+   "new": "or",
+   "span": [
+    29,
+    30,
+    29,
+    33
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m8e9e8a63",
+   "mutant": {
+    "mid": "m8e9e8a63",
+    "site": "selfdrive/controls/lib/longcontrol.py:220:COR",
+    "file_map": "openpilot.selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m8e9e8a63/selfdrive/controls/lib/longcontrol.py;selfdrive.controls.lib.longcontrol=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m8e9e8a63/selfdrive/controls/lib/longcontrol.py",
+    "md5": "9b6d01dd393eb2bafe286f4fdbaecb76"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:171:SGN",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 166,
+   "op": "SGN",
+   "old": "np.clip(output_a_target, accel_clip[0], accel_clip[1])",
+   "new": "-(np.clip(output_a_target, accel_clip[0], accel_clip[1]))",
+   "span": [
+    166,
+    27,
+    166,
+    81
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m9095366a",
+   "mutant": {
+    "mid": "m9095366a",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:171:SGN",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9095366a/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m9095366a/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "b6f0bb6b65847d29a1059054d27b9102"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:138:SGN",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 94,
+   "op": "SGN",
+   "old": "v_cruise_kph * CV.KPH_TO_MS",
+   "new": "-(v_cruise_kph * CV.KPH_TO_MS)",
+   "span": [
+    94,
+    15,
+    94,
+    42
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "mead0c659",
+   "mutant": {
+    "mid": "mead0c659",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:138:SGN",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mead0c659/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/mead0c659/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "54a3072a7a42dff78362278f8780aec2"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:295:NEG",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 138,
+   "op": "NEG",
+   "old": "not math.isfinite(attr)",
+   "new": "not (not math.isfinite(attr))",
+   "span": [
+    138,
+    9,
+    138,
+    32
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m1faeeedc",
+   "mutant": {
+    "mid": "m1faeeedc",
+    "site": "selfdrive/controls/controlsd.py:295:NEG",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1faeeedc/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1faeeedc/selfdrive/controls/controlsd.py",
+    "md5": "662a2978def2f8746929bf3cdec6c999"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/drive_helpers.py:410:AOR",
+   "file": "selfdrive/controls/lib/drive_helpers.py",
+   "line": 23,
+   "op": "AOR",
+   "old": "/",
+   "new": "*",
+   "span": [
+    23,
+    24,
+    23,
+    25
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "macef8656",
+   "mutant": {
+    "mid": "macef8656",
+    "site": "selfdrive/controls/lib/drive_helpers.py:410:AOR",
+    "file_map": "openpilot.selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/macef8656/selfdrive/controls/lib/drive_helpers.py;selfdrive.controls.lib.drive_helpers=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/macef8656/selfdrive/controls/lib/drive_helpers.py",
+    "md5": "3d6896983dd7b1f95aba3f33e5b6c20e"
+   }
+  },
+  {
+   "id": "selfdrive/controls/lib/longitudinal_planner.py:157:SGN",
+   "file": "selfdrive/controls/lib/longitudinal_planner.py",
+   "line": 135,
+   "op": "SGN",
+   "old": "np.interp(CONTROL_N_T_IDX, T_IDXS_MPC, self.mpc.v_solution)",
+   "new": "-(np.interp(CONTROL_N_T_IDX, T_IDXS_MPC, self.mpc.v_solution))",
+   "span": [
+    135,
+    32,
+    135,
+    91
+   ],
+   "note": "",
+   "stratum": "planning",
+   "mid": "m1413b396",
+   "mutant": {
+    "mid": "m1413b396",
+    "site": "selfdrive/controls/lib/longitudinal_planner.py:157:SGN",
+    "file_map": "openpilot.selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1413b396/selfdrive/controls/lib/longitudinal_planner.py;selfdrive.controls.lib.longitudinal_planner=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m1413b396/selfdrive/controls/lib/longitudinal_planner.py",
+    "md5": "6b5a24d10bcf8ab16a711e174bfaa8b5"
+   }
+  },
+  {
+   "id": "selfdrive/controls/controlsd.py:258:COR",
+   "file": "selfdrive/controls/controlsd.py",
+   "line": 96,
+   "op": "COR",
+   "old": "and",
+   "new": "or",
+   "span": [
+    96,
+    52,
+    96,
+    55
+   ],
+   "note": "",
+   "stratum": "control",
+   "mid": "m12ecb419",
+   "mutant": {
+    "mid": "m12ecb419",
+    "site": "selfdrive/controls/controlsd.py:258:COR",
+    "file_map": "openpilot.selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m12ecb419/selfdrive/controls/controlsd.py;selfdrive.controls.controlsd=/home/users/bhamadou/satrp_mutation/ads/store/openpilot/mutants/m12ecb419/selfdrive/controls/controlsd.py",
+    "md5": "b941bfbd9bff870047f31e9e2236445a"
+   }
+  }
+ ]
+}

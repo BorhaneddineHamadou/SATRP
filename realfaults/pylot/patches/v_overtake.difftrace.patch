@@ -1,0 +1,8 @@
+diff --git a/pylot/planning/planning_operator.py b/pylot/planning/planning_operator.py
+index 8593335..e9ebbf5 100644
+--- a/pylot/planning/planning_operator.py
++++ b/pylot/planning/planning_operator.py
+@@ -199,2 +199,3 @@ class PlanningOperator(erdos.Operator):
+         waypoints_stream.send(WaypointsMessage(timestamp, output_wps))
++        if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_overtake] ts=%d state=%s n_wps=%d ts0=%s\n' % (timestamp.coordinates[0], self._state, len(output_wps.waypoints), (list(output_wps.target_speeds)[:1] or [None])[0]))
+         waypoints_stream.send(erdos.WatermarkMessage(timestamp))

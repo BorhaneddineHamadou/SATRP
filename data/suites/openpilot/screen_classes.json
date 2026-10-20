@@ -1,0 +1,6221 @@
+{
+ "stack": "openpilot",
+ "floor": {
+  "26": 5.228903795909029,
+  "53": 31.31946553142062,
+  "61": 0.3247577252751906,
+  "89": 0.6848928598726397,
+  "105": 13.189736932399946,
+  "133": 0.8421921374984987
+ },
+ "base_trig": {
+  "26": false,
+  "53": false,
+  "61": true,
+  "89": false,
+  "105": false,
+  "133": false
+ },
+ "mutants": [
+  {
+   "mid": "maac6c40f",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:66:SDL",
+   "op": "SDL",
+   "stratum": "planning",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m449fd267",
+   "site": "selfdrive/modeld/constants.py:318:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.175447918186378,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.6248660026881,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.025307330234756762,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.3165697507887504,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.777099489499458,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.2422729555536285,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mf821d4c3",
+   "site": "selfdrive/modeld/constants.py:288:CSC:x05",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m27ada9d3",
+   "site": "selfdrive/controls/lib/latcontrol_torque.py:65:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.3338864250024432,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.98897884672467,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4999120824918397,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.226542042898738,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.988012997796552,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 27.563016077981906,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mfcd3f26f",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:742:CSC:x2",
+   "op": "CSC",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.35475667741795275,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.41327989494877,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4999523179110867,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7689070664249477,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 13.377210042692836,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.7149207014892096,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m87fa72cb",
+   "site": "selfdrive/modeld/fill_model_msg.py:49:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.051910356309948,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 24.512558922185427,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.028077781569247208,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7632442780693478,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 13.559003680666166,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 14.762067935077795,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m170fd28f",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:1124:CSC:x2",
+   "op": "CSC",
+   "stratum": "planning",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.4347935003037264,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 24.26071288548954,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": false,
+     "div": 0.08277279214541083,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.2401290703688326,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 13.189178203124518,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 10.605588022910483,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m138415af",
+   "site": "selfdrive/modeld/constants.py:143:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 1.5691306853586178,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 24.44325604169023,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.02516666883810857,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7678400009632027,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.42757016194678427,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.713801819424556,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m92052e2b",
+   "site": "selfdrive/modeld/constants.py:149:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m260fbab5",
+   "site": "selfdrive/controls/radard.py:1745:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 1.3155030950310949,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 22.458386298780713,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.026264017883568917,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7659260298890307,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.30365875960540617,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.699567532327773,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m67dacb8d",
+   "site": "selfdrive/modeld/fill_model_msg.py:1862:IDX",
+   "op": "IDX",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m522fbcb9",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:127:SDL",
+   "op": "SDL",
+   "stratum": "planning",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 4,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.4511752394224349,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 21.64729279235039,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5143806360619972,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.32850418819160093,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 29.58452726154539,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m3b0c0f56",
+   "site": "selfdrive/modeld/fill_model_msg.py:349:ROR",
+   "op": "ROR",
+   "stratum": "perception",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 12.568712099810446,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 31.177581037946275,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.0026862622798547162,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7478408065681182,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.32124351360322734,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 27.887308771186408,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m9cdcb8e2",
+   "site": "selfdrive/modeld/fill_model_msg.py:1441:IDX",
+   "op": "IDX",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m9fffde4c",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:837:IDX",
+   "op": "IDX",
+   "stratum": "planning",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 2,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 24.715816322042276,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 13.862690360097695,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": 26.660045129965248,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m73baf5a6",
+   "site": "selfdrive/modeld/parse_model_outputs.py:40:COR",
+   "op": "COR",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.17136708674525497,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 29.484349619902204,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3211865801748417,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 13.104203713629582,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 13.279628502023114,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.6571765755735477,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m7a24eb29",
+   "site": "selfdrive/controls/lib/drive_helpers.py:62:SGN",
+   "op": "SGN",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 5,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.2009792730649944,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 18.564393100255227,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": 3.513496117170774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 3.5893025052239724,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 4.675256281508147,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 27.36294851524627,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "med1c3f64",
+   "site": "selfdrive/modeld/constants.py:91:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mf6254ba0",
+   "site": "selfdrive/modeld/fill_model_msg.py:642:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mf0c8752a",
+   "site": "selfdrive/modeld/fill_model_msg.py:361:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.5317922316594563,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 33.60232726360619,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.025150071394013256,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 5.89027044293264,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 3.1884916911430805,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 1.188517941556263,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mac9a9c7f",
+   "site": "selfdrive/controls/controlsd.py:767:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 4,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 2.0766476478313978,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 30.982501968850862,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.02545927705868503,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5239717684213294,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 16.13078326381833,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.230252812582758,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m0245db8d",
+   "site": "selfdrive/modeld/constants.py:103:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 1,
+   "triggers": 1,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 5.398506998734668,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": 4.181989078242235,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m5f870464",
+   "site": "selfdrive/modeld/constants.py:75:AOR",
+   "op": "AOR",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "me539e48a",
+   "site": "selfdrive/modeld/parse_model_outputs.py:67:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 5,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": 3.513496117170774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": 14.92467386313097,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 29.58452726154539,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mffd221b5",
+   "site": "selfdrive/modeld/fill_model_msg.py:142:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m1476fa59",
+   "site": "selfdrive/modeld/constants.py:210:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 4.556265668064638,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.987239975383112,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.045086000514939134,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7495848413329629,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 1.2580863519332024,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 9.665261910757144,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m8a55c167",
+   "site": "selfdrive/controls/lib/drive_helpers.py:34:CSC:x2",
+   "op": "CSC",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 3,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.239349286993573,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 30.037704715961635,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.498936509624731,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 3.638376176116072,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 16.44248751557816,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.783452332858179,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m7d4b731e",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:123:SDL",
+   "op": "SDL",
+   "stratum": "planning",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mdc751610",
+   "site": "selfdrive/modeld/constants.py:293:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m21a62e68",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:254:SGN",
+   "op": "SGN",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 2.708125522617238,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.664905164829804,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.055943160685920125,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.2701076239105,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 1.6994559586299312,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 8.543416530802501,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mca764f0e",
+   "site": "selfdrive/controls/radard.py:467:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.1684316590039918,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 25.960865628969525,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.05776843383356785,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7673580935129083,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.846116263498974,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 15.814098439924292,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m5ca3c240",
+   "site": "selfdrive/modeld/fill_model_msg.py:1286:IDX",
+   "op": "IDX",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 2,
+   "triggers": 2,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 4.705918104079665,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 25.72725520958758,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": 26.660045129965248,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mcfd6227f",
+   "site": "selfdrive/controls/controlsd.py:166:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m9352dffa",
+   "site": "selfdrive/controls/lib/drive_helpers.py:30:CSC:x05",
+   "op": "CSC",
+   "stratum": "planning",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 1.7127070896171417,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 29.812035070176282,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.015492970069102142,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 3.5577783751751744,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 3.2004701520651833,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 0.7673319128823276,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m82ded1ae",
+   "site": "selfdrive/controls/radard.py:198:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.6645776812254187,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 22.269212937801964,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3013195035924761,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.5773723532109075,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 11.300986763451933,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 13.458351321137972,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mdfdf13ee",
+   "site": "selfdrive/controls/controlsd.py:479:CSC:x05",
+   "op": "CSC",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.534464207245281,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 30.94778846410353,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.05057792816782529,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.2681964628799782,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 18.882591030324413,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 4.49015109978601,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m2b1d358d",
+   "site": "selfdrive/controls/controlsd.py:110:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.5127598204379795,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 20.0493543537254,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.497602946955611,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 9.48309348366311,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.32502733732102923,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 0.6106812090623679,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3ccf50c0",
+   "site": "selfdrive/modeld/constants.py:99:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 8.652956874540969,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 0.36658968429545197,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3172973068219107,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7666896585250808,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 19.043339490700212,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.082322566669498,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m028b0577",
+   "site": "selfdrive/modeld/fill_model_msg.py:1806:IDX",
+   "op": "IDX",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m6df7722d",
+   "site": "selfdrive/controls/lib/longcontrol.py:281:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 5,
+   "triggers": 4,
+   "base_triggers": 0,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 25.722438666960706,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 3.540393799429134,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": 3.513496117170774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.7218874840556264,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.0125732521726567,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.0398421888024003,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m8f993856",
+   "site": "selfdrive/modeld/constants.py:159:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 4,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 4.396438986187838,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 21.072370721564365,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.044389268423636837,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7686286442175918,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 15.050393326628772,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 4.012060980171216,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m0f21cf31",
+   "site": "selfdrive/controls/controlsd.py:141:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 1,
+   "triggers": 1,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.32769392518063534,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": 4.1787722157457425,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "md8ca1979",
+   "site": "selfdrive/controls/controlsd.py:690:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.5393033903538299,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 32.006570155926035,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.025290331237176344,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5236686230508548,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 1.0019353124873551,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 0.5457973536537633,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m5f57d6ef",
+   "site": "selfdrive/modeld/parse_model_outputs.py:199:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mf27084ae",
+   "site": "selfdrive/modeld/fill_model_msg.py:66:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 3.5356236963870242,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 0.40207918387423774,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4999083510830897,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5245447096347731,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 20.307221010269394,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.1702088818960679,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m4a02de75",
+   "site": "selfdrive/modeld/fill_model_msg.py:107:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 4,
+   "triggers": 3,
+   "base_triggers": 0,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 1.8199982706819733,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 22.091141436834814,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 4.034303057176438,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.9895336374058645,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 29.58452726154539,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m53210d11",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:298:CLR",
+   "op": "CLR",
+   "stratum": "planning",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.8226463122682693,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 0.0024679559971533785,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.0008619375829182596,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 1.7643362597562438,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 21.40148070835144,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 2.3366585295853475,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3eac5a70",
+   "site": "selfdrive/controls/lib/drive_helpers.py:130:COR",
+   "op": "COR",
+   "stratum": "planning",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 6,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.7558696038193388,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 3.545868444209933,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3153599530360062,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.8994915087081516,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.19950114357787,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.4811024458125241,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m666d85bd",
+   "site": "selfdrive/controls/controlsd.py:169:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mf4c4a88a",
+   "site": "selfdrive/modeld/fill_model_msg.py:1869:IDX",
+   "op": "IDX",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 5,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.722438666960706,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": 2.2886259947166883,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": 26.660045129965248,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3c0a65b2",
+   "site": "selfdrive/modeld/constants.py:297:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3e98ae4d",
+   "site": "selfdrive/controls/controlsd.py:103:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.9335611052935424,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 34.504198992652164,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.04463795854752142,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 1.3031926993603675,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.7096157958968711,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 0.9355547564669631,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mb9831999",
+   "site": "selfdrive/controls/radard.py:1237:CSC:x05",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 1,
+   "divergent": 3,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 24.726076039477512,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 27.277458471128654,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.510392664976215,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 3.587810621443336,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.2799672735368575,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.3772262962731046,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m5ada1624",
+   "site": "selfdrive/controls/controlsd.py:228:SDL",
+   "op": "SDL",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m0e5a58c0",
+   "site": "selfdrive/controls/radard.py:202:SDL",
+   "op": "SDL",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mdfcb81e3",
+   "site": "selfdrive/modeld/constants.py:97:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m064f70bc",
+   "site": "selfdrive/modeld/fill_model_msg.py:522:AOR",
+   "op": "AOR",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 4.0793719027621265,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 36.2423315475676,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.053767257740284166,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5625692694812212,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 18.885857216516314,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 0.6135517541153771,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mc69f4ad1",
+   "site": "selfdrive/modeld/constants.py:363:CSC:x2",
+   "op": "CSC",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 1.7819148798499085,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 0.00043537345832579823,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.499919870745162,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.3335015189502784,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 1.9234327891580782,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 17.270973405957136,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mc80b3e5f",
+   "site": "selfdrive/controls/lib/latcontrol_torque.py:74:CSC:x05",
+   "op": "CSC",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 24.052898508127306,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 26.062983999463768,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3054720526294805,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 24.778453156195315,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 4.5530691255947096,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.089265132924664,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "md936d0ee",
+   "site": "selfdrive/controls/lib/drive_helpers.py:249:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 4,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 1.2300906698460086,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 5.490629031670974,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.2730573004484501,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 3.3989574315840345,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 20.155774249833044,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 0.7008551151088063,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m45bda936",
+   "site": "selfdrive/controls/lib/drive_helpers.py:431:CSC:x05",
+   "op": "CSC",
+   "stratum": "planning",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 2,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 8.417362839295619,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 21.21987957116329,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": 26.660045129965248,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m9ee5b20f",
+   "site": "selfdrive/controls/radard.py:187:NEG",
+   "op": "NEG",
+   "stratum": "perception",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 6,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.602564377274629,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 0.6206013457743518,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.28269105996858274,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.7984582504773367,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.3046502658340098,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.1168322994117394,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m291fab75",
+   "site": "selfdrive/modeld/constants.py:157:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.4993936305508645,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 33.57350765738229,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.025432968256892466,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5856809798051202,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 1.6878282967212388,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.0608264910192344,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m66807394",
+   "site": "selfdrive/controls/controlsd.py:330:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 4,
+   "triggers": 1,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.3314534994623062,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 13.95928783349929,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5339796882827845,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.2215401476031972,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 29.58452726154539,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "me17b83f6",
+   "site": "selfdrive/controls/lib/latcontrol_torque.py:71:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 3,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 24.72404768985928,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.291159283722028,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.026371629443272714,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 25.46811462118479,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.9769670902019968,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 3.0002470799638865,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m4bc8d8ea",
+   "site": "selfdrive/modeld/fill_model_msg.py:1634:IDX",
+   "op": "IDX",
+   "stratum": "perception",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m33f0a68e",
+   "site": "selfdrive/modeld/parse_model_outputs.py:267:CRP",
+   "op": "CRP",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.3908767446727038,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 32.76024428046801,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.04244483702555724,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5925819572669462,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.661274738401803,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 12.977469203961078,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m3fb0f7f2",
+   "site": "selfdrive/modeld/fill_model_msg.py:114:NEG",
+   "op": "NEG",
+   "stratum": "perception",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.200930780232063,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 6.789271898203534,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4998821685116837,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7720890402720967,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.74073087875785,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 15.3735735904508,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m03b2e413",
+   "site": "selfdrive/controls/controlsd.py:1124:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 1.2133736567251838,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 35.81369486070222,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3190841745562283,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 3.840486749871688,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 2.1448590350929666,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 1.9407390590461868,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m1801ad53",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:66:SGN",
+   "op": "SGN",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 24.463135813793727,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 38.165329671118094,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3004849619190017,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.7816696773092807,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 13.959107158539403,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 5.24541780641281,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m76df3f22",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:534:COR",
+   "op": "COR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.14522340681954443,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 38.1509390524722,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.30724611254227285,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 3.998683987762612,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 17.45858439452818,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 6.9662244447904,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mf1d53903",
+   "site": "selfdrive/controls/lib/drive_helpers.py:101:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 24.485954154831255,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 34.44382674477285,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4989785394532915,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 1.238983171513323,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 19.545382444043906,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 1.4983314114375583,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m698c62ea",
+   "site": "selfdrive/controls/lib/drive_helpers.py:224:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 4.085798382886076,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 40.91795830858057,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3130920174478229,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 3.4442352023668765,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 22.616130684578717,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 18.843708324815744,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "mf66bd2fd",
+   "site": "selfdrive/controls/controlsd.py:133:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.7957350892292987,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 13.261537889873367,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.31813617877550243,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 24.467187410322207,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.66467544854235,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 0.6884811828170996,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m7139ebc6",
+   "site": "selfdrive/controls/controlsd.py:328:CRP",
+   "op": "CRP",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 3,
+   "n_valid": 1,
+   "triggers": 1,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.6893265610582375,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": 4.181989078242235,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": 0.3065054747583707,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": 1.012466299985564,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 1.0039570510650297,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "maa648e39",
+   "site": "selfdrive/controls/lib/drive_helpers.py:156:ROR",
+   "op": "ROR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 0.8247907122519679,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 30.965149242502587,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.002695625475779987,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7700401671544013,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 16.18677816559366,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 0.7641661555309429,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m54d7c869",
+   "site": "selfdrive/controls/controlsd.py:294:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3dde19ec",
+   "site": "selfdrive/controls/controlsd.py:220:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m4f0d3f1c",
+   "site": "selfdrive/controls/lib/longcontrol.py:91:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.3428034616358442,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 23.99656324662393,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.0025391006309366864,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 25.43084937629306,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 12.258709684566488,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 2.5925899593651396,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m77550fce",
+   "site": "selfdrive/controls/lib/drive_helpers.py:284:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 5,
+   "triggers": 3,
+   "base_triggers": 0,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 3.1649526890614528,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 3.9483008500424437,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": 3.513496117170774,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 25.073853794323735,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 12.833329305925256,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 0.7274955132875459,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "me108cb8e",
+   "site": "selfdrive/controls/lib/longcontrol.py:149:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 2,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 2.521098596775692,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 31.305601653975575,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4989843737144124,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.2345919422231615,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.4607080453625902,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 3.4457731404455014,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "me1d5fc2b",
+   "site": "selfdrive/controls/controlsd.py:126:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.5876553347648164,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 2.2714134905494086,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.12695464714836663,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.6625371345733194,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.0824239491047847,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.113065946400258,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m0e9336d2",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:1131:CRP",
+   "op": "CRP",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 4,
+   "triggers": 1,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": false,
+     "div": 2.6435816046887575,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 20.28584830483842,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.7722345497981297,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.30610744205777574,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 29.58452726154539,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m3dfaeca1",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:111:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 2,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 3.5350452092804643,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 14.969636557963396,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": false,
+     "div": 0.07615907325004159,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 25.430825442576076,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 3.752237780808431,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 10.427644911718929,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m6db7a6ad",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:233:CRP",
+   "op": "CRP",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 4,
+   "triggers": 2,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.3746911411888611,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 34.12016661579761,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.5996995846369348,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.49945642534681906,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": 29.58452726154539,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m63beea2c",
+   "site": "selfdrive/controls/controlsd.py:363:ROR",
+   "op": "ROR",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m4691b057",
+   "site": "selfdrive/controls/controlsd.py:157:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.4295929912822854,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 33.288507582809224,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.02542803466283314,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 0.5277273600949504,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 16.01963575025571,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 1.6449886940387466,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m002a3552",
+   "site": "selfdrive/controls/lib/longcontrol.py:148:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 6,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.43923154768476413,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 0.574889956114574,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.31414161359791976,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.6034741325312719,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.2293141619162882,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.1982380127100731,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m74af6edf",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:1054:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 2,
+   "triggers": 2,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 7.859997811975054,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 4.340920470576677,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": 26.660045129965248,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mca3a43d8",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:102:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 1,
+   "triggers": 1,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 2.3213389429505433,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": 4.181989078242235,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m52616ac1",
+   "site": "selfdrive/controls/lib/drive_helpers.py:435:CRP",
+   "op": "CRP",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.7190715182133984,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 33.73167814989692,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.05816160313336192,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 1.2450368542134096,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 9.546077206944423,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 1.9185764688561704,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m3e6682fb",
+   "site": "selfdrive/controls/controlsd.py:921:CLR",
+   "op": "CLR",
+   "stratum": "control",
+   "cls": "silent",
+   "n_done": 6,
+   "n_valid": 3,
+   "triggers": 1,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 3.4989319232054243,
+     "base_trig": true,
+     "above_floor": true
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 7.261425306914037,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 2.004086420465736,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m59eda4a9",
+   "site": "selfdrive/controls/controlsd.py:131:SGN",
+   "op": "SGN",
+   "stratum": "control",
+   "cls": "stillborn",
+   "n_done": 6,
+   "n_valid": 0,
+   "triggers": 0,
+   "base_triggers": 0,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": false,
+     "trig": null,
+     "div": 25.971245780714604,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 53,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": false,
+     "trig": null,
+     "div": NaN,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m8e9e8a63",
+   "site": "selfdrive/controls/lib/longcontrol.py:220:COR",
+   "op": "COR",
+   "stratum": "control",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 6,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.8481346140013225,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 0.6371514729042986,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.2751506856145145,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.8339681370818123,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.3861873204989654,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.4567659135726978,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m9095366a",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:171:SGN",
+   "op": "SGN",
+   "stratum": "planning",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.8485428224835388,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 0.649485537971831,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3101865865035313,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": false,
+     "div": 26.658265503436777,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.3862849149337322,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.456325458647674,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "mead0c659",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:138:SGN",
+   "op": "SGN",
+   "stratum": "planning",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 6,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 3.6008667645439685,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 0.6249146162464673,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.319361168982857,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 3.624314464394608,
+     "base_trig": false,
+     "above_floor": true
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.4864210497216823,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.600268495292941,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m1faeeedc",
+   "site": "selfdrive/controls/controlsd.py:295:NEG",
+   "op": "NEG",
+   "stratum": "control",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 6,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.7904491180835446,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": true,
+     "div": 0.6371514729042986,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3065054747583707,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.9792676231329388,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.3861873204989654,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.4567659135726978,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "macef8656",
+   "site": "selfdrive/controls/lib/drive_helpers.py:410:AOR",
+   "op": "AOR",
+   "stratum": "planning",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 1.8288357978824017,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 15.85633157117522,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.32505143460859726,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 1.461872238181748,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.8503746645711066,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 8.698507264818536,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  },
+  {
+   "mid": "m1413b396",
+   "site": "selfdrive/controls/lib/longitudinal_planner.py:157:SGN",
+   "op": "SGN",
+   "stratum": "planning",
+   "cls": "mass-fail",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 5,
+   "base_triggers": 1,
+   "divergent": 0,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 0.8461073548348947,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 2.1530274255338244,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.3209324428158434,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 1.0480030415671482,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": true,
+     "div": 1.4728313416933276,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": true,
+     "div": 1.5925951387035093,
+     "base_trig": false,
+     "above_floor": false
+    }
+   ]
+  },
+  {
+   "mid": "m12ecb419",
+   "site": "selfdrive/controls/controlsd.py:258:COR",
+   "op": "COR",
+   "stratum": "control",
+   "cls": "partial",
+   "n_done": 6,
+   "n_valid": 6,
+   "triggers": 3,
+   "base_triggers": 1,
+   "divergent": 1,
+   "rows": [
+    {
+     "sid": 26,
+     "valid": true,
+     "trig": true,
+     "div": 2.4471062250083047,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 53,
+     "valid": true,
+     "trig": false,
+     "div": 37.24447830718052,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 61,
+     "valid": true,
+     "trig": true,
+     "div": 0.0434975909397568,
+     "base_trig": true,
+     "above_floor": false
+    },
+    {
+     "sid": 89,
+     "valid": true,
+     "trig": true,
+     "div": 0.8399391946415007,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 105,
+     "valid": true,
+     "trig": false,
+     "div": 0.7518374818817736,
+     "base_trig": false,
+     "above_floor": false
+    },
+    {
+     "sid": 133,
+     "valid": true,
+     "trig": false,
+     "div": 27.35528021940549,
+     "base_trig": false,
+     "above_floor": true
+    }
+   ]
+  }
+ ]
+}

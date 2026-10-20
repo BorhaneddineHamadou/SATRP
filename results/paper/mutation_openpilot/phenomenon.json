@@ -1,0 +1,174 @@
+{
+ "instance": "mutation_openpilot",
+ "runs": 21360,
+ "configs": 28,
+ "scenarios": 30,
+ "cells": 840,
+ "seeds_per_cell": 24,
+ "base_seeds": 40,
+ "base": {
+  "mean_q": 0.2808333333333334,
+  "q0": "0",
+  "q_intermediate": "30",
+  "q_flaky": "20",
+  "q_ge85": "1",
+  "self_disagree": 0.3499583333333334
+ },
+ "cells_mut": {
+  "intermediate": 806,
+  "flaky": 533,
+  "always_pass": 20,
+  "always_fail": 14,
+  "self_disagree": 0.325400958994709,
+  "self_disagree_gt_0": 0.9595238095238096
+ },
+ "gt_full": {
+  "cells": 118,
+  "flaky": 44,
+  "regressing_cfgs": 14,
+  "zero_cfgs": 14,
+  "cells_per_regressing_cfg_min": 1,
+  "cells_per_regressing_cfg_max": 29,
+  "cells_per_regressing_cfg_median": 1.0,
+  "mean_effect": 0.5637711864406779,
+  "per_config": {
+   "MUT:m002a3552": 29,
+   "MUT:m03b2e413": 0,
+   "MUT:m138415af": 1,
+   "MUT:m1476fa59": 1,
+   "MUT:m170fd28f": 0,
+   "MUT:m260fbab5": 1,
+   "MUT:m27ada9d3": 0,
+   "MUT:m291fab75": 1,
+   "MUT:m3b0c0f56": 1,
+   "MUT:m3ccf50c0": 0,
+   "MUT:m3dfaeca1": 0,
+   "MUT:m3e6682fb": 0,
+   "MUT:m449fd267": 0,
+   "MUT:m4691b057": 0,
+   "MUT:m522fbcb9": 1,
+   "MUT:m52616ac1": 1,
+   "MUT:m77550fce": 29,
+   "MUT:m7a24eb29": 0,
+   "MUT:m82ded1ae": 0,
+   "MUT:m9095366a": 29,
+   "MUT:mac9a9c7f": 0,
+   "MUT:macef8656": 1,
+   "MUT:mc80b3e5f": 2,
+   "MUT:mca764f0e": 0,
+   "MUT:md8ca1979": 0,
+   "MUT:md936d0ee": 20,
+   "MUT:mf27084ae": 0,
+   "MUT:mfcd3f26f": 1
+  },
+  "deterministic_cells": 74,
+  "weak_cells": 0
+ },
+ "gt_sep": {
+  "cells": 119,
+  "flaky": 43,
+  "regressing_cfgs": 16,
+  "zero_cfgs": 12,
+  "cells_per_regressing_cfg_min": 1,
+  "cells_per_regressing_cfg_max": 29,
+  "cells_per_regressing_cfg_median": 1.5,
+  "mean_effect": 0.5764005602240897,
+  "per_config": {
+   "MUT:m002a3552": 29,
+   "MUT:m03b2e413": 0,
+   "MUT:m138415af": 1,
+   "MUT:m1476fa59": 2,
+   "MUT:m170fd28f": 1,
+   "MUT:m260fbab5": 0,
+   "MUT:m27ada9d3": 0,
+   "MUT:m291fab75": 1,
+   "MUT:m3b0c0f56": 1,
+   "MUT:m3ccf50c0": 0,
+   "MUT:m3dfaeca1": 0,
+   "MUT:m3e6682fb": 1,
+   "MUT:m449fd267": 2,
+   "MUT:m4691b057": 0,
+   "MUT:m522fbcb9": 1,
+   "MUT:m52616ac1": 0,
+   "MUT:m77550fce": 28,
+   "MUT:m7a24eb29": 0,
+   "MUT:m82ded1ae": 0,
+   "MUT:m9095366a": 29,
+   "MUT:mac9a9c7f": 2,
+   "MUT:macef8656": 2,
+   "MUT:mc80b3e5f": 0,
+   "MUT:mca764f0e": 1,
+   "MUT:md8ca1979": 1,
+   "MUT:md936d0ee": 17,
+   "MUT:mf27084ae": 0,
+   "MUT:mfcd3f26f": 0
+  },
+  "deterministic_cells": 76,
+  "weak_cells": 0
+ },
+ "null": {
+  "full": [
+   21.659,
+   4.548705200383951
+  ],
+  "sep": [
+   15.849,
+   3.9240538987124016
+  ],
+  "empirical_odd_vs_even": 2,
+  "full_rate": 0.02578452380952381,
+  "sep_rate": 0.018867857142857145
+ },
+ "screen": {
+  "candidates": 100,
+  "classes": {
+   "stillborn": 34,
+   "partial": 45,
+   "silent": 7,
+   "mass-fail": 14
+  },
+  "selected": 28,
+  "selected_counts": {
+   "partial": 17,
+   "silent": 6,
+   "mass-fail": 3,
+   "borderline": 2
+  },
+  "per_op": {
+   "CSC": 6,
+   "CRP": 6,
+   "SGN": 3,
+   "AOR": 4,
+   "ROR": 2,
+   "SDL": 5,
+   "CLR": 1,
+   "NEG": 1
+  },
+  "per_file": {
+   "selfdrive/controls/lib/longitudinal_planner.py": 5,
+   "selfdrive/controls/controlsd.py": 5,
+   "selfdrive/controls/lib/drive_helpers.py": 5,
+   "selfdrive/controls/lib/latcontrol_torque.py": 2,
+   "selfdrive/modeld/constants.py": 5,
+   "selfdrive/modeld/fill_model_msg.py": 2,
+   "selfdrive/controls/radard.py": 3,
+   "selfdrive/controls/lib/longcontrol.py": 1
+  },
+  "selected_by_screen_class": {
+   "partial": 19,
+   "silent": 6,
+   "mass-fail": 3
+  },
+  "zero_gt_by_class": {
+   "partial": 10,
+   "silent": 3,
+   "mass-fail": 1
+  }
+ },
+ "twins": {
+  "pairs": 6,
+  "disagree": 2,
+  "rate": 0.3333333333333333,
+  "trace_floor_median": 3.035547966703764
+ }
+}

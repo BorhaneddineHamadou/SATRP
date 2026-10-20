@@ -1,0 +1,22 @@
+diff --git a/pylot/planning/world.py b/pylot/planning/world.py
+index 7b1859e..d70b983 100644
+--- a/pylot/planning/world.py
++++ b/pylot/planning/world.py
+@@ -167,7 +167,7 @@ class World(object):
+                 if not any(
+                         map(
+                             lambda transform: self._map.are_on_same_lane(
+-                                self.ego_transform.location, transform.location
++                                transform.location, self.ego_transform.location
+                             ), obstacle.predicted_trajectory)):
+                     # The person is not going to be on the same lane.
+                     self._logger.debug(
+@@ -216,7 +216,7 @@ class World(object):
+                 if not any(
+                         map(
+                             lambda transform: self._map.are_on_same_lane(
+-                                self.ego_transform.location, transform.location
++                                transform.location, self.ego_transform.location
+                             ), obstacle.predicted_trajectory)):
+                     # The vehicle is not going to be on the same lane as ego.
+                     self._logger.debug(

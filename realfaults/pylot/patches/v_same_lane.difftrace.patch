@@ -1,0 +1,12 @@
+diff --git a/pylot/planning/world.py b/pylot/planning/world.py
+index 7b1859e..ef0990c 100644
+--- a/pylot/planning/world.py
++++ b/pylot/planning/world.py
+@@ -171,2 +171,3 @@ class World(object):
+                             ), obstacle.predicted_trajectory)):
++                    if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_same_lane] ignore %s %d ego=(%.1f,%.1f) obs=(%.1f,%.1f)\n' % (obstacle.label, obstacle.id, self.ego_transform.location.x, self.ego_transform.location.y, obstacle.transform.location.x, obstacle.transform.location.y))
+                     # The person is not going to be on the same lane.
+@@ -220,2 +221,3 @@ class World(object):
+                             ), obstacle.predicted_trajectory)):
++                    if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_same_lane] ignore %s %d ego=(%.1f,%.1f) obs=(%.1f,%.1f)\n' % (obstacle.label, obstacle.id, self.ego_transform.location.x, self.ego_transform.location.y, obstacle.transform.location.x, obstacle.transform.location.y))
+                     # The vehicle is not going to be on the same lane as ego.

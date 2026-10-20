@@ -1,0 +1,19 @@
+diff --git a/pylot/planning/world.py b/pylot/planning/world.py
+index 7b1859e..a009daf 100644
+--- a/pylot/planning/world.py
++++ b/pylot/planning/world.py
+@@ -75,12 +75,9 @@ class World(object):
+             # We can't just check if forward_speed is zero because localization
+             # noise can cause the forward_speed to be non zero even when the
+             # ego is stopped.
+-            self._num_ticks_stopped += 1
+-            if self._num_ticks_stopped > 10:
+-                self._distance_since_last_full_stop = 0
+-                self._last_stop_ego_location = self.ego_transform.location
++            self._distance_since_last_full_stop = 0
++            self._last_stop_ego_location = self.ego_transform.location
+         else:
+-            self._num_ticks_stopped = 0
+             if self._last_stop_ego_location is not None:
+                 self._distance_since_last_full_stop = \
+                     self.ego_transform.location.distance(

@@ -1,0 +1,417 @@
+{
+ "base_commit": "8218ca97c1274627a4413bd3c29c6e0e21cc606c",
+ "base_branch": "challenge",
+ "base_date": "2020-10-27 (branch head; pushed 2020-11-16)",
+ "repo": "https://github.com/erdos-project/pylot.git",
+ "built": "2026-10-13",
+ "difftrace_env": "PYLOT_DIFFTRACE=1",
+ "difftrace_prefix": "[difftrace <vid>]",
+ "recommended_order": [
+  "v_overtake",
+  "v_speed7",
+  "v_same_lane",
+  "v_wp_index",
+  "v_junction_stop",
+  "v_goal_route0",
+  "v_wp_index_pre",
+  "v_tl_perfect"
+ ],
+ "versions": [
+  {
+   "vid": "v_wp_index",
+   "fix_commit": "4891c00",
+   "fix_date": "2020-11-12",
+   "introduced_by": "793b0c2",
+   "direction": "revert fix (re-introduce 793b0c2 max-clamp bug)",
+   "mechanism": "Waypoints._get_index clamps with max(len-1, min_index) -> ALWAYS returns the LAST waypoint of the list instead of the first waypoint >= min_distance (5 m). Used by PID steering (get_angle), PID target speed (get_target_speed) and World.stop_for_agents (get_vector/get_angle -> obstacle angle frame).",
+   "expected_pre_behaviour": "Steering look-ahead = last planner waypoint (~10 m ahead at steady state, because the behaviour planner's goal sits ~10 m ahead with the dense 1 m route) instead of ~5 m; obstacle-angle reference vector points to the same far waypoint. On a straight lane: slower lateral convergence; on curves: corner cutting. Target speed unaffected (uniform per message).",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "CutIn",
+    "Oncoming",
+    "Crossing"
+   ],
+   "negative_control_templates": [],
+   "covering_note": "Mechanism is template-independent (fires every control tick); expected effect WEAK on a mostly-straight lane - look for lateral deviation on the curved segment, not collisions. No clean negative control; use the difftrace (idx differs every tick) as deployment proof.",
+   "predicted_metric": "off-lane / lateral deviation (weak); no collision predicted",
+   "difftrace_var": "index returned by Waypoints._get_index inside get_vector (fix: first idx with dist>=5 m; version: len-1)",
+   "status": "ready",
+   "expected_effect_size": "weak",
+   "files": [
+    "pylot/planning/waypoints.py"
+   ],
+   "lines_changed": {
+    "plus": 3,
+    "minus": 4
+   },
+   "patch": "v_wp_index.patch",
+   "difftrace_patch": "v_wp_index.difftrace.patch",
+   "difftrace_context_lines": 3,
+   "difftrace_files": [
+    "pylot/planning/waypoints.py"
+   ],
+   "md5_base": {
+    "pylot/planning/waypoints.py": "037a3f66b7054dcf7abd5452b56d507c"
+   },
+   "md5_version": {
+    "pylot/planning/waypoints.py": "d15050bd0b3bb90cd7d93fd73e8262c9"
+   },
+   "tree": "v_wp_index/"
+  },
+  {
+   "vid": "v_wp_index_pre",
+   "fix_commit": "4891c00",
+   "fix_date": "2020-11-12",
+   "introduced_by": null,
+   "direction": "forward chronology: _get_index as it was BEFORE 793b0c2 (min-clamp; raises ValueError when no waypoint is >= min_distance)",
+   "mechanism": "Pre-793b0c2 code: wp_index = min(len-1, min_index); when no waypoint is >= 5 m away min_index=-1 -> ValueError('No more waypoints'). 4891c00's fix instead returns the last waypoint. (793b0c2 bug state is v_wp_index; the pre-state DIFFERS from the fix, so this is a distinct version.)",
+   "expected_pre_behaviour": "Identical to base except when ALL waypoints in the planner list are < 5 m from the ego: then World.stop_for_agents returns speed 0 and the PID brakes (both catch ValueError). Happens for ~4 ticks at route start (ego is stationary anyway) and in the final ~5 m before the route goal.",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [],
+   "negative_control_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "CutIn",
+    "Oncoming",
+    "Crossing"
+   ],
+   "covering_note": "Needs all remaining waypoints within 5 m: only the last 5 m of the route (if the scenario is not terminated earlier by the leaderboard completion radius). Likely inert in our suite.",
+   "predicted_metric": "stuck in last 5 m (route completion), otherwise none",
+   "difftrace_var": "index returned by _get_index inside get_vector ('ValueError' string in version when it raises)",
+   "status": "likely_inert",
+   "expected_effect_size": "none except route end",
+   "files": [
+    "pylot/planning/waypoints.py"
+   ],
+   "lines_changed": {
+    "plus": 3,
+    "minus": 4
+   },
+   "patch": "v_wp_index_pre.patch",
+   "difftrace_patch": "v_wp_index_pre.difftrace.patch",
+   "difftrace_context_lines": 3,
+   "difftrace_files": [
+    "pylot/planning/waypoints.py"
+   ],
+   "md5_base": {
+    "pylot/planning/waypoints.py": "037a3f66b7054dcf7abd5452b56d507c"
+   },
+   "md5_version": {
+    "pylot/planning/waypoints.py": "3f6505cac3e2dead6f3359f40972bad7"
+   },
+   "tree": "v_wp_index_pre/"
+  },
+  {
+   "vid": "v_same_lane",
+   "fix_commit": "760f137",
+   "fix_date": "2020-07-18",
+   "introduced_by": null,
+   "direction": "revert fix (swap are_on_same_lane argument order in the predicted-trajectory check, stop_person + stop_vehicle)",
+   "mechanism": "World.stop_person/stop_vehicle: when the obstacle's CURRENT location is not on the ego lane, the fallback checks whether ANY predicted location is on the ego lane via HDMap.are_on_same_lane(a, b). The function is asymmetric only in the junction rule: 'if waypoint_a.is_junction and not waypoint_b.is_junction: return False' (different road_id case). Fixed order (ego, pred): ignore obstacle when EGO is in the junction and the predicted point is outside. Bug order (pred, ego): ignore obstacle when the PREDICTED point is in the junction and the ego is outside -> an approaching ego ignores traffic crossing inside the junction.",
+   "expected_pre_behaviour": "Ego approaching a junction ignores a vehicle/person whose predicted path lies inside the junction (no braking) -> collision risk; conversely, while inside a junction it brakes for off-junction obstacles on other roads it should ignore.",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [
+    "Crossing"
+   ],
+   "negative_control_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "Oncoming",
+    "CutIn"
+   ],
+   "covering_note": "Fires ONLY if road_id differs AND exactly one of (ego, predicted point) is in a junction: i.e. the Crossing vehicle must cross at a junction. Mid-block crossing (same road_id, or off-road -> no DRIVING waypoint) is symmetric -> inert. LeadDecel/LeadStopped: same lane -> fallback never evaluated. Oncoming: same road, different lane_id -> symmetric. CutIn: adjacent lane, same road -> symmetric.",
+   "predicted_metric": "collision with crossing vehicle (approach phase); unnecessary braking inside junction",
+   "difftrace_var": "'ignore <label> <id>' event emitted when the fallback decides to ignore an obstacle (same statement at both call sites)",
+   "status": "ready",
+   "expected_effect_size": "moderate if Crossing is at a junction, else inert",
+   "files": [
+    "pylot/planning/world.py"
+   ],
+   "lines_changed": {
+    "plus": 2,
+    "minus": 2
+   },
+   "patch": "v_same_lane.patch",
+   "difftrace_patch": "v_same_lane.difftrace.patch",
+   "difftrace_context_lines": 1,
+   "difftrace_files": [
+    "pylot/planning/world.py"
+   ],
+   "md5_base": {
+    "pylot/planning/world.py": "2bfab7f963a1fb9523029116f8e8163d"
+   },
+   "md5_version": {
+    "pylot/planning/world.py": "973f066dbcee82d231adfbd4898569e7"
+   },
+   "tree": "v_same_lane/"
+  },
+  {
+   "vid": "v_tl_perfect",
+   "fix_commit": "02c8034",
+   "fix_date": "2020-07-30",
+   "introduced_by": null,
+   "direction": "revert behavioural hunk (drop the bounding_box-is-None hard stop); 09901a8 crash-fix hunk KEPT",
+   "mechanism": "World.stop_traffic_light, American-style branch (height_delta > 4): fixed code forces speed_factor_tl=0 when dist_to_intersection<12 and (bbox is None OR bbox area>400). Version: requires bbox area > 400 (would raise AttributeError when bbox is None, i.e. on the --simulator_traffic_light_detection path). Only the world.py hunk is re-expressed; 02c8034's ERDOSAgent visible-TL filter now lives in ERDOSBaseAgent.send_perfect_detections (moved by 52b8570) and its max_angle /4->/3 tweak is not re-expressed.",
+   "expected_pre_behaviour": "On the perfect-TL path with a RED/YELLOW American-style light within 12 m of the junction: AttributeError in the planner (crash / no control) instead of a hard stop. On the camera path (default conf) bbox is never None -> no behavioural difference at all.",
+   "path_default": false,
+   "path_gtperception": false,
+   "covering_templates": [],
+   "negative_control_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "CutIn",
+    "Oncoming",
+    "Crossing"
+   ],
+   "covering_note": "Unreachable in our suite: lights frozen GREEN -> stop_traffic_light returns (True, 1) before this code; the hunk is inside the American-style branch (height_delta>4) which Town01 pole lights do not satisfy; and bbox is None only with --simulator_traffic_light_detection, which neither conf sets.",
+   "predicted_metric": "none in suite (crash/no-control on perfect-TL path with red light elsewhere)",
+   "difftrace_var": "speed_factor_tl per traffic light after the style-specific logic (tl id, state, bbox_none, american, dist)",
+   "status": "likely_inert",
+   "expected_effect_size": "none",
+   "files": [
+    "pylot/planning/world.py"
+   ],
+   "lines_changed": {
+    "plus": 4,
+    "minus": 5
+   },
+   "patch": "v_tl_perfect.patch",
+   "difftrace_patch": "v_tl_perfect.difftrace.patch",
+   "difftrace_context_lines": 3,
+   "difftrace_files": [
+    "pylot/planning/world.py"
+   ],
+   "md5_base": {
+    "pylot/planning/world.py": "2bfab7f963a1fb9523029116f8e8163d"
+   },
+   "md5_version": {
+    "pylot/planning/world.py": "18fd68c87cf3e0c12c893f9760b62fb6"
+   },
+   "tree": "v_tl_perfect/"
+  },
+  {
+   "vid": "v_junction_stop",
+   "fix_commit": "afbf196",
+   "fix_date": "2020-07-31",
+   "introduced_by": null,
+   "direction": "revert the _num_ticks_stopped (>10 ticks) hunk in World.update; ERDOSAgent TL delta_y hunk untouched (now in ERDOSBaseAgent)",
+   "mechanism": "World.update: fixed code resets _distance_since_last_full_stop / _last_stop_ego_location only after >10 consecutive ticks with forward_speed<0.7 (a genuine full stop). Version resets on the FIRST slow tick. Consumer: stop_for_agents uncontrolled-junction rule (--stop_at_uncontrolled_junctions=True in challenge.conf): speed_factor_stop=0 when a junction is <=13 m ahead, no semaphorized (detected+obeyed) TL, and >13 m driven since last full stop. The unused __init__ line 'self._num_ticks_stopped = 0' is kept so the difftrace is valid in both trees.",
+   "expected_pre_behaviour": "At a junction that the planner treats as uncontrolled (no TL detected within range), the version 'stops' for a single tick and rolls through; base holds a >10-tick (~0.5 s game time) full stop.",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [
+    "Crossing"
+   ],
+   "negative_control_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "Oncoming",
+    "CutIn"
+   ],
+   "covering_note": "Requires a junction within 13 m on the ego route AND no detected/obeyed TL (all Town01 junctions are signalised; frozen-GREEN lights that the camera TL detector sees count as semaphorized -> rule skipped). Fires only on TL-detection misses near a junction. Likely inert; Crossing is the only template whose geometry could matter.",
+   "predicted_metric": "collision with crossing traffic at junction (less stopping); otherwise none",
+   "difftrace_var": "World._num_ticks_stopped and _distance_since_last_full_stop at the end of World.update (version: ticks stays 0; dist resets one tick earlier)",
+   "status": "likely_inert",
+   "expected_effect_size": "small (0.5 s shorter stop) and conditional",
+   "files": [
+    "pylot/planning/world.py"
+   ],
+   "lines_changed": {
+    "plus": 2,
+    "minus": 5
+   },
+   "patch": "v_junction_stop.patch",
+   "difftrace_patch": "v_junction_stop.difftrace.patch",
+   "difftrace_context_lines": 3,
+   "difftrace_files": [
+    "pylot/planning/world.py"
+   ],
+   "md5_base": {
+    "pylot/planning/world.py": "2bfab7f963a1fb9523029116f8e8163d"
+   },
+   "md5_version": {
+    "pylot/planning/world.py": "789f9a6fa1bb90c629402926520ed2db"
+   },
+   "tree": "v_junction_stop/"
+  },
+  {
+   "vid": "v_overtake",
+   "fix_commit": "7be3b0e",
+   "fix_date": "2020-07-30",
+   "introduced_by": null,
+   "direction": "re-enable OVERTAKE special case in PlanningOperator with pre-commit threshold 35 s (cost_functions 50000->35000 ms)",
+   "mechanism": "Behaviour planner FSM (live at base) switches FOLLOW_WAYPOINTS->OVERTAKE after the ego has not moved (speed<0.7) for >threshold ms game time, and back after 3 s of motion. Base: PlanningOperator ignores the state (branch commented out) -> stop_for_agents always applied, ego stays stopped. Version: in OVERTAKE the planner runs FOTPlanner.run (Frenet planner over world.waypoints with predicted obstacle corners, max_road_width_l=5 m) and SKIPS stop_for_agents (ignores obstacles/TL speed factors); threshold 35 s instead of 50 s. Two hunks, one mechanism (branch + its threshold). 7be3b0e's behaviour-planner prune hunk is NOT revertable (lines rewritten by ab5384a/793b0c2/47ff456) and is a no-op at base (10 m in both branches).",
+   "expected_pre_behaviour": "After ~35 s stuck behind a stopped lead, the ego pulls out around it on an FOT path (up to 5 m left = fully into the oncoming lane in Town01), ignoring stop logic for ~3 s of motion, then snaps back to lane following with stop_for_agents -> side-swipe / collision with lead or oncoming, or off-lane excursion; if FOT fails it sends an emergency stop (same as base). Base: stuck behind the lead until timeout.",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [
+    "LeadStopped",
+    "LeadDecel"
+   ],
+   "negative_control_templates": [
+    "CutIn",
+    "Oncoming",
+    "Crossing"
+   ],
+   "covering_note": "Needs ego stopped (speed<0.7) for >35 s of GAME time: LeadStopped (ego halts behind the lead) and LeadDecel only if the lead ends fully stopped for that long. Scenario must run long enough (>~45 s after the halt). CutIn/Oncoming/Crossing: ego never stuck -> negative controls.",
+   "predicted_metric": "collision (lead or oncoming) / off-lane; base outcome = stuck",
+   "difftrace_var": "PlanningOperator state + output waypoint count + first target speed per tick (state OVERTAKE appears 15 s earlier; FOT output replaces follow_waypoints output)",
+   "status": "ready",
+   "expected_effect_size": "strong when it fires; direction is stuck->moving-with-risk, so define the regression metric as collision/off-lane, not stuck",
+   "files": [
+    "pylot/planning/cost_functions.py",
+    "pylot/planning/planning_operator.py"
+   ],
+   "lines_changed": {
+    "plus": 18,
+    "minus": 18
+   },
+   "patch": "v_overtake.patch",
+   "difftrace_patch": "v_overtake.difftrace.patch",
+   "difftrace_context_lines": 1,
+   "difftrace_files": [
+    "pylot/planning/planning_operator.py"
+   ],
+   "md5_base": {
+    "pylot/planning/cost_functions.py": "a7c305d14b4613bf231658598e216211",
+    "pylot/planning/planning_operator.py": "953fac453446258e752a5589a1ed359b"
+   },
+   "md5_version": {
+    "pylot/planning/cost_functions.py": "f8e2395a8247b4b3fd9c62659b5e495a",
+    "pylot/planning/planning_operator.py": "6eadf02c485d700b282ff497fd06b421"
+   },
+   "tree": "v_overtake/"
+  },
+  {
+   "vid": "v_speed7",
+   "fix_commit": "47ff456",
+   "fix_date": "2020-11-15",
+   "introduced_by": null,
+   "direction": "revert ONLY --target_speed 6->7 in challenge.conf (conf-file variant, not source); behaviour-planner prune 2->3 and Dockerfile hunks dropped",
+   "mechanism": "PlanningOperator (waypoint mode): target_speed = speed_factor * FLAGS.target_speed every tick; PID tracks it. Higher cruise speed with unchanged distance-based stop thresholds (vehicle_max_distance 18 m, coast_factor 1.75, person zones).",
+   "expected_pre_behaviour": "Cruise at 7 m/s instead of 6: longer stopping distance, later effective braking relative to the fixed distance thresholds -> more/closer rear-end and crossing conflicts.",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "CutIn",
+    "Oncoming",
+    "Crossing"
+   ],
+   "negative_control_templates": [],
+   "covering_note": "Template-independent (every tick). Strongest expected in LeadDecel/LeadStopped/CutIn/Crossing; Oncoming weakest (opposite-lane vehicle is ignored by the same-lane filter). Deploy by pointing TEAM_CONFIG at <vid>/pylot/simulation/challenge/challenge.conf (the file in the image is otherwise identical).",
+   "predicted_metric": "collision (rear-end / crossing), min-TTC",
+   "difftrace_var": "FLAGS.target_speed, speed_factor and target_speed per planner tick",
+   "status": "ready",
+   "expected_effect_size": "moderate",
+   "files": [
+    "pylot/simulation/challenge/challenge.conf"
+   ],
+   "lines_changed": {
+    "plus": 1,
+    "minus": 0
+   },
+   "patch": "v_speed7.patch",
+   "difftrace_patch": "v_speed7.difftrace.patch",
+   "difftrace_context_lines": 3,
+   "difftrace_files": [
+    "pylot/planning/planning_operator.py"
+   ],
+   "md5_base": {
+    "pylot/simulation/challenge/challenge.conf": "665b35611c98ffd64bf25246eab6e6e2"
+   },
+   "md5_version": {
+    "pylot/simulation/challenge/challenge.conf": "67f95a3243ac49663900cd3be5338734"
+   },
+   "tree": "v_speed7/"
+  },
+  {
+   "vid": "v_goal_route0",
+   "fix_commit": "793b0c2",
+   "fix_date": "2020-11-06",
+   "introduced_by": null,
+   "direction": "revert the __get_goal_location hunk (goal = route[1] always, instead of route[0] when ego is >=5 m from route[0]). NOTE: this hunk is in 793b0c2, NOT in ab5384a as listed in the brief (ab5384a only refactored the goal code into __get_goal_location without changing route[1])",
+   "mechanism": "BehaviourPlanningOperator.__get_goal_location: the goal (end of the map-computed waypoint list handed to the planner) is route[0] when the ego is >=5 m from it, else route[1]. Route = dense 1 m leaderboard world-coord plan (used since 2019); remove_waypoint_if_close(10) pops one route point per tick, so route[0] settles ~10 m ahead and the goal is ~10 m ahead (base) vs ~11 m ahead (version).",
+   "expected_pre_behaviour": "Planner waypoint list extends 1 m further; identical lane geometry on a straight road. Differences only where route[0] and route[1] lie on different roads/lanes (junction turns) or at the route end.",
+   "path_default": true,
+   "path_gtperception": true,
+   "covering_templates": [],
+   "negative_control_templates": [
+    "LeadDecel",
+    "LeadStopped",
+    "CutIn",
+    "Oncoming",
+    "Crossing"
+   ],
+   "covering_note": "With a 1 m-spaced route the goal moves by one metre; on a straight lane this is inert. Kept as requested; expect identical outcomes with a trivially different difftrace (goal x,y shifted ~1 m).",
+   "predicted_metric": "none in suite",
+   "difftrace_var": "route length, distance to route[0] and the selected goal location per behaviour-planner tick",
+   "status": "likely_inert",
+   "expected_effect_size": "none",
+   "files": [
+    "pylot/planning/behavior_planning_operator.py"
+   ],
+   "lines_changed": {
+    "plus": 1,
+    "minus": 6
+   },
+   "patch": "v_goal_route0.patch",
+   "difftrace_patch": "v_goal_route0.difftrace.patch",
+   "difftrace_context_lines": 3,
+   "difftrace_files": [
+    "pylot/planning/behavior_planning_operator.py"
+   ],
+   "md5_base": {
+    "pylot/planning/behavior_planning_operator.py": "9cc1b381b9c9406921af573f3c95559e"
+   },
+   "md5_version": {
+    "pylot/planning/behavior_planning_operator.py": "837fc9d8c02674d854de43d3299b5a00"
+   },
+   "tree": "v_goal_route0/"
+  }
+ ],
+ "dropped": [
+  {
+   "vid": "v_remove_completed (73e7e0f)",
+   "fix_commit": "73e7e0f",
+   "fix_date": "2020-05-30",
+   "reason": "planning/utils.py no longer contains remove_completed_waypoints at 8218ca9 (removed by dc4cc8d 'Refactored methods that compute angles and distances between vectors', 2020-06-08; logic now lives in Waypoints.remove_completed/closest_waypoint). git apply -R fails. Not re-expressed."
+  },
+  {
+   "vid": "v_location_history (3a763f7)",
+   "fix_commit": "3a763f7",
+   "fix_date": "2020-04-26",
+   "reason": "obstacle_location_history_operator.py was restructured after the fix (ObstacleTrajectory(obstacle, trajectory) signature, loop body rewritten). git apply -R fails at hunk @61. Not re-expressed."
+  },
+  {
+   "vid": "v_lidar_depth (20e1151)",
+   "fix_commit": "20e1151",
+   "fix_date": "2020-06-04",
+   "reason": "point_cloud.py was rewritten (type hints, renamed locals) after the fix; the normalized-depth logic is still present but the exact lines are gone. git apply -R fails at hunk @101. Not re-expressed."
+  },
+  {
+   "vid": "v_prune_in_junction (760f137 behaviour-planner hunk)",
+   "fix_commit": "760f137",
+   "fix_date": "2020-07-18",
+   "reason": "'if not is_intersection: remove_waypoint_if_close(5)' was superseded by 7be3b0e (OVERTAKE branch + 3.5 m in junction), ab5384a (10 m / 3 m), 793b0c2 (3->2) and 47ff456 (2->3). Lines absent at base; separate mechanism but not cleanly revertable. Not re-expressed."
+  },
+  {
+   "vid": "02c8034 ERDOSAgent visible-TL filter + max_angle /4->/3",
+   "fix_commit": "02c8034",
+   "fix_date": "2020-07-30",
+   "reason": "Filter moved into ERDOSBaseAgent.send_perfect_detections (52b8570 refactor) and only runs with --simulator_traffic_light_detection (not in either conf); the angle tweak is American-style-only. Not re-expressed; v_tl_perfect carries only the world.py bbox hunk."
+  },
+  {
+   "vid": "ab5384a other hunks",
+   "fix_commit": "ab5384a",
+   "fix_date": "2020-08-10",
+   "reason": "Localization Kalman noise vars (x10), hd_map __is_intersection shim (gone at base: Waypoint wrapper exposes is_junction), prune 5->10 / 3.5->3 (later changed again), TL lookahead 15->20. Bundled, partly superseded; not requested."
+  }
+ ]
+}

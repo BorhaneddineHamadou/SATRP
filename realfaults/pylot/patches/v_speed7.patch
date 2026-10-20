@@ -1,0 +1,13 @@
+diff --git a/pylot/simulation/challenge/challenge.conf b/pylot/simulation/challenge/challenge.conf
+index 3f9c497..fe54293 100644
+--- a/pylot/simulation/challenge/challenge.conf
++++ b/pylot/simulation/challenge/challenge.conf
+@@ -36,7 +36,7 @@
+ ########## Planning flags ##########
+ --planning_type=waypoint
+ #--planning_type=frenet_optimal_trajectory
+---target_speed=6
++--target_speed=7
+ --max_speed=16
+ --d_road_w=0.2
+ --d_t_s=0.25

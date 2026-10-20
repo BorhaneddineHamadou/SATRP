@@ -1,0 +1,1 @@
+import os, sys; exec("if os.getenv(\"OP_MUTANT_FILE\"):\n sys.path.insert(0, \"/home/users/bhamadou/satrp_mutation/ads\")\n import op_mutant_hook\n sys.path.pop(0)")

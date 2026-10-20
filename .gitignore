@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+raw/
+results/*
+!results/paper/
+!results/README.md
+data/derived/*/runs.rebuilt.jsonl
+.pytest_cache/

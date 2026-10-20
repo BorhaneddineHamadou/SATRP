@@ -1,0 +1,127 @@
+mutant run_idx histogram: [(0, 840), (1, 840), (2, 840)] ... [(21, 840), (22, 840), (23, 840)] n_idx 24
+
+SEP GT cells: depth12=85 depth24=119 overlap=80 only12=5 only24=39
+  mean effect (p-q, on GT seeds): only-in-12 0.477 | both(d12 est) 0.701 | only-in-24 0.435
+  only-in-12 cells re-estimated at depth 24: mean effect 0.277 (winner's curse if << their depth-12 estimate)
+
+=== A reproduce depth12 sep=True GTdepth=12 DRAWdepth=12 level=1 (g=0.6,a=0.3,c=0.5) faults=85 flaky=15
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.260  0.260  0.440  0.450                      -
+uniform       0.281  0.276  0.659  0.696                      -
+sprt          0.282  0.275  0.168  0.309                      -
+apt           0.280  0.280  0.297  0.394                      -
+satrp_base    0.294  0.296  0.418  0.571                      -
+satrp_warm    0.298  0.302  0.427  0.616                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== B reproduce depth24 sep=True GTdepth=24 DRAWdepth=24 level=1 (g=0.6,a=0.3,c=0.5) faults=119 flaky=42
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.259  0.259  0.432  0.399                      -
+uniform       0.291  0.291  0.652  0.654                      -
+sprt          0.229  0.198  0.088  0.178                      -
+apt           0.264  0.259  0.168  0.326                      -
+satrp_base    0.284  0.287  0.279  0.455                      -
+satrp_warm    0.282  0.285  0.293  0.469                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== C GT24 / draw12 sep=True GTdepth=24 DRAWdepth=12 level=1 (g=0.6,a=0.3,c=0.5) faults=119 flaky=27
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.265  0.265  0.426  0.413                      -
+uniform       0.293  0.292  0.633  0.654                      -
+sprt          0.223  0.187  0.082  0.166                      -
+apt           0.267  0.264  0.159  0.333                      -
+satrp_base    0.289  0.291  0.271  0.467                      -
+satrp_warm    0.283  0.286  0.284  0.468                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== D GT12 / draw24 sep=True GTdepth=12 DRAWdepth=24 level=1 (g=0.6,a=0.3,c=0.5) faults=85 flaky=23
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.262  0.262  0.448  0.469                      -
+uniform       0.276  0.277  0.681  0.719                      -
+sprt          0.298  0.300  0.168  0.352                      -
+apt           0.282  0.276  0.294  0.398                      -
+satrp_base    0.299  0.301  0.428  0.601                      -
+satrp_warm    0.302  0.305  0.438  0.643                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== A reproduce depth12 sep=True GTdepth=12 DRAWdepth=12 level=5 (g=0.8,a=0.05,c=1.3) faults=85 flaky=15
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.262  0.262  0.439  0.468                      -
+uniform       0.282  0.279  0.656  0.718                      -
+sprt          0.048  0.000  0.000  0.000                      -
+apt           0.000  0.000  0.000  0.000                      -
+satrp_base    0.236  0.195  0.181  0.192                      -
+satrp_warm    0.261  0.239  0.223  0.279                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== B reproduce depth24 sep=True GTdepth=24 DRAWdepth=24 level=5 (g=0.8,a=0.05,c=1.3) faults=119 flaky=42
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.259  0.259  0.426  0.394                      -
+uniform       0.291  0.290  0.655  0.650                      -
+sprt          0.029  0.000  0.000  0.000                      -
+apt           0.000  0.000  0.000  0.000                      -
+satrp_base    0.215  0.185  0.080  0.163                      -
+satrp_warm    0.227  0.207  0.104  0.197                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== C GT24 / draw12 sep=True GTdepth=24 DRAWdepth=12 level=5 (g=0.8,a=0.05,c=1.3) faults=119 flaky=27
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.262  0.262  0.426  0.399                      -
+uniform       0.293  0.294  0.629  0.657                      -
+sprt          0.027  0.000  0.000  0.000                      -
+apt           0.000  0.000  0.000  0.000                      -
+satrp_base    0.221  0.197  0.072  0.172                      -
+satrp_warm    0.228  0.214  0.098  0.207                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== D GT12 / draw24 sep=True GTdepth=12 DRAWdepth=24 level=5 (g=0.8,a=0.05,c=1.3) faults=85 flaky=23
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.262  0.262  0.445  0.462                      -
+uniform       0.276  0.275  0.680  0.704                      -
+sprt          0.054  0.000  0.000  0.000                      -
+apt           0.000  0.000  0.000  0.000                      -
+satrp_base    0.244  0.200  0.188  0.202                      -
+satrp_warm    0.273  0.246  0.221  0.290                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== E full-pool depth12 sep=False GTdepth=12 DRAWdepth=12 level=1 (g=0.6,a=0.3,c=0.5) faults=116 flaky=41
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.295  0.295  0.404  0.590                      -
+uniform       0.287  0.300  0.645  0.876                      -
+sprt          0.370  0.299  0.039  0.296                      -
+apt           0.371  0.350  0.118  0.533                      -
+satrp_base    0.363  0.365  0.221  0.753                      -
+satrp_warm    0.353  0.355  0.248  0.777                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== F full-pool depth24 sep=False GTdepth=24 DRAWdepth=24 level=1 (g=0.6,a=0.3,c=0.5) faults=118 flaky=44
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.315  0.315  0.444  0.548                      -
+uniform       0.330  0.339  0.662  0.839                      -
+sprt          0.354  0.294  0.031  0.280                      -
+apt           0.370  0.350  0.093  0.500                      -
+satrp_base    0.373  0.374  0.191  0.668                      -
+satrp_warm    0.368  0.370  0.220  0.704                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== E full-pool depth12 sep=False GTdepth=12 DRAWdepth=12 level=5 (g=0.8,a=0.05,c=1.3) faults=116 flaky=41
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.298  0.298  0.404  0.594                      -
+uniform       0.288  0.301  0.648  0.885                      -
+sprt          0.034  0.015  0.000  0.009                      -
+apt           0.000  0.000  0.000  0.000                      -
+satrp_base    0.435  0.337  0.045  0.364                      -
+satrp_warm    0.427  0.343  0.063  0.395                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+=== F full-pool depth24 sep=False GTdepth=24 DRAWdepth=24 level=5 (g=0.8,a=0.05,c=1.3) faults=118 flaky=44
+method        F1auc  F1@2x  FP@2x rec@2x   exhausted/draw-calls
+strap         0.315  0.315  0.451  0.549                      -
+uniform       0.329  0.340  0.666  0.855                      -
+sprt          0.028  0.014  0.000  0.007                      -
+apt           0.000  0.000  0.000  0.000                      -
+satrp_base    0.385  0.300  0.043  0.306                      -
+satrp_warm    0.394  0.327  0.054  0.359                      -
+oracle        1.000  1.000  0.000  1.000                      -
+
+DONE

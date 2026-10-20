@@ -1,0 +1,18 @@
+diff --git a/pylot/planning/behavior_planning_operator.py b/pylot/planning/behavior_planning_operator.py
+index 4a364e2..928cbb5 100644
+--- a/pylot/planning/behavior_planning_operator.py
++++ b/pylot/planning/behavior_planning_operator.py
+@@ -232,12 +232,7 @@ class BehaviorPlanningOperator(erdos.Operator):
+ 
+     def __get_goal_location(self, ego_transform):
+         if len(self._route.waypoints) > 1:
+-            dist = ego_transform.location.distance(
+-                self._route.waypoints[0].location)
+-            if dist < 5:
+-                new_goal_location = self._route.waypoints[1].location
+-            else:
+-                new_goal_location = self._route.waypoints[0].location
++            new_goal_location = self._route.waypoints[1].location
+         elif len(self._route.waypoints) == 1:
+             new_goal_location = self._route.waypoints[0].location
+         else:

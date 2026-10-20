@@ -1,0 +1,66 @@
+[
+ {
+  "vid": "base",
+  "commit": "4dd9a38a86f7078e0ba3a4a753462df8820276f7",
+  "direction": "none",
+  "files": [
+   "team_code/sensor_agent.py"
+  ],
+  "hunk": "",
+  "site": "carla_garage@4dd9a38 team_code HEAD (leaderboard_1)",
+  "mechanism": "carla_garage leaderboard_1 HEAD, unmodified (both fixes present).",
+  "expected_pre_behaviour": "reference behaviour",
+  "covering_scenarios": [
+   "ProxLeadDecel",
+   "ProxLeadStopped",
+   "ProxCutIn",
+   "ProxOncomingDrift",
+   "ProxCrossingTraffic"
+  ],
+  "negative_control_scenarios": [],
+  "md5": "5109444fe39fb4cbde5f6e15bfc20055"
+ },
+ {
+  "vid": "v_lidar_stale",
+  "commit": "d491088048378518ce553d83e6cfcb1e3c2593ce",
+  "direction": "revert",
+  "files": [
+   "team_code/sensor_agent.py"
+  ],
+  "hunk": "d491088048378518ce553d83e6cfcb1e3c2593ce\ndiff --git a/team_code/sensor_agent.py b/team_code/sensor_agent.py\nindex 559a329..49791e8 100644\n--- a/team_code/sensor_agent.py\n+++ b/team_code/sensor_agent.py\n@@ -406,7 +406,7 @@ class SensorAgent(autonomous_agent.AutonomousAgent):\n       lidar_bev = []\n       # prepare LiDAR input\n       for i in lidar_indices:\n-        lidar_point_cloud = deepcopy(self.lidar_buffer[i])\n+        lidar_point_cloud = deepcopy(self.lidar_buffer[-(i+1)])\n \n         # For single frame there is no point in realignment. The state_log index will also differ.\n         if self.config.realign_lidar and self.config.lidar_seq_len > 1:\n",
+  "site": "team_code/sensor_agent.py:409 lidar_buffer[-(i+1)] -> lidar_buffer[i] (revert d491088)",
+  "mechanism": "lidar_buffer is a deque(maxlen=lidar_seq_len*data_save_freq=1*5=5) appended with the current full cloud every run_step. HEAD reads [-(i+1)] = [-1] = newest; the pre-fix code reads [i] = [0] = oldest = 4 ticks old (200 ms at 20 FPS sync, action_repeat=1). With lidar_seq_len=1 the realign branch is skipped, so the stale cloud is fed to the network in the ego frame of 4 ticks ago (commit message: \"LiDAR was 100ms delayed due to accessing a queue from the wrong side\"). Active in our host for ANY lidar spec, because the buffer fills once per tick regardless of sweep fraction.",
+  "expected_pre_behaviour": "Perception of moving actors lags by ~0.2 s: braking/evasion starts later for cut-ins, crossers and oncoming drifters; static/slow leads shift by ego displacement only (v*0.2 s, <=1.6 m at 8 m/s) so LeadStopped is near-inert.",
+  "covering_scenarios": [
+   "ProxCutIn",
+   "ProxCrossingTraffic",
+   "ProxOncomingDrift",
+   "ProxLeadDecel"
+  ],
+  "negative_control_scenarios": [
+   "ProxLeadStopped"
+  ],
+  "md5": "a2c179bd0988c3800e51afb4e09292a9"
+ },
+ {
+  "vid": "v_speed_offset",
+  "commit": "cf590987985b1ec4f29124e47580271c2a2c4f70",
+  "direction": "revert",
+  "files": [
+   "team_code/sensor_agent.py"
+  ],
+  "hunk": "cf590987985b1ec4f29124e47580271c2a2c4f70\ndiff --git a/team_code/sensor_agent.py b/team_code/sensor_agent.py\nindex c68e5b7..559a329 100644\n--- a/team_code/sensor_agent.py\n+++ b/team_code/sensor_agent.py\n@@ -89,9 +89,9 @@ class SensorAgent(autonomous_agent.AutonomousAgent):\n     # Classification networks are known to be overconfident which leads to them braking a bit too late in our case.\n     # Reducing the driving speed slightly counteracts that.\n     if int(os.environ.get('SLOWER', 1)):\n-      print('Reduce target speed value by one.')\n-      self.config.target_speeds[2] = self.config.target_speeds[2] - 1.0\n-      self.config.target_speeds[3] = self.config.target_speeds[3] - 1.0\n+      print('Reduce target speed value by two m/s.')\n+      self.config.target_speeds[2] = self.config.target_speeds[2] - 2.0\n+      self.config.target_speeds[3] = self.config.target_speeds[3] - 2.0\n \n     # Collects some statistics about the target point. Not needed usually.\n     self.tp_stats = False\n",
+  "site": "team_code/sensor_agent.py:92-94 SLOWER offset 2.0 -> 1.0 m/s (revert cf59098, sensor_agent.py part only)",
+  "mechanism": "With SLOWER=1 (default) the target-speed classes 2 and 3 are lowered before inference. HEAD: [0,2,5,8] -> [0,2,3,6] m/s; reverted: [0,2,4,7] m/s. The expected target speed = sum(softmax * target_speeds) (uncertainty weighting) feeds the longitudinal PID, so the reverted version drives ~1 m/s faster in every non-brake state and brakes from a higher speed. The route_scenario_local.py part of cf59098 is leaderboard-side and not in team_code; it is NOT reverted.",
+  "expected_pre_behaviour": "Higher cruise speed (~7 vs ~6 m/s) and longer stopping distance in every scenario; more/earlier contacts where the margin is tight (CutIn, LeadDecel, CrossingTraffic); the 2023 camera-ready note calls the 2 m/s offset a bugfix for longest6 (overconfident classifier brakes late).",
+  "covering_scenarios": [
+   "ProxLeadDecel",
+   "ProxLeadStopped",
+   "ProxCutIn",
+   "ProxOncomingDrift",
+   "ProxCrossingTraffic"
+  ],
+  "negative_control_scenarios": [],
+  "md5": "51d20255e4f5d3aec624b8f8854a6438"
+ }
+]

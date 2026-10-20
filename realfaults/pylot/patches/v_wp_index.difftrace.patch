@@ -1,0 +1,17 @@
+diff --git a/pylot/planning/waypoints.py b/pylot/planning/waypoints.py
+index 726a950..028ace8 100644
+--- a/pylot/planning/waypoints.py
++++ b/pylot/planning/waypoints.py
+@@ -133,6 +133,12 @@ class Waypoints(object):
+     def get_vector(self, transform, min_distance):
+         """Returns the vector between the transform and the first waypoint that
+         is at least min_distance away."""
++        if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1':
++            try:
++                _dt_idx = self._get_index(transform, min_distance)
++            except ValueError:
++                _dt_idx = 'ValueError'
++            __import__('sys').stderr.write('[difftrace v_wp_index] get_vector n=%d idx=%s\n' % (len(self.waypoints), _dt_idx))
+         wp_index = self._get_index(transform, min_distance)
+         return self.waypoints[wp_index].location.as_vector_2D() - \
+             transform.location.as_vector_2D()

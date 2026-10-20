@@ -1,0 +1,59 @@
+diff --git a/pylot/planning/cost_functions.py b/pylot/planning/cost_functions.py
+index aad8abd..b6129b7 100644
+--- a/pylot/planning/cost_functions.py
++++ b/pylot/planning/cost_functions.py
+@@ -108,7 +108,7 @@ def cost_inefficiency(vehicle_info, predictions, trajectory):
+ 
+ 
+ def cost_overtake(current_state, future_state, ego_info):
+-    if ego_info.current_time - ego_info.last_time_moving > 50000:
++    if ego_info.current_time - ego_info.last_time_moving > 35000:
+         # Switch to OVERTAKE if ego hasn't moved for a while.
+         if future_state == BehaviorPlannerState.OVERTAKE:
+             return 0
+diff --git a/pylot/planning/planning_operator.py b/pylot/planning/planning_operator.py
+index 8593335..5992dcc 100644
+--- a/pylot/planning/planning_operator.py
++++ b/pylot/planning/planning_operator.py
+@@ -178,24 +178,24 @@ class PlanningOperator(erdos.Operator):
+         ttd = ttd_msg.data - (time.time() - self._world.pose.localization_time)
+         self._logger.debug('@{}: adjusting ttd from {} to {}'.format(
+             timestamp, ttd_msg.data, ttd))
+-        # if self._state == BehaviorPlannerState.OVERTAKE:
+-        #     # Ignore traffic lights and obstacle.
+-        #     output_wps = self._planner.run(timestamp, ttd)
+-        # else:
+-        (speed_factor, _, _, speed_factor_tl,
+-         speed_factor_stop) = self._world.stop_for_agents(timestamp)
+-        if self._flags.planning_type == 'waypoint':
+-            target_speed = speed_factor * self._flags.target_speed
+-            self._logger.debug(
+-                '@{}: speed factor: {}, target speed: {}'.format(
+-                    timestamp, speed_factor, target_speed))
+-            output_wps = self._world.follow_waypoints(target_speed)
+-        else:
++        if self._state == BehaviorPlannerState.OVERTAKE:
++            # Ignore traffic lights and obstacle.
+             output_wps = self._planner.run(timestamp, ttd)
+-            speed_factor = min(speed_factor_stop, speed_factor_tl)
+-            self._logger.debug('@{}: speed factor: {}'.format(
+-                timestamp, speed_factor))
+-            output_wps.apply_speed_factor(speed_factor)
++        else:
++            (speed_factor, _, _, speed_factor_tl,
++             speed_factor_stop) = self._world.stop_for_agents(timestamp)
++            if self._flags.planning_type == 'waypoint':
++                target_speed = speed_factor * self._flags.target_speed
++                self._logger.debug(
++                    '@{}: speed factor: {}, target speed: {}'.format(
++                        timestamp, speed_factor, target_speed))
++                output_wps = self._world.follow_waypoints(target_speed)
++            else:
++                output_wps = self._planner.run(timestamp, ttd)
++                speed_factor = min(speed_factor_stop, speed_factor_tl)
++                self._logger.debug('@{}: speed factor: {}'.format(
++                    timestamp, speed_factor))
++                output_wps.apply_speed_factor(speed_factor)
+         waypoints_stream.send(WaypointsMessage(timestamp, output_wps))
+         waypoints_stream.send(erdos.WatermarkMessage(timestamp))
+ 

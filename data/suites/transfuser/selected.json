@@ -1,0 +1,317 @@
+{
+ "stack": "transfuser",
+ "N": 28,
+ "seed": 20260929,
+ "want": {
+  "partial": 15,
+  "silent": 7,
+  "mass-fail": 3,
+  "borderline": 3
+ },
+ "counts": {
+  "partial": 18,
+  "silent": 7,
+  "mass-fail": 1,
+  "borderline": 2
+ },
+ "per_op": {
+  "AOR": 2,
+  "COR": 3,
+  "SGN": 3,
+  "IDX": 3,
+  "NEG": 4,
+  "ROR": 3,
+  "CRP": 2,
+  "CSC": 5,
+  "SDL": 3
+ },
+ "per_file": {
+  "team_code_transfuser/model.py": 8,
+  "team_code_transfuser/submission_agent.py": 12,
+  "team_code_transfuser/config.py": 8
+ },
+ "selected": [
+  "mfcccb1e3",
+  "m708ce400",
+  "m3090a1c0",
+  "m713a2fd6",
+  "m6edd099f",
+  "m98b4689e",
+  "m7442167a",
+  "m10a7366e",
+  "m5a69aeea",
+  "mfdbe4cc3",
+  "m195d3513",
+  "m2560f324",
+  "m099a15b3",
+  "m22273879",
+  "mccfb207e",
+  "mf1de3906",
+  "m3957971b",
+  "ma4fe9a8a",
+  "m53e5a9d5",
+  "mbb15f7ad",
+  "m1994b465",
+  "ma2055310",
+  "mc2e19d52",
+  "m8594da47",
+  "mefc2478d",
+  "ma6573b35",
+  "m993b775a",
+  "mdc51c801"
+ ],
+ "detail": [
+  {
+   "mid": "mfcccb1e3",
+   "site": "team_code_transfuser/model.py:2243:AOR",
+   "op": "AOR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m708ce400",
+   "site": "team_code_transfuser/submission_agent.py:563:COR",
+   "op": "COR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 2
+  },
+  {
+   "mid": "m3090a1c0",
+   "site": "team_code_transfuser/submission_agent.py:129:SGN",
+   "op": "SGN",
+   "cls": "partial",
+   "trig": 1,
+   "base": 2,
+   "div": 6
+  },
+  {
+   "mid": "m713a2fd6",
+   "site": "team_code_transfuser/submission_agent.py:3100:IDX",
+   "op": "IDX",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 4
+  },
+  {
+   "mid": "m6edd099f",
+   "site": "team_code_transfuser/submission_agent.py:184:NEG",
+   "op": "NEG",
+   "cls": "partial",
+   "trig": 2,
+   "base": 2,
+   "div": 2
+  },
+  {
+   "mid": "m98b4689e",
+   "site": "team_code_transfuser/model.py:2107:ROR",
+   "op": "ROR",
+   "cls": "partial",
+   "trig": 1,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m7442167a",
+   "site": "team_code_transfuser/submission_agent.py:303:NEG",
+   "op": "NEG",
+   "cls": "partial",
+   "trig": 2,
+   "base": 2,
+   "div": 2
+  },
+  {
+   "mid": "m10a7366e",
+   "site": "team_code_transfuser/submission_agent.py:773:ROR",
+   "op": "ROR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m5a69aeea",
+   "site": "team_code_transfuser/submission_agent.py:2384:ROR",
+   "op": "ROR",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 2
+  },
+  {
+   "mid": "mfdbe4cc3",
+   "site": "team_code_transfuser/config.py:142:CRP",
+   "op": "CRP",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m195d3513",
+   "site": "team_code_transfuser/submission_agent.py:1764:COR",
+   "op": "COR",
+   "cls": "partial",
+   "trig": 1,
+   "base": 2,
+   "div": 3
+  },
+  {
+   "mid": "m2560f324",
+   "site": "team_code_transfuser/config.py:144:CSC:x05",
+   "op": "CSC",
+   "cls": "partial",
+   "trig": 2,
+   "base": 2,
+   "div": 2
+  },
+  {
+   "mid": "m099a15b3",
+   "site": "team_code_transfuser/submission_agent.py:3076:IDX",
+   "op": "IDX",
+   "cls": "partial",
+   "trig": 3,
+   "base": 2,
+   "div": 3
+  },
+  {
+   "mid": "m22273879",
+   "site": "team_code_transfuser/model.py:6022:IDX",
+   "op": "IDX",
+   "cls": "partial",
+   "trig": 0,
+   "base": 2,
+   "div": 6
+  },
+  {
+   "mid": "mccfb207e",
+   "site": "team_code_transfuser/config.py:358:CSC:x05",
+   "op": "CSC",
+   "cls": "partial",
+   "trig": 0,
+   "base": 2,
+   "div": 6
+  },
+  {
+   "mid": "mf1de3906",
+   "site": "team_code_transfuser/model.py:266:SDL",
+   "op": "SDL",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m3957971b",
+   "site": "team_code_transfuser/submission_agent.py:267:SDL",
+   "op": "SDL",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "ma4fe9a8a",
+   "site": "team_code_transfuser/config.py:232:CSC:x05",
+   "op": "CSC",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m53e5a9d5",
+   "site": "team_code_transfuser/config.py:340:CSC:x05",
+   "op": "CSC",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "mbb15f7ad",
+   "site": "team_code_transfuser/config.py:290:AOR",
+   "op": "AOR",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "m1994b465",
+   "site": "team_code_transfuser/config.py:322:CSC:x05",
+   "op": "CSC",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "ma2055310",
+   "site": "team_code_transfuser/config.py:67:SGN",
+   "op": "SGN",
+   "cls": "silent",
+   "trig": 2,
+   "base": 2,
+   "div": 1
+  },
+  {
+   "mid": "mc2e19d52",
+   "site": "team_code_transfuser/model.py:291:NEG",
+   "op": "NEG",
+   "cls": "mass-fail",
+   "trig": 5,
+   "base": 2,
+   "div": 5
+  },
+  {
+   "mid": "m8594da47",
+   "site": "team_code_transfuser/model.py:2358:CRP",
+   "op": "CRP",
+   "cls": "borderline",
+   "trig": 3,
+   "base": 2,
+   "div": 0
+  },
+  {
+   "mid": "mefc2478d",
+   "site": "team_code_transfuser/model.py:961:COR",
+   "op": "COR",
+   "cls": "borderline",
+   "trig": 3,
+   "base": 2,
+   "div": 0
+  },
+  {
+   "mid": "ma6573b35",
+   "site": "team_code_transfuser/submission_agent.py:1036:SDL",
+   "op": "SDL",
+   "cls": "partial",
+   "trig": 0,
+   "base": 2,
+   "div": 6
+  },
+  {
+   "mid": "m993b775a",
+   "site": "team_code_transfuser/submission_agent.py:851:NEG",
+   "op": "NEG",
+   "cls": "partial",
+   "trig": 2,
+   "base": 2,
+   "div": 2
+  },
+  {
+   "mid": "mdc51c801",
+   "site": "team_code_transfuser/model.py:297:SGN",
+   "op": "SGN",
+   "cls": "partial",
+   "trig": 1,
+   "base": 2,
+   "div": 6
+  }
+ ]
+}

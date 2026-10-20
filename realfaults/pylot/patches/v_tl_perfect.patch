@@ -1,0 +1,20 @@
+diff --git a/pylot/planning/world.py b/pylot/planning/world.py
+index 7b1859e..3db4d03 100644
+--- a/pylot/planning/world.py
++++ b/pylot/planning/world.py
+@@ -403,11 +403,10 @@ class World(object):
+                     dist_to_intersection = self._map.distance_to_intersection(
+                         self.ego_transform.location, max_distance_to_check=20)
+                     if (dist_to_intersection is not None
+-                            and dist_to_intersection < 12):
+-                        if (tl.bounding_box is None
+-                                or tl.bounding_box.get_width() *
+-                                tl.bounding_box.get_height() > 400):
+-                            speed_factor_tl = 0
++                            and dist_to_intersection < 12
++                            and tl.bounding_box.get_width() *
++                            tl.bounding_box.get_height() > 400):
++                        speed_factor_tl = 0
+                     if (dist_to_intersection is not None and tl_dist < 27
+                             and 12 <= dist_to_intersection <= 20):
+                         speed_factor_tl = 0

@@ -1,0 +1,378 @@
+{
+ "stack": "openpilot",
+ "seed": 20260929,
+ "quota": {
+  "ProxLeadDecel": 6,
+  "ProxLeadStopped": 6,
+  "ProxCutIn": 6,
+  "ProxOncomingDrift": 6,
+  "ProxCrossingTraffic": 6
+ },
+ "mix": [
+  0.3,
+  0.4,
+  0.3
+ ],
+ "suite": [
+  {
+   "sid": 5,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 34.82390692577922,
+    "v_lead": 5.255822171839999,
+    "g_trig": 18.094533208413413,
+    "a_lead": 4.826356159917181
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 7,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 47.239314269291306,
+    "v_lead": 6.227358043471031,
+    "g_trig": 18.82061176553855,
+    "a_lead": 7.273062142050925
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 10,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 27.242568007292924,
+    "v_lead": 6.993077551194004,
+    "g_trig": 31.916946758853005,
+    "a_lead": 6.644300401325938
+   },
+   "nominal_triggers": 5,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 20,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 26.34202343608583,
+    "v_lead": 7.0585331854942535,
+    "g_trig": 29.596729179550188,
+    "a_lead": 5.601095959972005
+   },
+   "nominal_triggers": 4,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 26,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 48.210303930093616,
+    "v_lead": 6.783512998808669,
+    "g_trig": 21.11630408651962,
+    "a_lead": 5.077723667626654
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 28,
+   "scenario_cls": "ProxLeadDecel",
+   "params": {
+    "gap0": 36.73941432776819,
+    "v_lead": 6.017195364234439,
+    "g_trig": 26.672137878917468,
+    "a_lead": 5.520721540649754
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 47,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 107.62753824145614
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 49,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 81.05804437373345
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 52,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 88.3503696491296
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 53,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 101.84381922404683
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 55,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 76.51174218588983
+   },
+   "nominal_triggers": 3,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 59,
+   "scenario_cls": "ProxLeadStopped",
+   "params": {
+    "d0": 109.43786796221903
+   },
+   "nominal_triggers": 3,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 61,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 15.758476053139647,
+    "v_cut": 7.7252179230410665,
+    "d_trig": 34.09983932304722,
+    "t_lat": 1.920114436859201,
+    "a_cut": 0.08824929594950597
+   },
+   "nominal_triggers": 4,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 63,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 26.795289791631767,
+    "v_cut": 5.851264977972841,
+    "d_trig": 22.277632735909858,
+    "t_lat": 2.6135026929851857,
+    "a_cut": 0.3329996191681534
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 64,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 37.8495505183506,
+    "v_cut": 8.864812716054207,
+    "d_trig": 33.58559349601763,
+    "t_lat": 2.40555066956298,
+    "a_cut": 0.7522965742766491
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 66,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 32.160353139697094,
+    "v_cut": 7.270884971008957,
+    "d_trig": 16.980630632469918,
+    "t_lat": 1.6244332834090027,
+    "a_cut": 1.2837787649554708
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 87,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 39.42281054840967,
+    "v_cut": 4.2963095556794295,
+    "d_trig": 19.919624725082876,
+    "t_lat": 2.1000644556176407,
+    "a_cut": 2.862185664037486
+   },
+   "nominal_triggers": 4,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 89,
+   "scenario_cls": "ProxCutIn",
+   "params": {
+    "gap0": 31.89206284852724,
+    "v_cut": 5.470523296896668,
+    "d_trig": 22.89199866867392,
+    "t_lat": 2.5945622360327643,
+    "a_cut": 2.4672593603485073
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 94,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 107.30378442428471,
+    "v_onc": 12.085859930557033,
+    "d_trig": 44.76345073751571,
+    "vy_drift": 2.0176256971515314,
+    "y_frac": 0.9266714671689796,
+    "t_stay": 3.265392318070833
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 95,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 113.90967990790855,
+    "v_onc": 11.544996157881773,
+    "d_trig": 25.126902240620602,
+    "vy_drift": 1.5764001292277485,
+    "y_frac": 1.227048826047913,
+    "t_stay": 3.805102037395681
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 102,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 129.13286878283506,
+    "v_onc": 11.11096642718864,
+    "d_trig": 40.062429054260264,
+    "vy_drift": 1.72276448879965,
+    "y_frac": 0.883227063952795,
+    "t_stay": 2.563349858942548
+   },
+   "nominal_triggers": 3,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 105,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 146.90853056472042,
+    "v_onc": 12.92127774139413,
+    "d_trig": 32.17990019541479,
+    "vy_drift": 1.2980910741761889,
+    "y_frac": 1.1789854011211474,
+    "t_stay": 2.1373194184397843
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 106,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 123.00427229538958,
+    "v_onc": 13.642703174051956,
+    "d_trig": 25.055373882406382,
+    "vy_drift": 1.6708571988933523,
+    "y_frac": 0.9336636271873193,
+    "t_stay": 2.359930554835465
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 116,
+   "scenario_cls": "ProxOncomingDrift",
+   "params": {
+    "r0": 101.63567530973913,
+    "v_onc": 15.560080295303639,
+    "d_trig": 28.580492538644737,
+    "vy_drift": 1.6661373858703112,
+    "y_frac": 1.0429770914520349,
+    "t_stay": 2.269240049620805
+   },
+   "nominal_triggers": 3,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 122,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 93.43602822017739,
+    "d_trig": 24.279865915159334,
+    "v_cross": 2.6448650129661133,
+    "y0": 6.8788848618481655
+   },
+   "nominal_triggers": 3,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 123,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 94.04555089470641,
+    "d_trig": 27.607243400753802,
+    "v_cross": 1.846232602556651,
+    "y0": 7.118236783368197
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 133,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 96.35771896209933,
+    "d_trig": 22.464031630198015,
+    "v_cross": 2.578348215041336,
+    "y0": 6.750595605155665
+   },
+   "nominal_triggers": 2,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 139,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 106.86377606610147,
+    "d_trig": 19.545035832128907,
+    "v_cross": 2.989339396970557,
+    "y0": 6.570839557105244
+   },
+   "nominal_triggers": 0,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 145,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 85.80585465787847,
+    "d_trig": 23.226612282395234,
+    "v_cross": 2.236068645677345,
+    "y0": 7.596010080723383
+   },
+   "nominal_triggers": 1,
+   "nominal_runs": 5
+  },
+  {
+   "sid": 149,
+   "scenario_cls": "ProxCrossingTraffic",
+   "params": {
+    "d_place": 92.39750043755737,
+    "d_trig": 20.921688870738308,
+    "v_cross": 2.443837599964605,
+    "y0": 7.207251990522278
+   },
+   "nominal_triggers": 3,
+   "nominal_runs": 5
+  }
+ ]
+}

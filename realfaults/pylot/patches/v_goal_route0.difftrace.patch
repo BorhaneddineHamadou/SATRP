@@ -1,0 +1,12 @@
+diff --git a/pylot/planning/behavior_planning_operator.py b/pylot/planning/behavior_planning_operator.py
+index 4a364e2..29f0540 100644
+--- a/pylot/planning/behavior_planning_operator.py
++++ b/pylot/planning/behavior_planning_operator.py
+@@ -120,6 +120,7 @@ class BehaviorPlanningOperator(erdos.Operator):
+             else:
+                 self._route.remove_waypoint_if_close(ego_transform.location, 3)
+         new_goal_location = self.__get_goal_location(ego_transform)
++        if __import__('os').environ.get('PYLOT_DIFFTRACE') == '1': __import__('sys').stderr.write('[difftrace v_goal_route0] ts=%d route_n=%d d0=%.2f goal=(%.2f,%.2f)\n' % (timestamp.coordinates[0], len(self._route.waypoints), (ego_transform.location.distance(self._route.waypoints[0].location) if len(self._route.waypoints) > 0 else -1.0), new_goal_location.x, new_goal_location.y))
+         if new_goal_location != self._goal_location:
+             self._goal_location = new_goal_location
+             if self._map:
