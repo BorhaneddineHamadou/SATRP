@@ -13,7 +13,7 @@ in CARLA) on 1,680 (version, scenario) cells under 24 seeds each against a 40-se
 pool, anchored by ten reverted historical fixes of two further stacks (**Pylot**, **TF++**)
 on CARLA Leaderboard routes. 48,336 recorded runs in all.
 
-This repository holds the method, the evaluation harness with its twelve baselines, the
+This repository holds the method, the evaluation harness with its ten baselines, the
 benchmark construction tooling (mutation operators, run-time mutant deployment, screening,
 campaign workers), the real-fault harnesses, the six evaluation instances the paper was
 computed from, and one command that recomputes every number in the paper on a CPU. The raw
@@ -40,7 +40,7 @@ reproduction status.
 
 ```
 satrp/            method + evaluation harness (pure Python, offline)
-  eval_satrp.py       SA-TRP (cold/base/warm) and the twelve baselines on a common budgeted draw stream; F1-AUC, recall/FP at 2x, APFDc, Top-K
+  eval_satrp.py       SA-TRP (cold/base/warm) and the ten baselines on a common budgeted draw stream; F1-AUC, recall/FP at 2x, APFDc, Top-K
   eval_altgt.py       ground truth: one-sided Fisher exact test vs the baseline pool (full-pool and budget-separated protocols)
   run_altgt_mutation.py   one instance x one GT protocol x the 8-level knob sweep  -> results/<instance>/frontier_all_<tag>{,_best}.csv
   extra_analysis_mut.py   clustered bootstrap CIs (by mutant) + held-out gamma selection
