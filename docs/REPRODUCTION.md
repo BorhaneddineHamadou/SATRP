@@ -33,7 +33,7 @@ decimal can arise from BLAS summation order.
 | RQ4 history table (`tab:rq5`): cold / base / warm and the history-depth sweep h = 2, 4, 8, 20, 40 | `run_altgt_mutation.py <instance> <h>` then `satrp/summarize_history_depth.py` | `frontier_all_fisher_h<h>_best.csv`; `results/mutation_history_depth.md` |
 | RQ5 real-fault anchor: per-version rates, GT cells, null, mechanism tests (`tab:realanchor`) | `realfaults/analysis/real_numbers.py` (needs the raw archive) | `results/realfaults/real_numbers.md`, `cells.csv`, `all_runs.csv` (shipped copies in `results/paper/realfaults/`) |
 | RQ5 method comparison on real faults (`tab:realmain`) | `run_altgt_mutation.py real_pylot` / `real_tfpp` / `real_tfpp_straight` / `real_pylot_T2` (+ `ALTGT_SEP=1`) | `results/real_*/frontier_all_fisher{,_sep}_best.csv` |
-| Threats: Pylot port collisions, openpilot first campaign discarded | documented in `docs/CAMPAIGN.md`, `docs/BENCHMARK.md` sec. 5; outcome pools of the discarded campaign in `satrp_raw_openpilot_first_campaign.zip` | -- |
+| Threats: Pylot port collisions, openpilot first campaign discarded and rerun | documented in `docs/CAMPAIGN.md`, `docs/BENCHMARK.md` sec. 5 | -- |
 
 Supporting plots (not in the paper): `satrp/eval_satrp.py`, `eval_satrp_frontier.py`,
 `satrp_roc.py` write `results/<instance>/satrp_{summary,curves,frontier,roc}.*`.

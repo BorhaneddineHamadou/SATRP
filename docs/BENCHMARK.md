@@ -79,7 +79,7 @@ unused backbones are excluded.
   shifted seed (`attempts` in the row). Every openpilot run of the clean rerun executed with
   a private parameter directory (`params_isolated: true`): the first openpilot campaign was
   found to couple consecutive runs through openpilot's persisted calibration state and was
-  discarded (its outcome pools are archived in `satrp_raw_openpilot_first_campaign.zip`).
+  discarded and the whole benchmark rerun.
 
 ## 6. Ground truth and instance files
 
