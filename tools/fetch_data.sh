@@ -4,12 +4,12 @@
 # The shipped data/derived/ files already allow every paper number to be recomputed without this step.
 #
 #   bash tools/fetch_data.sh                 # all four archives (~2.5 GB)
-#   bash tools/fetch_data.sh openpilot       # one archive: openpilot | transfuser | realfaults | openpilot_first_campaign
+#   bash tools/fetch_data.sh openpilot       # one archive: openpilot | openpilot_screening | transfuser | realfaults
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 ZENODO_RECORD="${ZENODO_RECORD:-<ZENODO-RECORD-ID>}"      # TODO: set once the record is published
 BASE="https://zenodo.org/records/${ZENODO_RECORD}/files"
-ARCHIVES="${*:-openpilot transfuser realfaults openpilot_first_campaign}"
+ARCHIVES="${*:-openpilot openpilot_screening transfuser realfaults}"
 mkdir -p "$ROOT/raw"; cd "$ROOT/raw"
 for a in $ARCHIVES; do
   f="satrp_raw_${a}.zip"
